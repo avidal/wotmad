@@ -1,0 +1,17 @@
+*.py[co]
+*.sw[a-z]
+*~
+*.orig
+*.bak
+
+tmp/*
+!tmp/.empty
+
+run/*
+!run/.empty
+
+uploads/*
+!uploads/.empty
+
+wotmad/static/*
+!wotmad/static/.empty
