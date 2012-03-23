@@ -1,1 +1,28 @@
-<h1>Hello, world!</h1>
+<!doctype html>
+<html lang="en">
+{% load compress %}
+{% load static from staticfiles %}
+
+{% compress css %}
+<link type="text/less" rel="stylesheet" href="{% static "bootstrap/less/bootstrap.less" %}">
+<style type="text/less">
+header.jumbotron {
+  text-align: center;
+  h1 {
+    font-size: 96px;
+    line-height: 128px;
+  }
+}
+</style>
+{% endcompress %}
+
+<div class="container">
+  <header class="jumbotron">
+    <h1>wotmad</h1>
+    <p>
+      what?
+    </p>
+  </header>
+</div>
+
+</html>
