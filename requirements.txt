@@ -1,0 +1,2 @@
+git+git://github.com/django/django.git@master#egg=Django
+path.py==2.2.2
