@@ -13,5 +13,5 @@ run/*
 uploads/*
 !uploads/.empty
 
-wotmad/static/*
-!wotmad/static/.empty
+static/*
+!static/.empty
