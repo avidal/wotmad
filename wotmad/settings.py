@@ -2,6 +2,7 @@ from path import path
 
 PROJECT_ROOT = path(__file__).abspath().dirname()
 SITE_ROOT = PROJECT_ROOT.dirname()
+SITE_URL = 'http://chrono.local:8000'
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -81,6 +82,23 @@ INSTALLED_APPS = (
     'django.contrib.admin',
 
     'compressor',
+    'django_browserid',
+)
+
+AUTHENTICATION_BACKENDS = (
+    'django.contrib.auth.backends.ModelBackend',
+    'django_browserid.auth.BrowserIDBackend',
+)
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+    "django.contrib.auth.context_processors.auth",
+    "django.core.context_processors.debug",
+    "django.core.context_processors.i18n",
+    "django.core.context_processors.media",
+    "django.core.context_processors.static",
+    "django.core.context_processors.tz",
+    "django.contrib.messages.context_processors.messages",
+    "django_browserid.context_processors.browserid_form",
 )
 
 LOGGING = {
@@ -112,3 +130,5 @@ COMPRESS_OUTPUT_DIR = '_cache'
 COMPRESS_PRECOMPILERS = (
     ('text/less', 'lessc {infile} {outfile}'),
 )
+
+BROWSERID_VERIFICATION_URL = 'http://browserid.org/verify'

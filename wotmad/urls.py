@@ -5,8 +5,10 @@ admin.autodiscover()
 
 from wotmad.views import HomeView
 
-urlpatterns = patterns('',
+urlpatterns = patterns(
+    '',
     url(r'^$', HomeView.as_view(), name='home'),
 
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^browserid/', include('django_browserid.urls')),
 )
