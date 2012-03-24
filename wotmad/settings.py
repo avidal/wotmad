@@ -133,5 +133,6 @@ COMPRESS_PRECOMPILERS = (
 
 BROWSERID_CREATE_USER = True
 LOGIN_URL = '/login/'
+LOGOUT_URL = '/logout/'
 LOGIN_REDIRECT_URL = '/login/redirect/'
 LOGIN_REDIRECT_URL_FAILURE = '/login/failure/'

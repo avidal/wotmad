@@ -1,6 +1,8 @@
 from django.contrib import auth
+from django.contrib import messages
 from django.core.urlresolvers import reverse
-from django.views.generic import FormView, RedirectView
+from django.views.generic import View, FormView, RedirectView
+from django.shortcuts import redirect
 
 from django_browserid.base import get_audience
 from django_browserid.views import Verify as MozVerify
@@ -22,9 +24,21 @@ class Verify(MozVerify):
                 audience=self.audience)
 
         if self.user:
+            messages.success(self.request, "Holy shit! That worked!")
             return self.login_success()
 
         return self.login_failure()
+
+
+class Logout(View):
+
+    def dispatch(self, request, *args, **kwargs):
+        # Log the user out
+        auth.logout(request)
+
+        messages.info(request, "Thank you come again.")
+
+        return redirect('home')
 
 
 class LoginRedirect(RedirectView):

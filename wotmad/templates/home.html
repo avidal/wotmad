@@ -34,7 +34,7 @@ header.jumbotron {
         {{ browserid_form.as_p }}
       </form>
     {% else %}
-      <span class="pull-right">{{ user }}</span>
+      <a class="pull-right" href="{% url logout %}">{{ user }}</a>
     {% endif %}
   </div>
   <header class="jumbotron">
@@ -53,6 +53,13 @@ header.jumbotron {
       <li><a href="#">?</a></li>
     </ul>
   </header>
+
+  {% for message in messages %}
+    <div class="alert alert-{{ message.tags }}">
+      {{ message }}
+    </div>
+  {% endfor %}
+
   <h2>Recent Activity</h2>
   <ul>
     <li><i class="icon-file"></i> <a href="#">Mythras</a> uploaded <a href="#">how to kill a mockingbird</a></li>
