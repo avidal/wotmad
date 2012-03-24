@@ -87,7 +87,7 @@ INSTALLED_APPS = (
 
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
-    'django_browserid.auth.BrowserIDBackend',
+    'wotmad.backends.BrowserIDBackend',
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
@@ -131,4 +131,7 @@ COMPRESS_PRECOMPILERS = (
     ('text/less', 'lessc {infile} {outfile}'),
 )
 
-BROWSERID_VERIFICATION_URL = 'http://browserid.org/verify'
+BROWSERID_CREATE_USER = True
+LOGIN_URL = '/login/'
+LOGIN_REDIRECT_URL = '/?login=true'
+LOGIN_REDIRECT_URL_FAILURE = '/?login=failure'
