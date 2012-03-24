@@ -2,7 +2,7 @@ import json
 import logging
 import subprocess
 
-from django.conf import settings
+from django.contrib.auth.models import User
 
 from django_browserid.auth import BrowserIDBackend as MozBrowserIDBackend
 
@@ -23,12 +23,13 @@ class BrowserIDBackend(MozBrowserIDBackend):
         payload = "assertion={0}&audience={1}".format(assertion, audience)
         curl = subprocess.Popen(["curl", "-d", payload,
                                 "https://browserid.org/verify"],
-                                stdout=subprocess.PIPE)
+                                stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
         # FIXME: This entire class should go away, but if it can't then
         # at the very least we should probably catch errors here.
         try:
-            result = json.loads(curl.communicate()[0])
+            out, err = curl.communicate()
+            result = json.loads(out)
         except ValueError:
             result = None
 
@@ -45,11 +46,26 @@ class BrowserIDBackend(MozBrowserIDBackend):
         if len(users) == 1:
             return users[0]
 
-        create_user = getattr(settings, 'BROWSERID_CREATE_USER', False)
-        if not create_user:
-            return None
-        elif create_user == True:
-            return self.create_user(email)
+        return self.create_user(email)
+
+    def create_user(self, email):
+        """Deal with creating new users.
+
+        We will set their username temporarily to the first part of their
+        email address, with a .2, .3, .4 as necessary to ensure uniqueness.
+
+        """
+
+        candidate = email.split('@')[0]
+        existing = User.objects.filter(username__startswith=candidate)
+
+        if existing:
+            username = "{0}.{1}".format(candidate, existing.count())
         else:
-            # Find the function to call, call it and throw in the email.
-            return self._load_module(create_user)(email)
+            username = candidate
+
+        user = User.objects.create_user(username, email)
+        user.is_active = False
+        user.save()
+
+        return user
