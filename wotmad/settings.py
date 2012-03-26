@@ -1,8 +1,20 @@
+import os
+
 from path import path
 
 PROJECT_ROOT = path(__file__).abspath().dirname()
 SITE_ROOT = PROJECT_ROOT.dirname()
-SITE_URL = 'http://chrono.local:8000'
+ENV = os.environ.get('ENV', 'dev')
+
+SITE_URL_MAP = {
+    'heroku': 'http://wotmad.herokuapp.com',
+    'dev': 'http://chrono.local:5000',
+}
+
+try:
+    SITE_URL = SITE_URL_MAP[ENV]
+except KeyError:
+    raise KeyError("No SITE_URL configured for environment {0}".format(ENV))
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
