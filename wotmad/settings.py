@@ -83,6 +83,7 @@ INSTALLED_APPS = (
 
     'compressor',
     'django_browserid',
+    'gunicorn',
 )
 
 AUTHENTICATION_BACKENDS = (
