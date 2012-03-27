@@ -1,7 +1,7 @@
 from django.contrib import messages
 from django.shortcuts import redirect
 from django.template.defaultfilters import slugify
-from django.views.generic import DetailView
+from django.views.generic import DetailView, ListView
 from django.views.generic.edit import CreateView
 
 from .forms import LogForm
@@ -27,3 +27,10 @@ class SubmitLog(CreateView):
 
 class LogDetail(DetailView):
     model = Log
+
+
+class LogList(ListView):
+    model = Log
+
+    def get_queryset(self):
+        return Log.objects.order_by('date_submitted')

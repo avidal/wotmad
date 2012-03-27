@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>the art of war
+  <small class="pull-right">
+    <a href="{% url submit-log %}">submit log</a>
+  </small>
+</h1>
+
+<ul>
+  {% for log in object_list %}
+    <li>
+      <a href="{{ log.get_absolute_url }}">{{ log.title }}</a>
+      submitted by {{ log.submitter }} about
+      <abbr title="{{ log.date_submitted }}">{{ log.date_submitted|timesince }} ago.</abbr>
+    </li>
+  {% endfor %}
+</ul>
+{% endblock %}
