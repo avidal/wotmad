@@ -75,6 +75,11 @@ header.jumbotron {
   <footer class="footer">
     <p class="pull-right"><a href="#">Back to top</a></p>
     <p>
+      Features and Issues <a
+        href="https://trello.com/board/wotmad/4f723dc355adc061384f2976">on Trello</a>;
+      Source code on <a href="https://github.com/avidal/wotmad/">Github</a>.
+    </p>
+    <p>
       <a href="https://mixpanel.com/f/partner"><img src="https://mixpanel.com/site_media/images/partner/badge_light.png" alt="Mobile and Web Analytics" /></a>
     </p>
   </footer>
@@ -86,7 +91,18 @@ header.jumbotron {
 <script src="{% static "bootstrap/js/bootstrap.min.js" %}"></script>
 {% compress js %}
 <script>
-  mixpanel.track("View");
+$(document).ready(function() {
+  $('#browserid').bind('click', function(e) {
+    e.preventDefault();
+    navigator.id.getVerifiedEmail(function(assertion) {
+        if (assertion) {
+          var $e = $('#id_assertion');
+          $e.val(assertion.toString());
+          $e.parent().submit();
+        }
+    });
+  });
+});
 </script>
 {% block javascript %}{% endblock %}
 {% endcompress %}
