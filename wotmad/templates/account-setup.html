@@ -1,77 +1,30 @@
-<!doctype html>
-<html lang="en">
-{% load compress %}
-{% load static from staticfiles %}
+{% extends "base.html" %}
 
-<head>
-<title>wotmad</title>
-{% compress css %}
-<link type="text/less" rel="stylesheet" href="{% static "bootstrap/less/bootstrap.less" %}">
-<style type="text/less">
-header.jumbotron {
-  text-align: center;
-  h1 {
-    font-size: 96px;
-    line-height: 96px;
-  }
+{% block userinfo %}{% endblock %}
 
-  ul.nav {
-    li {
-      display: inline-block;
-    }
-  }
-}
-</style>
-{% endcompress %}
-</head>
+{% block content %}
+  <h2>By what name do you wish to be known?</h2>
+  <p>
+    Pick your username. One has been generated for you based on your
+    email address. Max length is 30, and it can look like an email address.
+    No spaces or other odd punctuation, please.
+  </p>
+  <p>
+    Whatever you pick here you will be stuck using for life, so think
+    carefully!
+    <small>Or at least until you get a new email address or ask me to change it.</small>
+  </p>
 
-<div class="container">
-  <header class="jumbotron">
-    <h1>wotmad</h1>
-    <ul class="nav">
-      <li><a href="#">home</a></li>
-      <li class="sep">|</li>
-      <li><a href="#">logs</a></li>
-      <li class="sep">|</li>
-      <li><a href="#">scripts</a></li>
-      <li class="sep">|</li>
-      <li><a href="#">stats</a></li>
-      <li class="sep">|</li>
-      <li><a href="#">misc</a></li>
-      <li class="sep">|</li>
-      <li><a href="#">?</a></li>
-    </ul>
-  </header>
-    <h2>By what name do you wish to be known?</h2>
-    <p>
-      Pick your username. One has been generated for you based on your
-      email address. Max length is 30, and it can look like an email address.
-      No spaces or other odd punctuation, please.
-    </p>
-    <p>
-      Whatever you pick here you will be stuck using for life, so think
-      carefully!
-      <small>Or at least until you get a new email address or ask me to change it.</small>
-    </p>
-
-    <form method="POST" class="form-inline">
-      {% csrf_token %}
-      <div class="control-group {{ form.username.errors|yesno:"error," }}">
-        <div class="controls">
-          {{ form.username }}
-          {% if form.username.errors %}
-            <span class="help-inline">{{ form.username.errors|join:", " }}</span>
-          {% endif %}
-        </div>
+  <form method="POST" class="form-inline">
+    {% csrf_token %}
+    <div class="control-group {{ form.username.errors|yesno:"error," }}">
+      <div class="controls">
+        {{ form.username }}
+        {% if form.username.errors %}
+          <span class="help-inline">{{ form.username.errors|join:", " }}</span>
+        {% endif %}
       </div>
-      <button type="submit" class="btn btn-large btn-primary">Update</button>
-    </form>
-</div>
-
-<script src="https://browserid.org/include.js"></script>
-<script src="//code.jquery.com/jquery.min.js"></script>
-<script src="{% static "bootstrap/js/bootstrap.min.js" %}"></script>
-{% compress js %}
-{% endcompress %}
-
-</html>
+    </div>
+    <button type="submit" class="btn btn-large btn-primary">Update</button>
+  </form>
+{% endblock %}

@@ -1,65 +1,6 @@
-<!doctype html>
-<html lang="en">
-{% load compress %}
-{% load static from staticfiles %}
+{% extends "base.html" %}
 
-<head>
-<title>wotmad</title>
-{% compress css %}
-<link type="text/less" rel="stylesheet" href="{% static "bootstrap/less/bootstrap.less" %}">
-<style type="text/less">
-header.jumbotron {
-  text-align: center;
-  h1 {
-    font-size: 96px;
-    line-height: 96px;
-  }
-
-  ul.nav {
-    li {
-      display: inline-block;
-    }
-  }
-}
-</style>
-{% endcompress %}
-</head>
-
-<div class="container">
-  <div class="span12">
-    {% if not user.is_authenticated %}
-      <a id="browserid" class="pull-right" href="#">login / register</a>
-      <form method="POST" action="{% url account-verify %}">
-        {% csrf_token %}
-        {{ browserid_form.as_p }}
-      </form>
-    {% else %}
-      <a class="pull-right" href="{% url logout %}">{{ user }}</a>
-    {% endif %}
-  </div>
-  <header class="jumbotron">
-    <h1>wotmad</h1>
-    <ul class="nav">
-      <li><a href="#">home</a></li>
-      <li class="sep">|</li>
-      <li><a href="#">logs</a></li>
-      <li class="sep">|</li>
-      <li><a href="#">scripts</a></li>
-      <li class="sep">|</li>
-      <li><a href="#">stats</a></li>
-      <li class="sep">|</li>
-      <li><a href="#">misc</a></li>
-      <li class="sep">|</li>
-      <li><a href="#">?</a></li>
-    </ul>
-  </header>
-
-  {% for message in messages %}
-    <div class="alert alert-{{ message.tags }}">
-      {{ message }}
-    </div>
-  {% endfor %}
-
+{% block content %}
   <h2>Recent Activity</h2>
   <ul>
     <li><i class="icon-file"></i> <a href="#">Mythras</a> uploaded <a href="#">how to kill a mockingbird</a></li>
@@ -75,12 +16,9 @@ header.jumbotron {
     <li><i class="icon-gift"></i> <a href="#">Johnny</a> submitted <a href="#">bash tracker</a> for zMUD.</li>
     <li><i class="icon-home"></i> <a href="#">Markus</a> updated <a href="#">mapping script</a> for mudlet to v2.0.</li>
   </ul>
-</div>
+{% endblock %}
 
-<script src="https://browserid.org/include.js"></script>
-<script src="//code.jquery.com/jquery.min.js"></script>
-<script src="{% static "bootstrap/js/bootstrap.min.js" %}"></script>
-{% compress js %}
+{% block javascript %}
 <script>
 $(document).ready(function() {
   $('#browserid').bind('click', function(e) {
@@ -95,6 +33,4 @@ $(document).ready(function() {
   });
 });
 </script>
-{% endcompress %}
-
-</html>
+{% endblock %}

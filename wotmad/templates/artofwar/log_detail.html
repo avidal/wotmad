@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>
+  {{ log.title }}
+  <small>
+    submitted by {{ log.submitter }} about {{ log.date_submitted|timesince }}
+    ago
+  </small>
+</h2>
+<pre>
+  {{ log.text }}
+</pre>
+{% endblock %}

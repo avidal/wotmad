@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+{% load compress %}
+{% load static from staticfiles %}
+
+<head>
+<title>{% block title %}wotmad{% endblock %}</title>
+{% compress css %}
+<link type="text/less" rel="stylesheet" href="{% static "bootstrap/less/bootstrap.less" %}">
+<style type="text/less">
+header.jumbotron {
+  text-align: center;
+  h1 {
+    font-size: 96px;
+    line-height: 96px;
+  }
+
+  ul.nav {
+    li {
+      display: inline-block;
+    }
+  }
+}
+{% block stylesheets %}{% endblock %}
+</style>
+{% endcompress %}
+</head>
+
+{% block outer %}
+<div class="container">
+  {% block userinfo %}
+    <div class="span12">
+      {% if not user.is_authenticated %}
+        <a id="browserid" class="pull-right" href="#">login / register</a>
+        <form method="POST" action="{% url account-verify %}">
+          {% csrf_token %}
+          {{ browserid_form.as_p }}
+        </form>
+      {% else %}
+        <a class="pull-right" href="{% url logout %}">{{ user }}</a>
+      {% endif %}
+    </div>
+  {% endblock %}
+  <header class="jumbotron">
+    <h1>wotmad</h1>
+    {% block mainnav %}
+      <ul class="nav">
+        <li><a href="#">art of war</a></li>
+        <li class="sep">|</li>
+        <li><a href="#">scripts</a></li>
+        <li class="sep">|</li>
+        <li><a href="#">stats</a></li>
+        <li class="sep">|</li>
+        <li><a href="#">misc</a></li>
+        <li class="sep">|</li>
+        <li><a href="#">?</a></li>
+      </ul>
+    {% endblock %}
+  </header>
+
+  {% block messages %}
+    {% for message in messages %}
+      <div class="alert alert-{{ message.tags }}">
+        {{ message }}
+      </div>
+    {% endfor %}
+  {% endblock %}
+
+  {% block content %}{% endblock %}
+</div>
+{% endblock %}
+
+<script src="https://browserid.org/include.js"></script>
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script src="{% static "bootstrap/js/bootstrap.min.js" %}"></script>
+{% compress js %}
+{% block javascript %}{% endblock %}
+{% endcompress %}
+
+</html>

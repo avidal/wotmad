@@ -96,6 +96,10 @@ INSTALLED_APPS = (
     'compressor',
     'django_browserid',
     'gunicorn',
+    'crispy_forms',
+
+    'wotmad.account',
+    'wotmad.artofwar',
 )
 
 AUTHENTICATION_BACKENDS = (
@@ -149,3 +153,5 @@ LOGIN_URL = '/login/'
 LOGOUT_URL = '/logout/'
 LOGIN_REDIRECT_URL = '/login/redirect/'
 LOGIN_REDIRECT_URL_FAILURE = '/login/failure/'
+
+CRISPY_FAIL_SILENTLY = not DEBUG
