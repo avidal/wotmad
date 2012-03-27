@@ -1,5 +1,15 @@
 {% extends "base.html" %}
 
+{% block stylesheets %}
+<style type="text/less">
+pre.log-text {
+  color: #eee;
+  background-color: #111;
+  font-size: 14px;
+}
+</style>
+{% endblock %}
+
 {% block content %}
 <h2>
   {{ log.title }}
@@ -8,7 +18,5 @@
     ago
   </small>
 </h2>
-<pre>
-  {{ log.text }}
-</pre>
+<pre class="log-text">{{ log.text }}</pre>
 {% endblock %}
