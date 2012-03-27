@@ -1,0 +1,11 @@
+# wotmad
+
+Features and bugs are tracked on Trello at the [wotmad](https://trello.com/board/wotmad/4f723dc355adc061384f2976)
+board.
+
+The in-development version is running at http://wotmad.herokuapp.com and may
+be down at any given time and the data may go mixing at any time.
+
+Logins are handled via [BrowserID](https://browserid.org) because it's much
+easier for me to use. If you don't want an account through BrowserID, so sorry
+charlie.
