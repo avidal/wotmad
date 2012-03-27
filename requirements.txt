@@ -7,3 +7,4 @@ requests==0.10.8
 psycopg2==2.4.4
 gunicorn==0.14.2
 django-crispy-forms==1.1.2
+django-braces==0.1.0

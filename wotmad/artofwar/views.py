@@ -4,11 +4,13 @@ from django.template.defaultfilters import slugify
 from django.views.generic import DetailView, ListView
 from django.views.generic.edit import CreateView
 
+from braces.views import LoginRequiredMixin
+
 from .forms import LogForm
 from .models import Log
 
 
-class SubmitLog(CreateView):
+class SubmitLog(LoginRequiredMixin, CreateView):
     model = Log
     form_class = LogForm
 
