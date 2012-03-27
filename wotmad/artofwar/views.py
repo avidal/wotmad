@@ -35,4 +35,4 @@ class LogList(ListView):
     model = Log
 
     def get_queryset(self):
-        return Log.objects.order_by('date_submitted')
+        return Log.objects.order_by('-date_submitted')
