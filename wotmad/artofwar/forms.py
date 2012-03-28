@@ -14,6 +14,7 @@ class LogForm(forms.ModelForm):
         helper.form_method = 'POST'
         helper.layout = Layout(
             Field('title', css_class='span8'),
+            Field('description', css_class='span8', rows=3),
             Field('text', css_class='span8', rows=10)
         )
 

@@ -11,12 +11,10 @@ pre.log-text {
 {% endblock %}
 
 {% block content %}
-<h2>
-  {{ log.title }}
-  <small>
-    submitted by {{ log.submitter }} about {{ log.date_submitted|timesince }}
-    ago
-  </small>
-</h2>
+<h2>{{ log.title }}</h2>
+<span class="muted">
+  submitted by {{ log.submitter }} about {{ log.date_submitted|timesince }} ago
+</span>
+<p>{{ log.description }}</p>
 <pre class="log-text">{{ log.text }}</pre>
 {% endblock %}
