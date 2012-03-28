@@ -97,6 +97,7 @@ INSTALLED_APPS = (
     'django_browserid',
     'gunicorn',
     'crispy_forms',
+    'south',
 
     'wotmad.account',
     'wotmad.artofwar',
