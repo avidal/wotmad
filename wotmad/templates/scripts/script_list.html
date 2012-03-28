@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>client scripts
+  <small class="pull-right">
+    <a href="{% url scripts:submit %}">submit script</a>
+  </small>
+</h1>
+
+<ul>
+  {% for script in object_list %}
+    <li>
+      <a href="{{ script.get_absolute_url }}">{{ script.title }}</a>
+      submitted by {{ script.submitter }} about
+      <abbr title="{{ script.date_submitted }}">{{ script.date_submitted|timesince }} ago.</abbr>
+    </li>
+  {% endfor %}
+</ul>
+{% endblock %}

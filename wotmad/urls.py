@@ -21,6 +21,8 @@ urlpatterns = patterns(
     url(r'art-of-war/(?P<pk>\d+)/(?P<slug>[a-z0-9\-_]+)/', LogDetail.as_view(),
         name='view-log'),
 
+    url(r'scripts/', include('wotmad.scripts.urls', namespace='scripts')),
+
     url(r'^admin/', include(admin.site.urls)),
     url(r'^browserid/', include('django_browserid.urls')),
 )
