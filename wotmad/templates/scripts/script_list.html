@@ -2,6 +2,13 @@
 
 {% block content %}
 <h1>client scripts
+  <small><a href="{% url scripts:list client="zmud" %}">zmud</a>,</small>
+  <small><a href="{% url scripts:list client="cmud" %}">cmud</a>,</small>
+  <small><a href="{% url scripts:list client="tintin" %}">tintin</a>,</small>
+  <small><a href="{% url scripts:list client="tinyfugue" %}">tinyfugue</a>,</small>
+  <small><a href="{% url scripts:list client="mudlet" %}">mudlet</a>,</small>
+  <small><a href="{% url scripts:list client="alclient" %}">al client</a>,</small>
+  <small><a href="{% url scripts:list client="other" %}">other</a></small>
   <small class="pull-right">
     <a href="{% url scripts:submit %}">submit script</a>
   </small>
@@ -10,6 +17,7 @@
 <ul>
   {% for script in object_list %}
     <li>
+      [{{ script.get_client_display }}]
       <a href="{{ script.get_absolute_url }}">{{ script.title }}</a>
       submitted by {{ script.submitter }} about
       <abbr title="{{ script.date_submitted }}">{{ script.date_submitted|timesince }} ago.</abbr>

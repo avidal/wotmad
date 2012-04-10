@@ -4,9 +4,10 @@ from django.db import models
 CLIENT_CHOICES = (
     ('ZMUD', 'zMUD'),
     ('CMUD', 'cMUD'),
-    ('TT', 'TinTin'),
-    ('TF', 'TinyFugue'),
+    ('TINTIN', 'TinTin'),
+    ('TINYFUGUE', 'TinyFugue'),
     ('MUDLET', 'Mudlet'),
+    ('ALCLIENT', 'AL Client'),
     ('OTHER', 'Other'),
 )
 
@@ -18,8 +19,7 @@ class Script(models.Model):
     description = models.TextField(blank=True, default=u'')
     source = models.TextField()
 
-    client = models.CharField(max_length=60, choices=CLIENT_CHOICES,
-                              default='OTHER')
+    client = models.CharField(max_length=60, choices=CLIENT_CHOICES)
 
     submitter = models.ForeignKey('auth.User', related_name='scripts')
     date_submitted = models.DateTimeField(auto_now_add=True)

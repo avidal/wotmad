@@ -1,4 +1,5 @@
 from django.contrib import messages
+from django.http import Http404
 from django.shortcuts import redirect
 from django.template.defaultfilters import slugify
 from django.views.generic import DetailView, ListView
@@ -7,7 +8,7 @@ from django.views.generic.edit import CreateView
 from braces.views import LoginRequiredMixin
 
 from .forms import ScriptForm
-from .models import Script
+from .models import Script, CLIENT_CHOICES
 
 
 class SubmitScript(LoginRequiredMixin, CreateView):
@@ -35,4 +36,18 @@ class ScriptList(ListView):
     model = Script
 
     def get_queryset(self):
-        return Script.objects.order_by('-date_submitted')
+        qs = Script.objects.order_by('-date_submitted')
+
+        client = self.kwargs.get('client', None)
+        if not client:
+            return qs
+
+        # Uppercase the client and see if its in the client list
+        clients_dict = dict(CLIENT_CHOICES)
+        if client.upper() not in clients_dict:
+            raise Http404
+
+        if client:
+            qs = qs.filter(client=client.upper())
+
+        return qs
