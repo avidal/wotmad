@@ -14,6 +14,7 @@ class ScriptForm(forms.ModelForm):
         helper.form_method = 'POST'
         helper.layout = Layout(
             Field('title', css_class='span8'),
+            Field('client', css_class='span8'),
             Field('description', css_class='span8', rows=3),
             Field('source', css_class='span8', rows=10)
         )
