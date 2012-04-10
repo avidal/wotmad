@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2>{{ script.title }}</h2>
+<h2>[{{ script.get_client_display }}] {{ script.title }}</h2>
 <span class="muted">
   submitted by {{ script.submitter }} about {{ script.date_submitted|timesince }} ago
 </span>
