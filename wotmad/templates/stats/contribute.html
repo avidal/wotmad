@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>contribute to the stat pool</h1>
+
+<p>
+  Contributing to the stat pool is a very humanitarian thing to do! It will
+  allow all players to determine the best places to stat from to get the perfect
+  character. Plus, you can use it to show off! Are you the fastest statter on
+  the planet? For how long?!
+</p>
+
+<p>
+  Contributing stats is a simple process. Pick one of the scripts below for your
+  client and install it. Part of the installation process will require that you
+  enter your API key, that's how we determine who is submitting the stats. Your
+  API key is <code>{{ user.apikey.key }}</code>.
+</p>
+
+<h2>Submitting without a client, or writing a custom script</h2>
+<p>
+  If there is not a script for your client and you have the chops to write one
+  yourself, the actual process to submit a stat is simple. When you stat a new
+  character, fire off an HTTP request to
+  http://wotmad.herokuapp.com/stats/submit/, with the data for the stat in the
+  querystring.
+</p>
+
+<h3>Arguments</h3>
+<p>
+  The following querystring arguments need to be present for us to accept
+  a submitted stat.
+</p>
+<ul>
+  <li><code>apikey</code>: This is your API key, as listed above</li>
+  <li><code>name</code>: Optional. It will never be displayed to anyone but you.</li>
+  <li><code>sex</code>: M or F. The sex of the character.</li>
+  <li><code>faction</code>: H, D, or S. The faction of the character (Human, Darkside, Seanchan).</li>
+  <li><code>class</code>: W, H, R, C. The character's class (Warrior, Hunter, Rogue, Channeler).</li>
+  <li><code>homeland</code>: Full name of the homeland or stock.</li>
+  <li><code>hitpoints</code>: Number of hitpoints.</li>
+  <li><code>moves</code>: Number of moves.</li>
+  <li><code>spellpoints</code>: Number of spellpoints. Not required for any class other than Channeler.</li>
+  <li><code>strength</code>: STR stat.</li>
+  <li><code>intel</code>: INT stat.</li>
+  <li><code>wil</code>: WIL stat.</li>
+  <li><code>dex</code>: DEX stat.</li>
+  <li><code>con</code>: CON stat.</li>
+</ul>
+
+<h3>Examples</h3>
+Note that the following examples all assume an API key of
+<code>0xdeadbeef</code>, and substitutes <code>API_URL</code> in place of the
+actual submit URL.
+<p>
+  Jayne, a Human male hunter from the Borderlands, 130 HP, 121 MVs; 18 12 12 19 18
+</p>
+<pre>
+  API_URL?apikey=0xdeadbeef&amp;name=Jayne&amp;sex=M&amp;faction=H&amp;class=H&amp;homeland=The+Borderlands&amp;hitpoints=130&amp;moves=121&amp;strength=18&amp;intel=12&amp;wil=12&amp;dex=19&amp;con=19
+</pre>
+{% endblock %}
