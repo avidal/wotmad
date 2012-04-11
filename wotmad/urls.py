@@ -12,6 +12,7 @@ urlpatterns = patterns(
     url(r'accounts/', include('wotmad.accounts.urls', namespace='accounts')),
     url(r'art-of-war/', include('wotmad.artofwar.urls', namespace='artofwar')),
     url(r'scripts/', include('wotmad.scripts.urls', namespace='scripts')),
+    url(r'stats/', include('wotmad.stats.urls', namespace='stats')),
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^browserid/', include('django_browserid.urls')),

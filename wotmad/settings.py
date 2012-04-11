@@ -102,6 +102,7 @@ INSTALLED_APPS = (
     'wotmad.accounts',
     'wotmad.artofwar',
     'wotmad.scripts',
+    'wotmad.stats',
 )
 
 AUTHENTICATION_BACKENDS = (
