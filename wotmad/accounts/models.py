@@ -34,8 +34,11 @@ class APIKey(models.Model):
         # the special characters
         key = base64.b64encode(key, pair)
 
-        # Finally, strip off the trailing == if it exists
+        # Strip off the trailing == if it exists
         key = key.rstrip('==')
+
+        # Reduce it down to 38 characters
+        key = key[:38]
 
         # If this key has been taken already, then try again
         if cls.objects.filter(key=key).count():
