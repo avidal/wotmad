@@ -11,10 +11,16 @@ SITE_URL_MAP = {
     'dev': 'http://chrono.local:5000',
 }
 
-try:
-    SITE_URL = SITE_URL_MAP[ENV]
-except KeyError:
-    raise KeyError("No SITE_URL configured for environment {0}".format(ENV))
+# First, try loading SITE_URL out of the environment
+# If that fails, load it out of the map
+SITE_URL = os.environ.get('SITE_URL', None)
+
+if not SITE_URL:
+    SITE_URL = SITE_URL_MAP.get(ENV, None)
+
+if not SITE_URL:
+    from django.exceptions import ImproperlyConfigured
+    raise ImproperlyConfigured("No SITE_URL specified.")
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -126,7 +132,7 @@ LOGGING = {
     'disable_existing_loggers': False,
     'filters': {
         'require_debug_false': {
-            '()': 'django.utils.log.RequireDebugFalse'
+            '()': 'django.utils.log.RequireDebugFalse',
         }
     },
     'handlers': {
