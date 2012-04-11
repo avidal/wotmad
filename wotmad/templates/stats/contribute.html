@@ -13,9 +13,18 @@
 <p>
   Contributing stats is a simple process. Pick one of the scripts below for your
   client and install it. Part of the installation process will require that you
-  enter your API key, that's how we determine who is submitting the stats. Your
-  API key is <code>{{ user.apikey.key }}</code>.
+  enter your API key, that's how we determine who is submitting the stats.
+  {% if user.is_authenticated %}
+    Your API key is <code>{{ user.apikey.key }}</code>.
+  {% endif %}
 </p>
+{% if not user.is_authenticated %}
+  <div class="alert alert-info">
+    You need to be logged in to view your API key. Click the
+    <em>login / register</em> link at the top of the page to login, then come back
+    here when you're done.
+  </div>
+{% endif %}
 
 <h2>Submitting without a client, or writing a custom script</h2>
 <p>
