@@ -99,7 +99,7 @@ INSTALLED_APPS = (
     'crispy_forms',
     'south',
 
-    'wotmad.account',
+    'wotmad.accounts',
     'wotmad.artofwar',
     'wotmad.scripts',
 )
@@ -151,9 +151,9 @@ COMPRESS_PRECOMPILERS = (
 )
 
 BROWSERID_CREATE_USER = True
-LOGIN_URL = '/login/'
-LOGOUT_URL = '/logout/'
-LOGIN_REDIRECT_URL = '/login/redirect/'
-LOGIN_REDIRECT_URL_FAILURE = '/login/failure/'
+LOGIN_URL = '/accounts/login/'
+LOGOUT_URL = '/accounts/logout/'
+LOGIN_REDIRECT_URL = '/accounts/login/redirect/'
+LOGIN_REDIRECT_URL_FAILURE = '/accounts/login/failure/'
 
 CRISPY_FAIL_SILENTLY = not DEBUG
