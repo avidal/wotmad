@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>submitted stats
+  <small class="pull-right">
+    <a href="#">want to contribute?</a>
+  </small>
+</h1>
+
+<ul>
+  {% for stat in object_list %}
+    <li>
+      {{ stat }}
+      submitted by {{ stat.submitter }} about
+      <abbr title="{{ stat.date_submitted }}">{{ stat.date_submitted|timesince }} ago.</abbr>
+    </li>
+  {% endfor %}
+</ul>
+{% endblock %}
