@@ -13,7 +13,7 @@ class Log(models.Model):
 
     @models.permalink
     def get_absolute_url(self):
-        return ('view-log', [self.pk, self.slug])
+        return ('artofwar:detail', [self.pk, self.slug])
 
     def __unicode__(self):
         return self.title
