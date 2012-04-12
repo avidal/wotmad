@@ -29,7 +29,7 @@ class SubmitScript(LoginRequiredMixin, CreateView):
         script.add_version(form.cleaned_data.get('source'))
 
         messages.success(request, "Score!")
-        return redirect(script.get_absolute_url())
+        return redirect(script)
 
 
 class UpdateScript(LoginRequiredMixin, UpdateView):
@@ -92,11 +92,21 @@ class SubmitScriptVersion(LoginRequiredMixin, UpdateView):
         msg = "Version {0} added. Thanks!"
         messages.success(self.request,
                          msg.format(script.latest_version.version))
-        return redirect(script.get_absolute_url())
+        return redirect(script)
 
 
 class ScriptDetail(DetailView):
     model = Script
+
+    def get(self, *args, **kwargs):
+        script = self.get_object()
+
+        # If the slug in the URL doesn't match the script slug,
+        # then redirect
+        if script.slug != kwargs.get('slug'):
+            return redirect(script, permanent=True)
+
+        return super(ScriptDetail, self).get(*args, **kwargs)
 
 
 class ScriptList(ListView):
