@@ -30,15 +30,15 @@ class Stat(models.Model):
     klass = models.CharField(max_length=1, choices=CLASS_CHOICES)
     homeland = models.CharField(max_length=32)
 
-    hitpoints = models.IntegerField()
-    moves = models.IntegerField()
-    spellpoints = models.IntegerField()
+    hitpoints = models.PositiveSmallIntegerField()
+    moves = models.PositiveSmallIntegerField()
+    spellpoints = models.PositiveSmallIntegerField(default=0, blank=True)
 
-    strength = models.IntegerField()
-    intel = models.IntegerField()
-    wil = models.IntegerField()
-    dex = models.IntegerField()
-    con = models.IntegerField()
+    strength = models.PositiveSmallIntegerField()
+    intel = models.PositiveSmallIntegerField()
+    wil = models.PositiveSmallIntegerField()
+    dex = models.PositiveSmallIntegerField()
+    con = models.PositiveSmallIntegerField()
 
     def __unicode__(self):
         parts = []
