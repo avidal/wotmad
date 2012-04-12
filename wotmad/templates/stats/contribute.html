@@ -35,6 +35,16 @@
   querystring.
 </p>
 
+<h3>Submission URL</h3>
+<p>
+  The URL to send your submitted stats to is:
+  <code>http://wotmad.herokuapp.com/stats/submit/</code>.
+</p>
+<p>
+  Below are listed the arguments that should be present for the stat to be
+  accepted, followed by an example (or two?).
+</p>
+
 <h3>Arguments</h3>
 <p>
   The following querystring arguments need to be present for us to accept
@@ -59,12 +69,17 @@
 
 <h3>Examples</h3>
 Note that the following examples all assume an API key of
-<code>0xdeadbeef</code>, and substitutes <code>API_URL</code> in place of the
-actual submit URL.
+<code>0xdeadbeef</code>.
 <p>
   Jayne, a Human male hunter from the Borderlands, 130 HP, 121 MVs; 18 12 12 19 18
 </p>
 <pre>
-  API_URL?apikey=0xdeadbeef&amp;name=Jayne&amp;sex=M&amp;faction=H&amp;class=H&amp;homeland=The+Borderlands&amp;hitpoints=130&amp;moves=121&amp;strength=18&amp;intel=12&amp;wil=12&amp;dex=19&amp;con=19
+  http://wotmad.herokuapp.com/stats/submit/?apikey=0xdeadbeef&amp;name=Jayne&amp;sex=M&amp;faction=H&amp;class=H&amp;homeland=The+Borderlands&amp;hitpoints=130&amp;moves=121&amp;strength=18&amp;intel=12&amp;wil=12&amp;dex=19&amp;con=19
+</pre>
+<p>
+  Poopsmell, a female Trolloc Warrior of Boarish stock, 140 HP, 230 MVs; 19 6 6 15 19
+</p>
+<pre>
+  http://wotmad.herokuapp.com/stats/submit/?apikey=0xdeadbeef&amp;name=Poopsmell&amp;sex=F&amp;faction=D&amp;class=W&amp;homeland=Boarish&amp;hitpoints=140&amp;moves=230&amp;strength=19&amp;intel=6&amp;wil=6&amp;dex=15&amp;con=19
 </pre>
 {% endblock %}
