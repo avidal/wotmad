@@ -28,8 +28,9 @@ class Script(models.Model):
         """Adds a new script version for this script"""
 
         # First, mark the old version as not the current one
-        self.latest_version.is_current = False
-        self.latest_version.save()
+        if self.latest_version:
+            self.latest_version.is_current = False
+            self.latest_version.save()
 
         version = ScriptSource()
         version.is_current = True
@@ -41,7 +42,10 @@ class Script(models.Model):
 
     @property
     def latest_version(self):
-        return self.versions.get(is_current=True)
+        try:
+            return self.versions.get(is_current=True)
+        except ScriptSource.DoesNotExist:
+            return None
 
     @models.permalink
     def get_absolute_url(self):
