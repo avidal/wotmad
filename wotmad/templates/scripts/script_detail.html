@@ -6,11 +6,13 @@
   {% if script.submitter == user %}
     <small class="pull-right">
       <a href="{% url scripts:newversion pk=script.pk slug=script.slug %}">upload new version</a>
+      |
+      <a href="{% url scripts:edit pk=script.pk slug=script.slug %}">update details</a>
     </small>
   {% endif %}
 </h2>
 <span class="muted">
-  submitted by {{ script.submitter }} about {{ script.latest_version.date_submitted|timesince }} ago;
+  submitted by {{ script.submitter }} about {{ script.last_modified|timesince }} ago;
   version {{ script.latest_version.version }}.
 </span>
 <p>{{ script.description }}</p>

@@ -7,7 +7,7 @@ from django.views.generic.edit import CreateView, UpdateView
 
 from braces.views import LoginRequiredMixin
 
-from .forms import CreateScriptForm, NewVersionScriptForm
+from .forms import CreateScriptForm, NewVersionScriptForm, UpdateScriptForm
 from .models import Script, CLIENT_CHOICES
 
 
@@ -30,6 +30,29 @@ class SubmitScript(LoginRequiredMixin, CreateView):
 
         messages.success(request, "Score!")
         return redirect(script.get_absolute_url())
+
+
+class UpdateScript(LoginRequiredMixin, UpdateView):
+    model = Script
+    form_class = UpdateScriptForm
+
+    def get_object(self):
+        obj = super(UpdateScript, self).get_object()
+
+        # Ensure request.user owns the script
+        if obj.submitter != self.request.user:
+            raise Http404()
+
+        return obj
+
+    def form_valid(self, form):
+        # Do the regular behavior here, which is to save the object
+        # It normally follows this with a redirect to the detail
+        # page, but we're going to flash a message first
+        super(UpdateScript, self).form_valid(form)
+
+        messages.success(self.request, "Script updated successfully.")
+        return redirect(self.get_success_url())
 
 
 class SubmitScriptVersion(LoginRequiredMixin, UpdateView):

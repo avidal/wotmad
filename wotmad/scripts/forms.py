@@ -33,6 +33,30 @@ class CreateScriptForm(forms.ModelForm):
         exclude = ['slug', 'submitter', 'source']
 
 
+class UpdateScriptForm(forms.ModelForm):
+
+    def __init__(self, *args, **kwargs):
+        helper = FormHelper()
+        helper.form_class = 'form-horizontal'
+        helper.form_method = 'POST'
+        helper.layout = Layout(
+            Field('title', css_class='span8'),
+            Field('client', css_class='span8'),
+            Field('description', css_class='span8', rows=3),
+        )
+
+        helper.add_input(Submit('submit', 'Update Script',
+                                css_class='btn-primary'))
+
+        self.helper = helper
+
+        super(UpdateScriptForm, self).__init__(*args, **kwargs)
+
+    class Meta:
+        model = Script
+        exclude = ['slug', 'submitter', 'source']
+
+
 class NewVersionScriptForm(forms.Form):
 
     source = forms.CharField(widget=forms.Textarea)
