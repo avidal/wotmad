@@ -17,12 +17,9 @@ class Script(models.Model):
     slug = models.SlugField(max_length=60)
     title = models.CharField(max_length=60)
     description = models.TextField(blank=True, default=u'')
-    source = models.TextField()
-
     client = models.CharField(max_length=60, choices=CLIENT_CHOICES)
 
     submitter = models.ForeignKey('auth.User', related_name='scripts')
-    date_submitted = models.DateTimeField(auto_now_add=True)
 
     def add_version(self, source):
         """Adds a new script version for this script"""
