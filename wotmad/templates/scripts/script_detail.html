@@ -1,10 +1,16 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2>[{{ script.get_client_display }}] {{ script.title }}</h2>
+<h2>
+  [{{ script.get_client_display }}] {{ script.title }}
+  <small class="pull-right">
+    <a href="{% url scripts:newversion pk=script.pk slug=script.slug %}">upload new version</a>
+  </small>
+</h2>
 <span class="muted">
-  submitted by {{ script.submitter }} about {{ script.date_submitted|timesince }} ago
+  submitted by {{ script.submitter }} about {{ script.latest_version.date_submitted|timesince }} ago;
+  version {{ script.latest_version.version }}.
 </span>
 <p>{{ script.description }}</p>
-<pre>{{ script.source }}</pre>
+<pre>{{ script.latest_version.source }}</pre>
 {% endblock %}

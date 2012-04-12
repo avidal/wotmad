@@ -25,17 +25,21 @@ class Script(models.Model):
         """Adds a new script version for this script"""
 
         # First, mark the old version as not the current one
-        if self.latest_version:
-            self.latest_version.is_current = False
-            self.latest_version.save()
+        version = 0
+        latest = self.latest_version
+        if latest:
+            version = latest.version
+            latest.is_current = False
+            latest.save()
 
-        version = ScriptSource()
-        version.is_current = True
-        version.script = self
-        version.source = source
-        version.save()
+        newversion = ScriptSource()
+        newversion.version = version + 1
+        newversion.is_current = True
+        newversion.script = self
+        newversion.source = source
+        newversion.save()
 
-        return version
+        return newversion
 
     @property
     def latest_version(self):
@@ -60,3 +64,6 @@ class ScriptSource(models.Model):
 
     version = models.IntegerField()
     source = models.TextField()
+
+    def __unicode__(self):
+        return u'{0} version {1}'.format(self.script.title, self.version)
