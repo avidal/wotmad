@@ -46,10 +46,11 @@ class UpdateScript(LoginRequiredMixin, UpdateView):
         return obj
 
     def form_valid(self, form):
-        # Do the regular behavior here, which is to save the object
-        # It normally follows this with a redirect to the detail
-        # page, but we're going to flash a message first
-        super(UpdateScript, self).form_valid(form)
+        script = form.save(commit=False)
+
+        # We also want to update the script's slug based on the new title
+        script.slug = slugify(script.title)
+        script.save()
 
         messages.success(self.request, "Script updated successfully.")
         return redirect(self.get_success_url())
