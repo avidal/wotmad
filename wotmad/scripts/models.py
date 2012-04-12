@@ -24,9 +24,38 @@ class Script(models.Model):
     submitter = models.ForeignKey('auth.User', related_name='scripts')
     date_submitted = models.DateTimeField(auto_now_add=True)
 
+    def add_version(self, source):
+        """Adds a new script version for this script"""
+
+        # First, mark the old version as not the current one
+        self.latest_version.is_current = False
+        self.latest_version.save()
+
+        version = ScriptSource()
+        version.is_current = True
+        version.script = self
+        version.source = source
+        version.save()
+
+        return version
+
+    @property
+    def latest_version(self):
+        return self.versions.get(is_current=True)
+
     @models.permalink
     def get_absolute_url(self):
         return ('scripts:detail', [self.pk, self.slug])
 
     def __unicode__(self):
         return self.title
+
+
+class ScriptSource(models.Model):
+
+    script = models.ForeignKey(Script, related_name='versions')
+    date_submitted = models.DateTimeField(auto_now_add=True)
+    is_current = models.BooleanField()
+
+    version = models.IntegerField()
+    source = models.TextField()
