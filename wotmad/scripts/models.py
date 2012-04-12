@@ -73,4 +73,6 @@ class ScriptSource(models.Model):
     source = models.TextField()
 
     def __unicode__(self):
-        return u'{0} version {1}'.format(self.script.title, self.version)
+        return u'[V{0}] {1} - {2}'.format(self.version,
+                                          self.script.submitter.username,
+                                          self.script.title)
