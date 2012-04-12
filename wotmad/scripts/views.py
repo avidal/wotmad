@@ -36,6 +36,15 @@ class SubmitScriptVersion(LoginRequiredMixin, UpdateView):
     model = Script
     form_class = NewVersionScriptForm
 
+    def get_object(self):
+        obj = super(SubmitScriptVersion, self).get_object()
+
+        # Ensure request.user owns the script
+        if obj.submitter != self.request.user:
+            raise Http404()
+
+        return obj
+
     def get_form_kwargs(self):
         # Normally, the UpdateView mixin would pull out the object
         # instance and stick it into the form kwargs. Since this isn't
