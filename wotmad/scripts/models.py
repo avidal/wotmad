@@ -1,3 +1,5 @@
+import datetime
+
 from django.db import models
 
 
@@ -17,6 +19,8 @@ class Script(models.Model):
     slug = models.SlugField(max_length=60)
     title = models.CharField(max_length=60)
     description = models.TextField(blank=True, default=u'')
+    last_modified = models.DateTimeField(auto_now=True)
+
     client = models.CharField(max_length=60, choices=CLIENT_CHOICES)
 
     submitter = models.ForeignKey('auth.User', related_name='scripts')
@@ -38,6 +42,9 @@ class Script(models.Model):
         newversion.script = self
         newversion.source = source
         newversion.save()
+
+        # Also bump the local last modified
+        self.last_modified = datetime.datetime.now()
 
         return newversion
 

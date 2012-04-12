@@ -79,7 +79,7 @@ class ScriptList(ListView):
     model = Script
 
     def get_queryset(self):
-        qs = Script.objects.all()
+        qs = Script.objects.order_by('-last_modified')
 
         client = self.kwargs.get('client', None)
         if not client:

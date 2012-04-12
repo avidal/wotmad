@@ -20,7 +20,7 @@
       [{{ script.get_client_display }}]
       <a href="{{ script.get_absolute_url }}">{{ script.title }}</a>
       submitted by {{ script.submitter }} about
-      <abbr title="{{ script.date_submitted }}">{{ script.date_submitted|timesince }} ago.</abbr>
+      <abbr title="{{ script.latest_version.date_submitted }}">{{ script.latest_version.date_submitted|timesince }} ago.</abbr>
     </li>
   {% endfor %}
 </ul>
