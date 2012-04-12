@@ -10,10 +10,15 @@ class Migration(DataMigration):
         """Copies and creates the latest ScriptSource entry for each script."""
 
         Script = orm.Script
+        ScriptSource = orm.ScriptSource
 
         for script in Script.objects.all():
             # Add a new script version, using the current entries source
-            script.add_version(script.source)
+            version = ScriptSource()
+            version.script = script
+            version.version = 1
+            version.is_current = True
+            version.save()
 
 
     def backwards(self, orm):
