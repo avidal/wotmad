@@ -16,6 +16,7 @@ class Migration(DataMigration):
             # Add a new script version, using the current entries source
             version = ScriptSource()
             version.script = script
+            version.source = script.source
             version.version = 1
             version.is_current = True
             version.save()
