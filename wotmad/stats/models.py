@@ -30,10 +30,6 @@ class Stat(models.Model):
     klass = models.CharField(max_length=1, choices=CLASS_CHOICES)
     homeland = models.CharField(max_length=32)
 
-    hitpoints = models.PositiveSmallIntegerField()
-    moves = models.PositiveSmallIntegerField()
-    spellpoints = models.PositiveSmallIntegerField(default=0, blank=True)
-
     strength = models.PositiveSmallIntegerField()
     intel = models.PositiveSmallIntegerField()
     wil = models.PositiveSmallIntegerField()
@@ -43,16 +39,12 @@ class Stat(models.Model):
     def __unicode__(self):
         parts = []
         parts.append("{faction} {sex} {klass} from {homeland}")
-        parts.append("[HP: {hitpoints}, MV: {moves}, SP: {spellpoints}]")
         parts.append("[{strength} {intel} {wil} {dex} {con}]")
 
         return " ".join(parts).format(faction=self.get_faction_display(),
                                       sex=self.get_sex_display(),
                                       klass=self.get_klass_display(),
                                       homeland=self.homeland,
-                                      hitpoints=self.hitpoints,
-                                      moves=self.moves,
-                                      spellpoints=self.spellpoints,
                                       strength=self.strength,
                                       intel=self.intel,
                                       wil=self.wil,

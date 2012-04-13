@@ -35,20 +35,28 @@ class SubmitStat(View):
         formdata['klass'] = formdata.get('class', None)
 
         # Allow the user to submit full versions of the sex, faction, and class
-        if 'sex' in formdata:
-            map_ = {'male': 'M', 'female': 'F'}
-            if formdata['sex'] in map_:
-                formdata['sex'] = map_[formdata['sex']]
+        fulltext_maps = {
+            'sex': {
+                'male': 'M',
+                'female': 'F',
+            },
+            'faction': {
+                'human': 'H',
+                'seanchan': 'S',
+                'trolloc': 'D',
+            },
+            'klass': {
+                'hunter': 'H',
+                'rogue': 'R',
+                'warrior': 'W',
+                'channeler': 'C',
+            },
+        }
 
-        if 'faction' in formdata:
-            map_ = {'human': 'H', 'seanchan': 'S', 'trolloc': 'T'}
-            if formdata['faction'] in map_:
-                formdata['faction'] = map_[formdata['faction']]
-
-        if 'klass' in formdata:
-            map_ = {'hunter': 'H', 'rogue': 'R', 'warrior': 'W', 'channeler': 'C'}
-            if formdata['klass'] in map_:
-                formdata['klass'] = map_[formdata['klass']]
+        for k, map_ in fulltext_maps.iteritems():
+            v = formdata.get(k, None)
+            if v and v in map_:
+                formdata[k] = map_[k]
 
         # Create the form instance
         form = SubmitStatForm(formdata)
@@ -75,9 +83,6 @@ class SubmitStat(View):
                                 faction=clean.get('faction'),
                                 klass=clean.get('klass'),
                                 homeland=clean.get('homeland'),
-                                hitpoints=clean.get('hitpoints'),
-                                moves=clean.get('moves'),
-                                spellpoints=clean.get('spellpoints') or 0,
                                 strength=clean.get('strength'),
                                 intel=clean.get('intel'),
                                 wil=clean.get('wil'),
