@@ -12,8 +12,7 @@
   {% endif %}
 </h2>
 <span class="muted">
-  submitted by {{ script.submitter }} about {{ script.last_modified|timesince }} ago;
-  version {{ script.latest_version.version }}.
+  updated to version {{  script.latest_version.version }} by {{ script.submitter }} about {{ script.latest_version.date_submitted|timesince }} ago
 </span>
 <p>{{ script.description }}</p>
 <pre>{{ script.latest_version.source }}</pre>

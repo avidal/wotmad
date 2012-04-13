@@ -45,6 +45,7 @@ class Script(models.Model):
 
         # Also bump the local last modified
         self.last_modified = datetime.datetime.now()
+        self.save()
 
         return newversion
 
