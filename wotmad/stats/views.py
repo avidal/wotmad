@@ -34,6 +34,22 @@ class SubmitStat(View):
         formdata = request.GET.copy()
         formdata['klass'] = formdata.get('class', None)
 
+        # Allow the user to submit full versions of the sex, faction, and class
+        if 'sex' in formdata:
+            map_ = {'male': 'M', 'female': 'F'}
+            if formdata['sex'] in map_:
+                formdata['sex'] = map_[formdata['sex']]
+
+        if 'faction' in formdata:
+            map_ = {'human': 'H', 'seanchan': 'S', 'trolloc': 'T'}
+            if formdata['faction'] in map_:
+                formdata['faction'] = map_[formdata['faction']]
+
+        if 'klass' in formdata:
+            map_ = {'hunter': 'H', 'rogue': 'R', 'warrior': 'W', 'channeler': 'C'}
+            if formdata['klass'] in map_:
+                formdata['klass'] = map_[formdata['klass']]
+
         # Create the form instance
         form = SubmitStatForm(formdata)
 
