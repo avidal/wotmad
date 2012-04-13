@@ -1,3 +1,4 @@
+from django.http import HttpResponse
 from django.views.generic import TemplateView, ListView, View
 
 from annoying.decorators import JsonResponse
@@ -21,9 +22,14 @@ class SubmitStat(View):
 
     def get(self, *args, **kwargs):
         request = self.request
+        ashtml = 'ashtml' in request.GET
 
         def make_response(data, code=200):
-            resp = JsonResponse(data)
+            if ashtml:
+                resp = HttpResponse(data)
+            else:
+                resp = JsonResponse(data)
+
             resp.status_code = code
             return resp
 
@@ -56,7 +62,7 @@ class SubmitStat(View):
         for k, map_ in fulltext_maps.iteritems():
             v = formdata.get(k, None)
             if v and v in map_:
-                formdata[k] = map_[k]
+                formdata[k] = map_[v]
 
         # Create the form instance
         form = SubmitStatForm(formdata)
