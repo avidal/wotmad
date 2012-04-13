@@ -3,6 +3,7 @@
 *~
 *.orig
 *.bak
+.idea
 
 tmp/*
 !tmp/.empty
