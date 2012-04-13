@@ -77,7 +77,7 @@ class SubmitStat(View):
                                 homeland=clean.get('homeland'),
                                 hitpoints=clean.get('hitpoints'),
                                 moves=clean.get('moves'),
-                                spellpoints=clean.get('spellpoints'),
+                                spellpoints=clean.get('spellpoints') or 0,
                                 strength=clean.get('strength'),
                                 intel=clean.get('intel'),
                                 wil=clean.get('wil'),
