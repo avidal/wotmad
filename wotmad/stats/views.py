@@ -26,7 +26,23 @@ class SubmitStat(View):
 
         def make_response(data, code=200):
             if ashtml:
-                resp = HttpResponse(data)
+                out = []
+                if 'error' in data:
+                    out.append("<h1>Error receiving stat</h1>")
+                    out.append("<p>{0}</p>".format(data['error']))
+                if 'errors' in data:
+                    out.append("<p>The following errors were encountered while "
+                               "validating your submission:</p>")
+                    for field, errors in data['errors'].iteritems():
+                        l = "<li>{0}<ul><li>{1}</li></ul></li>"
+                        out.append(l.format(field, "</li><li>".join(errors)))
+                if 'success' in data:
+                    out.append("<h1>Success! Your stat was accepted.</h1>")
+
+                out.append("<br/><br/>")
+                out.append("You may close this window at any time.")
+
+                resp = HttpResponse("\n".join(out))
             else:
                 resp = JsonResponse(data)
 
