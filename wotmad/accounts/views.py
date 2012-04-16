@@ -53,7 +53,7 @@ class LoginRedirect(RedirectView):
         if self.request.user.is_active:
             return reverse('home')
 
-        return reverse('account-setup')
+        return reverse('accounts:setup')
 
 
 class AccountSetup(FormView):
