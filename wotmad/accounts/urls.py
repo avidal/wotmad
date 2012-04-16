@@ -7,6 +7,6 @@ urlpatterns = patterns(
 
     url(r'login/redirect/$', LoginRedirect.as_view(), name='login-redirect'),
     url(r'logout/$', Logout.as_view(), name='logout'),
-    url(r'account/verify/$', Verify.as_view(), name='verify'),
-    url(r'account/setup/$', AccountSetup.as_view(), name='setup'),
+    url(r'verify/$', Verify.as_view(), name='verify'),
+    url(r'setup/$', AccountSetup.as_view(), name='setup'),
 )
