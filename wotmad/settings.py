@@ -22,7 +22,7 @@ if not SITE_URL:
     from django.exceptions import ImproperlyConfigured
     raise ImproperlyConfigured("No SITE_URL specified.")
 
-DEBUG = True
+DEBUG = ENV != 'heroku'
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
