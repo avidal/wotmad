@@ -1,27 +1,34 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>client scripts
-  <small><a href="{% url scripts:list client="zmud" %}">zmud</a>,</small>
-  <small><a href="{% url scripts:list client="cmud" %}">cmud</a>,</small>
-  <small><a href="{% url scripts:list client="tintin" %}">tintin</a>,</small>
-  <small><a href="{% url scripts:list client="tinyfugue" %}">tinyfugue</a>,</small>
-  <small><a href="{% url scripts:list client="mudlet" %}">mudlet</a>,</small>
-  <small><a href="{% url scripts:list client="alclient" %}">al client</a>,</small>
-  <small><a href="{% url scripts:list client="other" %}">other</a></small>
-  <small class="pull-right">
-    <a href="{% url scripts:submit %}">submit script</a>
-  </small>
-</h1>
-
-<ul>
-  {% for script in object_list %}
-    <li>
-      [{{ script.get_client_display }}]
-      <a href="{{ script.get_absolute_url }}">{{ script.title }}</a>
-      submitted by {{ script.submitter }} about
-      <abbr title="{{ script.last_modified }}">{{ script.last_modified|timesince }} ago.</abbr>
-    </li>
-  {% endfor %}
-</ul>
+    <div class="row">
+        <div class="span8">
+            <h1>client scripts</h1>
+        </div>
+        <div class="span4">
+            <small class="pull-right">
+                <a href="{% url scripts:submit %}">submit script</a>
+            </small>
+        </div>
+    </div>
+    <p>
+        <strong>filter:</strong>
+        <a href="{% url scripts:list client="zmud" %}">zmud</a>,
+        <a href="{% url scripts:list client="cmud" %}">cmud</a>,
+        <a href="{% url scripts:list client="tintin" %}">tintin</a>,
+        <a href="{% url scripts:list client="tinyfugue" %}">tinyfugue</a>,
+        <a href="{% url scripts:list client="mudlet" %}">mudlet</a>,
+        <a href="{% url scripts:list client="alclient" %}">al client</a>,
+        <a href="{% url scripts:list client="other" %}">other</a>
+    </p>
+    <ul>
+        {% for script in object_list %}
+            <li>
+                [{{ script.get_client_display }}]
+                <a href="{{ script.get_absolute_url }}">{{ script.title }}</a>
+                submitted by {{ script.submitter }} about
+                <abbr title="{{ script.last_modified }}">{{ script.last_modified|timesince }} ago.</abbr>
+            </li>
+        {% endfor %}
+    </ul>
 {% endblock %}
