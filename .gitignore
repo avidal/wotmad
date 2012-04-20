@@ -3,7 +3,8 @@
 *~
 *.orig
 *.bak
-.idea
+*.sublime-project
+*.sublime-workspace
 
 tmp/*
 !tmp/.empty
