@@ -5,6 +5,7 @@
 *.bak
 *.sublime-project
 *.sublime-workspace
+.ropeproject
 
 tmp/*
 !tmp/.empty
