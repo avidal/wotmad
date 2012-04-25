@@ -7,6 +7,7 @@
 <title>{% block title %}wotmad{% endblock %}</title>
 <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic,700italic|Ubuntu:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 {% compress css %}
+<link type="text/css" rel="stylesheet" href="{% static "css/chosen.css" %}">
 <link type="text/less" rel="stylesheet" href="{% static "less/style.less" %}">
 <style type="text/less">
 header.jumbotron {
@@ -85,6 +86,7 @@ header.jumbotron {
 <script src="https://browserid.org/include.js"></script>
 <script src="//code.jquery.com/jquery.min.js"></script>
 <script src="{% static "bootstrap/js/bootstrap.min.js" %}"></script>
+<script src="{% static "js/chosen.jquery.min.js" %}"></script>
 {% compress js %}
 <script>
 $(document).ready(function() {
@@ -98,6 +100,7 @@ $(document).ready(function() {
         }
     });
   });
+  $('.chzn-select').chosen();
 });
 </script>
 {% block javascript %}{% endblock %}

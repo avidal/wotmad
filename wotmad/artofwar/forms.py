@@ -14,6 +14,7 @@ class LogForm(forms.ModelForm):
         helper.form_method = 'POST'
         helper.layout = Layout(
             Field('title', css_class='span8'),
+            Field('categories', css_class='span8 chzn-select', data_placeholder='Select...'),
             Field('description', css_class='span8', rows=3),
             Field('text', css_class='span8', rows=10)
         )
@@ -24,6 +25,7 @@ class LogForm(forms.ModelForm):
         self.helper = helper
 
         super(LogForm, self).__init__(*args, **kwargs)
+        self.fields['categories'].help_text = ''
 
     class Meta:
         model = Log

@@ -5,6 +5,7 @@ class Log(models.Model):
 
     slug = models.SlugField(max_length=60)
     title = models.CharField(max_length=60)
+    categories = models.ManyToManyField('artofwar.Category')
     description = models.TextField(blank=True, default=u'')
     text = models.TextField(help_text=u'Paste your log here.')
 
@@ -17,3 +18,10 @@ class Log(models.Model):
 
     def __unicode__(self):
         return self.title
+
+
+class Category(models.Model):
+    name = models.CharField(max_length=60)
+
+    def __unicode__(self):
+        return self.name

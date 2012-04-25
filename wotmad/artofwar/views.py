@@ -22,6 +22,7 @@ class SubmitLog(LoginRequiredMixin, CreateView):
         log.submitter = request.user
 
         log.save()
+        form.save_m2m()
 
         messages.success(request, "Score!")
         return redirect(log.get_absolute_url())

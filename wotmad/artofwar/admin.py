@@ -1,5 +1,6 @@
 from django.contrib import admin
 
-from .models import Log
+from .models import Category, Log
 
+admin.site.register(Category)
 admin.site.register(Log)

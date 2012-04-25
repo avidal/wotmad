@@ -151,11 +151,19 @@ LOGGING = {
     }
 }
 
-COMPRESS_OUTPUT_DIR = '_cache'
-
 COMPRESS_PRECOMPILERS = (
     ('text/less', 'lessc {infile} {outfile}'),
+    ('text/css', 'cp {infile} {outfile}'),
 )
+
+COMPRESS_CSS_FILTERS = [
+    'compressor.filters.css_default.CssAbsoluteFilter',
+    'compressor.filters.datauri.CssDataUriFilter'
+]
+
+COMPRESS_DATA_URI_MAX_SIZE = 1024 * 5
+
+COMPRESS_ENABLED = True
 
 BROWSERID_CREATE_USER = True
 LOGIN_URL = '/accounts/login/'
