@@ -8,28 +8,14 @@ from django.db import models
 class Migration(SchemaMigration):
 
     def forwards(self, orm):
-        # Adding model 'Category'
-        db.create_table('artofwar_category', (
-            ('id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
-            ('slug', self.gf('django.db.models.fields.SlugField')(max_length=60)),
-            ('name', self.gf('django.db.models.fields.CharField')(max_length=60)),
-        ))
-        db.send_create_signal('artofwar', ['Category'])
-
-        # Adding M2M table for field categories on 'Log'
-        db.create_table('artofwar_log_categories', (
-            ('id', models.AutoField(verbose_name='ID', primary_key=True, auto_created=True)),
-            ('log', models.ForeignKey(orm['artofwar.log'], null=False)),
-            ('category', models.ForeignKey(orm['artofwar.category'], null=False))
-        ))
-        db.create_unique('artofwar_log_categories', ['log_id', 'category_id'])
+        # Adding field 'Log.pov'
+        db.add_column('artofwar_log', 'pov',
+                      self.gf('django.db.models.fields.CharField')(default='human', max_length=20),
+                      keep_default=False)
 
     def backwards(self, orm):
-        # Deleting model 'Category'
-        db.delete_table('artofwar_category')
-
-        # Removing M2M table for field categories on 'Log'
-        db.delete_table('artofwar_log_categories')
+        # Deleting field 'Log.pov'
+        db.delete_column('artofwar_log', 'pov')
 
     models = {
         'artofwar.category': {
@@ -44,6 +30,7 @@ class Migration(SchemaMigration):
             'date_submitted': ('django.db.models.fields.DateTimeField', [], {'auto_now_add': 'True', 'blank': 'True'}),
             'description': ('django.db.models.fields.TextField', [], {'default': "u''", 'blank': 'True'}),
             'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
+            'pov': ('django.db.models.fields.CharField', [], {'max_length': '20'}),
             'slug': ('django.db.models.fields.SlugField', [], {'max_length': '60'}),
             'submitter': ('django.db.models.fields.related.ForeignKey', [], {'related_name': "'logs'", 'to': "orm['auth.User']"}),
             'text': ('django.db.models.fields.TextField', [], {}),

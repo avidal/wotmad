@@ -7,7 +7,7 @@ from django.views.generic.edit import CreateView
 from braces.views import LoginRequiredMixin
 
 from .forms import LogForm
-from .models import Log
+from .models import Log, Category
 
 
 class SubmitLog(LoginRequiredMixin, CreateView):
@@ -34,6 +34,12 @@ class LogDetail(DetailView):
 
 class LogList(ListView):
     model = Log
+
+    def get_context_data(self, *args, **kwargs):
+        ctx = super(LogList, self).get_context_data(*args, **kwargs)
+        ctx.update(categories=Category.objects.all())
+
+        return ctx
 
     def get_queryset(self):
         return Log.objects.order_by('-date_submitted')

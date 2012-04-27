@@ -1,19 +1,35 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>the art of war
-  <small class="pull-right">
-    <a href="{% url artofwar:submit %}">submit log</a>
-  </small>
-</h1>
-
-<ul>
-  {% for log in object_list %}
-    <li>
-      <a href="{{ log.get_absolute_url }}">{{ log.title }}</a>
-      submitted by {{ log.submitter }} about
-      <abbr title="{{ log.date_submitted }}">{{ log.date_submitted|timesince }} ago.</abbr>
-    </li>
-  {% endfor %}
-</ul>
+<div class="row">
+  <div class="span9">
+    <ul class="log-list">
+      {% for log in object_list %}
+        <li class="log-entry">
+          <span class="log-title">
+            <a href="{{ log.get_absolute_url }}">{{ log.title }}</a>
+          </span><br/>
+          <ul class="log-meta">
+            <li><span class="label label-{{ log.pov }}">
+              {{ log.get_pov_display }}
+            </span></li>
+            {% for category in log.categories.all %}
+              <li><span class="label">{{ category }}</span></li>
+            {% endfor %}
+          </ul>
+          <span class="log-submission-info">
+            submitted {{ log.date_submitted|timesince }} ago by {{ log.submitter }}
+          </span>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="span3">
+    <div class="clearfix">
+      <a class="btn btn-primary btn-large pull-right" href="{% url artofwar:submit %}">
+        <i class="icon-plus"></i> submit log
+      </a>
+    </div>
+  </div>
+</div>
 {% endblock %}
