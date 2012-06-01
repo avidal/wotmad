@@ -37,15 +37,16 @@
               </ul>
             {% endblock %}
             <ul class="nav pull-right">
+              <li class="divider-vertical"></li>
               <li>
-              {% if not user.is_authenticated %}
+              {% if False and not user.is_authenticated %}
                 <a id="browserid" href="#">login / register</a>
                 <form method="POST" id="login-form" action="{% url accounts:verify %}">
                   {% csrf_token %}
                   {{ browserid_form.as_p }}
                 </form>
               {% else %}
-                Logged in as {{ user }}. <a href="{% url accounts:logout %}">Logout</a>
+                <a href="{% url accounts:logout %}" title="Logout">{{ user }}</a>
               {% endif %}
               </li>
             </ul>
