@@ -3,11 +3,12 @@ from django.conf.urls import patterns, include, url
 from django.contrib import admin
 admin.autodiscover()
 
-from wotmad.views import HomeView
+from wotmad.views import HomeView, SearchView
 
 urlpatterns = patterns(
     '',
     url(r'^$', HomeView.as_view(), name='home'),
+    url(r'^search/$', SearchView.as_view(), name='search'),
 
     url(r'^accounts/', include('wotmad.accounts.urls', namespace='accounts')),
     url(r'^art-of-war/', include('wotmad.artofwar.urls', namespace='artofwar')),
