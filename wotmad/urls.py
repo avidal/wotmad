@@ -16,4 +16,6 @@ urlpatterns = patterns(
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^browserid/', include('django_browserid.urls')),
+
+    url(r'^_/(?P<template>.*)', 'django.views.generic.simple.direct_to_template'),
 )
