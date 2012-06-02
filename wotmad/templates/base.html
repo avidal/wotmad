@@ -39,7 +39,7 @@
             <ul class="nav pull-right">
               <li class="divider-vertical"></li>
               <li>
-              {% if False and not user.is_authenticated %}
+              {% if not user.is_authenticated %}
                 <a id="browserid" href="#">login / register</a>
                 <form method="POST" id="login-form" action="{% url accounts:verify %}">
                   {% csrf_token %}
