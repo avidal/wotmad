@@ -8,13 +8,14 @@
     <ul class="log-list">
       {% for log in object_list %}
         <li class="log-entry">
-          <span class="log-title">
+          <span class="log-title {{ log.pov }}">
             <a href="{{ log.get_absolute_url }}">{{ log.title }}</a>
           </span><br/>
+          <ul class='log-vote'>
+            <li class='upvote'><i class='icon-chevron-up'></i></li>
+            <li class='downvote'><i class='icon-chevron-down'></i></li>
+          </ul>
           <ul class="log-meta">
-            <li><span class="label label-{{ log.pov }}">
-              {{ log.get_pov_display }}
-            </span></li>
             {% for category in log.categories.all %}
               <li><span class="label">{{ category }}</span></li>
             {% endfor %}
@@ -27,10 +28,20 @@
     </ul>
   </div>
   <div class="span3">
-    <div class="clearfix">
-      <a class="btn btn-primary btn-large pull-right" href="{% url artofwar:submit %}">
-        <i class="icon-plus"></i> submit log
-      </a>
+    <div class="well" style="padding: 8px 0;">
+      <ul class="nav nav-list">
+        <li>
+          <a href="{% url artofwar:submit %}"><i class="icon-plus"></i> Submit Log</a>
+        </li>
+        <li class="nav-header">
+          Filter Results
+        </li>
+        {% for category in categories %}
+          <li>
+            <a href="#">{{ category }}</a>
+          </li>
+        {% endfor %}
+      </ul>
     </div>
   </div>
 </div>
