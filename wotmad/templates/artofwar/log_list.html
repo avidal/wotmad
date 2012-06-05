@@ -5,6 +5,12 @@
 {% block content %}
 <div class="row">
   <div class="span9">
+    <ul class="nav nav-pills">
+      <li class="active">
+        <a href="#">most popular</a>
+      </li>
+      <li><a href="#">newest</a></li>
+    </ul>
     <ul class="log-list">
       {% for log in object_list %}
         <li class="log-entry">
