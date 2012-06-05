@@ -41,6 +41,10 @@
             <a href="#" class="filter-logs" data-category="{{ category.slug }}">{{ category }}</a>
           </li>
         {% endfor %}
+        <li class="divider"></li>
+        <li>
+          <a href="#" class="filter-logs" data-category=""><i class="icon-remove"></i> Reset Filters</a>
+        </li>
       </ul>
     </div>
   </div>
@@ -54,7 +58,11 @@ $(function() {
     event.preventDefault();
 
     var slug = $(this).data('category');
-    window.uri.removeQuery('category').addQuery('category', slug);
+    window.uri.removeQuery('category');
+    if(slug) {
+      window.uri.addQuery('category', slug);
+    }
+
     window.location = window.uri;
   });
 
