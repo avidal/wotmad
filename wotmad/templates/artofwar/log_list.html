@@ -38,11 +38,31 @@
         </li>
         {% for category in categories %}
           <li>
-            <a href="#">{{ category }}</a>
+            <a href="#" class="filter-logs" data-category="{{ category.slug }}">{{ category }}</a>
           </li>
         {% endfor %}
       </ul>
     </div>
   </div>
 </div>
+{% endblock %}
+
+{% block javascript %}
+<script>
+$(function() {
+  $('a.filter-logs').click(function(event) {
+    event.preventDefault();
+
+    var slug = $(this).data('category');
+    window.uri.removeQuery('category').addQuery('category', slug);
+    window.location = window.uri;
+  });
+
+  // Get the category out of the URI and highlight the element if applicable
+  var currentCategory = window.uri.query(true)['category'];
+  if(currentCategory) {
+    $('a.filter-logs[data-category="'+currentCategory+'"]').parent().addClass('active');
+  }
+});
+</script>
 {% endblock %}

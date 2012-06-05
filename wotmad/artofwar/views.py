@@ -41,5 +41,18 @@ class LogList(ListView):
 
         return ctx
 
+    def filter_queryset(self, qs):
+        # If the category is in request.GET, then filter
+        category = self.request.GET.get('category', None)
+        if not category:
+            return qs
+        return qs.filter(categories__slug=category)
+
+    def sort_queryset(self, qs):
+        return qs.order_by('-date_submitted')
+
     def get_queryset(self):
-        return Log.objects.order_by('-date_submitted')
+        qs = Log.objects
+        qs = self.filter_queryset(qs)
+        qs = self.sort_queryset(qs)
+        return qs
