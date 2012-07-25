@@ -1,3 +1,6 @@
+import csv
+from datetime import datetime
+
 from django.http import HttpResponse
 from django.views.generic import TemplateView, ListView, View
 
@@ -16,6 +19,62 @@ class StatList(ListView):
 
 class ContributeStat(TemplateView):
     template_name = 'stats/contribute.html'
+
+
+class ExportStats(View):
+
+    def get(self, *args, **kwargs):
+        request = self.request
+        mine = 'mine' in request.GET
+
+        response = HttpResponse(mimetype="text/csv")
+        response['Content-Disposition'] = 'attachment; filename=stats.csv'
+
+        writer = csv.writer(response)
+
+        header = [
+            ('Submitted', 'date_submitted'),
+            ('Faction', 'get_faction_display'),
+            ('Class', 'get_klass_display'),
+            ('Sex', 'get_sex_display'),
+            ('Homeland', 'homeland'),
+            ('Strength', 'strength'),
+            ('Intelligence', 'intel'),
+            ('Willpower', 'wil'),
+            ('Dexterity', 'dex'),
+            ('Constitution', 'con'),
+        ]
+
+        stats = Stat.objects.order_by('-date_submitted')
+
+        if mine:
+            stats = stats.filter(submitter=request.user)
+            header.insert(0, ('Name', 'name'))
+
+        labels = [r[0] for r in header]
+        fields = [r[1] for r in header]
+
+        writer.writerow(labels)
+
+        for stat in stats.all():
+            row = []
+            for f in fields:
+                attr = getattr(stat, f)
+                if callable(attr):
+                    value = attr()
+                else:
+                    value = attr
+
+                # If the value is a datetime object
+                # then we need to do some quick formatting
+                if isinstance(value, datetime):
+                    value = value.strftime("%Y-%m-%d %H:%M:%S")
+
+                row.append(value)
+
+            writer.writerow(row)
+
+        return response
 
 
 class SubmitStat(View):
