@@ -22,8 +22,9 @@ if not SITE_URL:
     from django.exceptions import ImproperlyConfigured
     raise ImproperlyConfigured("No SITE_URL specified.")
 
-DEBUG = True
-TEMPLATE_DEBUG = DEBUG
+if ENV == 'dev':
+    DEBUG = True
+    TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
     ('Alex Vidal', 'alex.vidal@gmail.com'),
@@ -31,12 +32,10 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': SITE_ROOT / 'tmp' / 'database.db',
-    }
-}
+import dj_database_url
+
+DEFAULT_DATABASE = 'sqlite:////' + (SITE_ROOT / 'tmp' / 'database.db')
+DATABASES = {'default': dj_database_url.config(default=DEFAULT_DATABASE)}
 
 TIME_ZONE = 'America/Chicago'
 

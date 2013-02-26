@@ -9,3 +9,4 @@ gunicorn==0.14.3
 django-crispy-forms==1.1.4
 django-braces==0.1.0
 South==0.7.5
+dj-database-url==0.2.1
