@@ -24,7 +24,10 @@ if not SITE_URL:
 
 if ENV == 'dev':
     DEBUG = True
-    TEMPLATE_DEBUG = DEBUG
+else:
+    DEBUG = False
+
+TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
     ('Alex Vidal', 'alex.vidal@gmail.com'),
@@ -108,6 +111,7 @@ INSTALLED_APPS = (
     'wotmad.artofwar',
     'wotmad.scripts',
     'wotmad.stats',
+    'wotmad.logparser',
 )
 
 AUTHENTICATION_BACKENDS = (
