@@ -1,0 +1,2326 @@
+* R HP:Healthy MV:Fresh > whe
+Players in your Zone
+--------------------
+Trik                 - Path to the Old Monastery
+Orasel               - A Caved-in Passage
+Saif                 - A Caved-in Passage
+Protus               - A Caved-in Passage
+
+* R HP:Healthy MV:Fresh > ponder
+[em scratches his head in thought.]
+Ok.
+
+* R HP:Healthy MV:Fresh > whe
+l
+Players in your Zone
+--------------------
+Trik                 - Path to the Old Monastery
+Orasel               - A Caved-in Passage
+Saif                 - A Caved-in Passage
+Protus               - A Caved-in Passage
+
+* R HP:Healthy MV:Fresh > A Caved-in Passage
+The small opening in the vegetation is only eight feet in diameter, and has
+recently caved in so that it is now visible from the outside. A layer of
+solid sand covers the surface, and with the outside light filtering in,
+plants are now starting to grow here.
+[ obvious exits: E ]
+The corpse of a blighted deer is lying here.
+A green woodpecker is here flying around.
+Orasel Daeyl, Shienaran Lancer. is standing here, riding a warhorse.
+Saif Sayeed is standing here, riding a warhorse.
+Eyes keen, a Domani razor stands here swishing its tail, being ridden by you.
+
+* R HP:Healthy MV:Fresh > 
+*Groth* has arrived from the east.
+*Bastige* has arrived from the east.
+A ramshorned trolloc has arrived from the east.
+
+sco
+* R HP:Healthy MV:Fresh > 
+Saif slashes a ramshorned trolloc's left leg very hard.
+
+* R HP:Healthy MV:Fresh > *Nexen* tries to pierce Orasel, but he deflects the blow.
+You have 399(399) hit and 140(140) movement points.
+You have scored 52018626 experience points and 960 quest points.
+You need 1481374 exp to level and 40 qp to rank.
+You have amassed 90 Turn points to date.
+You have played 70 days and 1 hours (real time).
+This ranks you as Protus the Specialist [Valon Guard 6] (Level 39).
+You are standing.
+
+* R HP:Healthy MV:Fresh > \
+*Haznak* strikes your body hard.
+*Groth* tries to blast you, but you parry successfully.
+*Buntaro* slashes Saif's left hand.
+[k dark]
+You do the best you can!
+
+b
+* R HP:Scratched MV:Fresh - Haznak: Hurt > 
+*Buntaro* tries to slash Saif, but he deflects the blow.
+A green woodpecker panics, and attempts to flee!
+A green woodpecker leaves east.
+*Groth* blasts your body hard.
+You try to lance *Haznak*, but he deflects the blow.
+*Haznak* strikes your body.
+Orasel tries to slash *Nexen*, but he deflects the blow.
+*Nexen* tries to pierce Orasel, but he deflects the blow.
+A ramshorned trolloc tries to cleave Saif, but he parries successfully.
+Saif slashes a ramshorned trolloc's body hard.
+
+*Bastige* tries to lance Orasel, but he parries successfully.
+[bash ]
+Saif closes the hiddenpassage.
+
+-o
+Cancelled.
+Order who to do what?
+Saif narrates 'on'
+
+* R HP:Scratched MV:Fresh - Haznak: Hurt > 
+*Nexen* pierces Orasel's body.
+
+* R HP:Scratched MV:Fresh - Haznak: Hurt > 
+*Buntaro* tries to slash Saif, but he deflects the blow.
+*Haznak* strikes your body hard.
+*Nexen* tries to pierce Orasel, but he deflects the blow.
+A ramshorned trolloc tries to cleave Saif, but he parries successfully.
+Saif slashes a ramshorned trolloc's left leg hard.
+
+* R HP:Hurt MV:Fresh - Haznak: Hurt > narr we on
+You narrate 'we on'
+
+* R HP:Hurt MV:Fresh - Haznak: Hurt > 
+Orasel avoids being bashed by *Bastige* who loses his balance and falls!
+
+* R HP:Hurt MV:Fresh - Haznak: Hurt > c
+b
+[change mood brave]
+Mood changed to: Brave
+
+[bash ]              - Haznak: Hurt > 
+
+                     
+*Groth* sends you sprawling with a powerful bash!
+Orasel sends *Nexen* sprawling with a powerful bash!
+
+* R HP:Hurt MV:Fresh - Haznak: Hurt > 
+The hiddenpassage is opened from the other side.
+
+* R HP:Hurt MV:Fresh - Haznak: Hurt > 
+*Buntaro* tries to slash Saif, but he deflects the blow.
+*Groth* blasts your right leg very hard.
+*Haznak* strikes your body very hard.
+Orasel tries to slash *Nexen*, but he deflects the blow.
+A ramshorned trolloc tries to cleave Saif, but he parries successfully.
+Saif slashes a ramshorned trolloc's right arm very hard.
+*Haznak* closes the hiddenpassage.
+
+* R HP:Hurt MV:Fresh - Haznak: Hurt > b
+
+*Bastige* tries to lance Orasel, but he parries successfully.
+*Buntaro* tries to slash Saif, but he parries successfully.
+*Groth* blasts your body hard.
+*Haznak* strikes your body extremely hard.
+Orasel tries to slash *Nexen*, but he parries successfully.
+A ramshorned trolloc tries to cleave Saif, but he parries successfully.
+Saif tries to slash a ramshorned trolloc, but he parries successfully.
+
+* R HP:Wounded MV:Fresh - Haznak: Hurt > 
+Saif narrates '5'
+Trik narrates 'now naerin'
+
+[bash ]              sh - Haznak: Hurt > 
+
+=
+*Bastige* tries to lance Orasel, but he deflects the blow.
+*Buntaro* tries to slash Saif, but he deflects the blow.
+*Groth* blasts your left arm.
+*Haznak* strikes your body hard.
+*Nexen* tries to pierce Orasel, but he parries successfully.
+A ramshorned trolloc tries to cleave Saif, but he parries successfully.
+Saif tries to slash a ramshorned trolloc, but he parries successfully.
+
+*
+*Nexen* tries to pierce Orasel, but he deflects the blow.
+
+*
+Saif narrates 'and mob'
+
+=
+The hiddenpassage is opened from the other side.
+
+-
+*Nexen* closes the hiddenpassage.
+
+=
+Your bash at *Haznak* sends him sprawling!
+Orasel sends *Nexen* sprawling with a powerful bash!
+
+* R HP:Wounded MV:Fresh - Haznak: Hurt > 
+*Bastige* tries to lance Orasel, but he deflects the blow.
+*Buntaro* barely slashes Saif's right leg.
+You lance *Haznak*'s right leg.
+Orasel tries to slash *Nexen*, but he deflects the blow.
+A ramshorned trolloc tries to cleave Saif, but he deflects the blow.
+
+                     sh - Haznak: Hurt > 
+*Groth* sends you sprawling with a powerful bash!
+Trik narrates 'open'
+
+* R HP:Wounded MV:Fresh - Haznak: Hurt > 
+A ramshorned trolloc avoids being bashed by Saif who loses his balance and falls!
+
+* R HP:Wounded MV:Fresh - Haznak: Hurt > 
+Naerin arrives from a flash of bright white light.
+
+* R HP:Wounded MV:Fresh - Haznak: Hurt > 
+*Bastige* tries to lance Orasel, but he deflects the blow.
+*Buntaro* tries to slash Saif, but he deflects the blow.
+*Groth* blasts your right leg hard.
+Orasel slashes *Nexen*'s right arm.
+A ramshorned trolloc tries to cleave Saif, but he parries successfully.
+
+* R HP:Wounded MV:Fresh - Haznak: Hurt > 
+Saif opens the hiddenpassage.
+Trik has arrived from the east, riding a warhorse.
+
+* R HP:Wounded MV:Fresh - Haznak: Hurt > 
+Naerin now follows Trik.
+*Buntaro* closes the hiddenpassage.
+Saif opens the hiddenpassage.
+
+* R HP:Wounded MV:Fresh - Haznak: Hurt > 
+*Buntaro* closes the hiddenpassage.
+Saif opens the hiddenpassage.
+
+* R HP:Wounded MV:Fresh - Haznak: Hurt > 
+*Buntaro* closes the hiddenpassage.
+Saif opens the hiddenpassage.
+
+* R HP:Wounded MV:Fresh - Haznak: Hurt > 
+Naerin tries to strike *Bastige*, but he parries successfully.
+*Nexen* closes the hiddenpassage.
+Saif opens the hiddenpassage.
+
+* R HP:Wounded MV:Fresh - Haznak: Hurt > 
+Naerin tries to strike *Bastige*, but he parries successfully.
+Saif tries to slash *Buntaro*, but he deflects the blow.
+*Bastige* tries to lance Orasel, but he deflects the blow.
+*Buntaro* tries to slash Saif, but he deflects the blow.
+*Groth* blasts your left arm very hard.
+*Haznak* strikes your right arm very hard.
+Orasel tries to slash *Nexen*, but he parries successfully.
+*Nexen* tries to pierce Orasel, but he parries successfully.
+A ramshorned trolloc cleaves Saif's left foot.
+*Nexen* closes the hiddenpassage.
+
+* R HP:Wounded MV:Fresh - Haznak: Hurt > open hiddenpassaghe
+
+Orasel opens the hiddenpassage.
+
+* R HP:Wounded MV:Fresh - Haznak: Hurt > 
+*Nexen* closes the hiddenpassage.
+
+* R HP:Wounded MV:Fresh - Haznak: Hurt > I see no hiddenpassaghe here.
+
+* R HP:Wounded MV:Fresh - Haznak: Hurt > 
+Orasel opens the hiddenpassage.
+
+* R HP:Wounded MV:Fresh - Haznak: Hurt > 
+*Haznak* strikes your right arm hard.
+*Nexen* closes the hiddenpassage.
+
+* R HP:Wounded MV:Fresh - Haznak: Hurt > b
+[bash ]              
+Orasel opens the hiddenpassage.
+
+ 
+*Bastige* closes the hiddenpassage.
+
+-
+*Bastige* lances Orasel's left arm hard.
+*Buntaro* tries to slash Saif, but he deflects the blow.
+*Haznak* strikes your body very hard.
+Orasel tries to slash *Nexen*, but he parries successfully.
+*Nexen* pierces Orasel's body.
+A ramshorned trolloc tickles Saif's left arm with his cleave.
+
+*
+Orasel opens the hiddenpassage.
+
+
+*Bastige* closes the hiddenpassage.
+
+=
+Naerin unleashes a flurry of icy spikes at *Haznak*, who is stabbed repeatedly.
+Orasel opens the hiddenpassage.
+
+-
+*Bastige* closes the hiddenpassage.
+*Nexen* panics, and attempts to flee!
+
+ 
+You dodge a bash from *Groth* who loses his balance and falls!
+Orasel opens the hiddenpassage.
+
+-
+*Nexen* tries to pierce Orasel, but he deflects the blow.
+*Bastige* closes the hiddenpassage.
+
+                     
+Naerin narrates 'gr me'
+As *Haznak* avoids your bash, you topple over and fall to the ground!
+Saif sends *Buntaro* sprawling with a powerful bash!
+Orasel opens the hiddenpassage.
+
+* R HP:Wounded MV:Fresh > 
+Naerin tries to strike *Bastige*, but he deflects the blow.
+Saif tries to slash *Buntaro*, but he deflects the blow.
+*Bastige* tries to lance Orasel, but he parries successfully.
+Orasel tries to slash *Nexen*, but he parries successfully.
+*Nexen* tries to pierce Orasel, but he parries successfully.
+A ramshorned trolloc tries to cleave Saif, but he parries successfully.
+*Bastige* closes the hiddenpassage.
+
+* R HP:Wounded MV:Fresh > stand
+\
+                     
+*Haznak* sends you sprawling with a powerful bash!
+
+* R HP:Battered MV:Fresh - Haznak: Wounded > c
+b
+
+Saif slashes *Buntaro*'s body.
+*Bastige* lances Orasel's head hard.
+*Haznak* strikes your left leg hard.
+*Nexen* pierces Orasel's body hard.
+A ramshorned trolloc tries to cleave Saif, but he parries successfully.
+
+* R HP:Battered MV:Fresh - Haznak: Wounded > 
+Naerin unleashes a flurry of icy spikes at *Haznak*, who is stabbed repeatedly.
+
+* R HP:Battered MV:Fresh - Haznak: Battered > 
+*Groth* clambers to his feet.
+Trik slashes *Groth*'s left arm hard.
+Orasel sends *Nexen* sprawling with a powerful bash!
+
+* R HP:Battered MV:Fresh - Haznak: Battered > Do you not consider fighting as standing?
+
+* R HP:Battered MV:Fresh - Haznak: Battered > [k dark]
+You do the best you can!
+
+* R HP:Battered MV:Fresh - Haznak: Battered > [change mood brave]
+Mood changed to: Brave
+
+* R HP:Battered MV:Fresh - Haznak: Battered > b
+[bash ]              
+
+Cancelled.
+[bash ]              
+
+ 
+*Groth* tries to blast Trik, but he parries successfully.
+Saif slashes *Buntaro*'s right leg very hard.
+*Bastige* lances Orasel's body hard.
+*Buntaro* slashes Saif's left arm.
+*Haznak* strikes your right arm very hard.
+Orasel slashes *Nexen*'s body.
+A ramshorned trolloc barely cleaves Saif's left arm.
+
+=
+*Haznak* strikes your head.
+
+*
+Naerin unleashes a flurry of icy spikes at *Haznak*, who is stabbed repeatedly.
+*Groth* avoids being bashed by Trik who loses his balance and falls!
+
+                     
+You lance *Haznak*'s head hard.
+Saif tries to slash *Buntaro*, but he parries successfully.
+*Buntaro* tries to slash Saif, but he parries successfully.
+*Haznak* strikes your body very hard.
+Orasel slashes *Nexen*'s left leg.
+A ramshorned trolloc tries to cleave Saif, but he deflects the blow.
+As *Haznak* avoids your bash, you topple over and fall to the ground!
+
+* R HP:Battered MV:Fresh > 
+*Groth* sends Trik sprawling with a powerful bash!
+
+* R HP:Battered MV:Fresh > 
+*Haznak* tries to strike you, but you deflect the blow.
+
+* R HP:Battered MV:Fresh - Haznak: Beaten > berk
+
+Naerin's icy spikes shred *Haznak*, whose insides now flow freely to the ground.
+*Haznak* is dead!  R.I.P.
+Your blood freezes as you hear *Haznak*'s death cry.
+
+]b
+* R HP:Battered MV:Fresh > *Groth* blasts Trik's body hard.
+Naerin tries to strike *Bastige*, but he parries successfully.
+*Bastige* lances Orasel's left arm.
+*Buntaro* tries to slash Saif, but he deflects the blow.
+*Nexen* tries to pierce Orasel, but he parries successfully.
+A ramshorned trolloc tries to cleave Saif, but he parries successfully.
+Orasel avoids being bashed by *Bastige* who loses his balance and falls!
+[change mood berserk]
+Mood changed to: Berserk
+
+* R HP:Battered MV:Fresh > Arglebargle, glop-glyf!?!
+
+* R HP:Battered MV:Fresh > 
+Naerin is now a member of Trik's group.
+
+* R HP:Battered MV:Fresh > 
+*Nexen* tries to pierce Orasel, but he parries successfully.
+
+\
+* R HP:Battered MV:Fresh > 
+*Buntaro* avoids being bashed by Saif who loses his balance and falls!
+
+* R HP:Battered MV:Fresh > b
+[k dark]
+You lance a ramshorned trolloc's right arm extremely hard.
+*Nexen* avoids being bashed by Orasel who loses his balance and falls!
+
+[bash ]              esh - Saif: Battered - a ramshorned trolloc: Hurt > 
+
+=
+*Groth* tries to blast Trik, but he parries successfully.
+Naerin tries to strike *Bastige*, but he parries successfully.
+*Buntaro* tries to slash Saif, but he deflects the blow.
+*Nexen* tries to pierce Orasel, but he deflects the blow.
+A ramshorned trolloc tries to cleave Saif, but he parries successfully.
+*Nexen* panics, and attempts to flee!
+*Groth* gets a skin of human flesh from the corpse of Haznak.
+*Groth* gets thirteen copper pennys from the corpse of Haznak.
+*Groth* gets a thin vial of yellow fluid from the corpse of Haznak.
+*Groth* gets a pair of animal-fur boots from the corpse of Haznak.
+*Groth* gets a set of riveted chainmail leggings from the corpse of Haznak.
+*Groth* gets a belt with a buckle of cuendillar from the corpse of Haznak.
+*Groth* gets a dark blue tasseled spear from the corpse of Haznak.
+*Groth* gets a ridged steel bracer from the corpse of Haznak.
+*Groth* gets a ridged steel bracer from the corpse of Haznak.
+*Groth* gets a sturdy pair of full leather gauntlets from the corpse of Haznak.
+*Groth* gets a pair of ebony-steel plate vambraces from the corpse of Haznak.
+*Groth* gets an earthen brown mantle from the corpse of Haznak.
+*Groth* gets a shirt of overlapping black scales from the corpse of Haznak.
+*Groth* gets a shimmering chain of gold from the corpse of Haznak.
+*Groth* gets a shimmering chain of gold from the corpse of Haznak.
+*Groth* gets a rimmed round helmet from the corpse of Haznak.
+*Groth* gets a gold ring delicately carved with ivy from the corpse of Haznak.
+*Groth* gets a gold ring delicately carved with ivy from the corpse of Haznak.
+*Groth* gets an oilstone from the corpse of Haznak.
+
+=
+*Nexen* opens the hiddenpassage.
+*Buntaro* closes the hiddenpassage.
+Trik sends *Groth* sprawling with a powerful bash!
+
+-
+*Nexen* panics, and attempts to flee!
+
+ 
+*Nexen* tries to pierce Orasel, but he deflects the blow.
+
+                     
+As a ramshorned trolloc avoids your bash, you topple over and fall to the ground!
+
+* R HP:Battered MV:Fresh > 
+Trik slashes *Groth*'s right leg.
+*Buntaro* tries to slash Saif, but he parries successfully.
+*Nexen* tries to pierce Orasel, but he parries successfully.
+A ramshorned trolloc tries to cleave Saif, but he parries successfully.
+
+* R HP:Battered MV:Fresh > 
+*Nexen* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh > stand
+
+Trik narrates 'contagion away'
+
+\
+* R HP:Battered MV:Fresh > 
+Naerin avoids being bashed by *Bastige* who loses his balance and falls!
+
+* R HP:Battered MV:Fresh > 
+*Nexen* panics, and attempts to flee!
+Saif sends *Buntaro* sprawling with a powerful bash!
+
+* R HP:Battered MV:Fresh > You stand up.
+
+* R HP:Battered MV:Fresh > [k dark]
+You lance a ramshorned trolloc's left leg extremely hard.
+*Nexen* avoids being bashed by Orasel who loses his balance and falls!
+
+* R HP:Battered MV:Fresh - Saif: Battered - a ramshorned trolloc: Wounded > 
+You lance a ramshorned trolloc's body very hard.
+Saif slashes *Buntaro*'s body hard.
+Trik slashes *Groth*'s left arm hard.
+Naerin tries to strike *Bastige*, but he parries successfully.
+*Nexen* tries to pierce Orasel, but he parries successfully.
+A ramshorned trolloc tries to cleave Saif, but he deflects the blow.
+
+* R HP:Battered MV:Fresh - Saif: Battered - a ramshorned trolloc: Wounded > 
+*Nexen* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Saif: Battered - a ramshorned trolloc: Wounded > b
+[bash ]              
+
+ 
+*Nexen* panics, and attempts to flee!
+
++
+*Nexen* panics, and attempts to flee!
+
+*
+Beads of cold sweat emerge from *Groth*'s face!
+
++
+Orasel tries to slash *Nexen*, but he parries successfully.
+Saif tries to slash *Buntaro*, but he deflects the blow.
+Trik barely slashes *Groth*'s right foot.
+*Nexen* tries to pierce Orasel, but he deflects the blow.
+Saif swiftly dodges a ramshorned trolloc's attempt to cleave him.
+*Nexen* tries to pierce Orasel, but he parries successfully.
+*Nexen* panics, and attempts to flee!
+
+-
+*Nexen* panics, and attempts to flee!
+
+                     
+As a ramshorned trolloc avoids your bash, you topple over and fall to the ground!
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Wounded > 
+*Bastige* sends Naerin sprawling with a powerful bash!
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Wounded > 
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Wounded > 
+Saif tries to slash *Buntaro*, but he parries successfully.
+*Bastige* lances Naerin's left arm hard.
+*Groth* tries to blast Trik, but he deflects the blow.
+Trik slashes *Groth*'s body.
+*Buntaro* tries to slash Saif, but he deflects the blow.
+*Nexen* tries to pierce Orasel, but he parries successfully.
+A ramshorned trolloc tries to cleave Saif, but he parries successfully.
+Trik avoids being bashed by *Groth* who loses his balance and falls!
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Wounded > 
+*Nexen* avoids being bashed by Orasel who loses his balance and falls!
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Wounded > 
+*Nexen* tries to pierce Orasel, but he deflects the blow.
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Wounded > 
+*Nexen* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Wounded > 
+You lance a ramshorned trolloc's head extremely hard.
+Saif tries to slash *Buntaro*, but he parries successfully.
+*Bastige* lances Naerin's left arm hard.
+*Groth* tries to blast Trik, but he deflects the blow.
+Trik slashes *Groth*'s left arm.
+*Buntaro* tries to slash Saif, but he deflects the blow.
+*Nexen* tries to pierce Orasel, but he deflects the blow.
+A ramshorned trolloc tries to cleave Saif, but he deflects the blow.
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Wounded > 
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Wounded > 
+*Nexen* tries to pierce Orasel, but he deflects the blow.
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Wounded > 
+*Nexen* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Wounded > 
+*Nexen* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Wounded > 
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Wounded > 
+*Nexen* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Wounded > 
+You lance a ramshorned trolloc's body very hard.
+Saif tries to slash *Buntaro*, but he parries successfully.
+*Bastige* tries to lance Naerin, but she deflects the blow.
+Trik barely slashes *Groth*'s head.
+Naerin tries to strike *Bastige*, but he deflects the blow.
+*Buntaro* tries to slash Saif, but he deflects the blow.
+*Nexen* tries to pierce Orasel, but he parries successfully.
+A ramshorned trolloc tries to cleave Saif, but he deflects the blow.
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Wounded > [
+
+*Buntaro* panics, and attempts to flee!
+
+[
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Wounded > [
+*Nexen* panics, and attempts to flee!
+*Buntaro* opens the hiddenpassage.
+[close hiddenpassage]
+Ok.
+*Nexen* avoids being bashed by Orasel who loses his balance and falls!
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Wounded > Trik avoids being bashed by *Groth* who loses his balance and falls!
+*Buntaro* panics, and attempts to flee!
+[close hiddenpassage]
+It's already closed!
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Wounded > [
+*Buntaro* opens the hiddenpassage.
+[close hiddenpassage]
+Ok.
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Wounded > [
+
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Wounded > *Nexen* panics, and attempts to flee!
+*Buntaro* opens the hiddenpassage.
+[close hiddenpassage]
+Ok.
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Wounded > *Buntaro* panics, and attempts to flee!
+[close hiddenpassage]
+It's already closed!
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Wounded > [
+
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Wounded > *Buntaro* panics, and attempts to flee!
+[close hiddenpassage]
+It's already closed!
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Wounded > 
+*Nexen* panics, and attempts to flee!
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Wounded > [
+
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Wounded > [
+You lance a ramshorned trolloc's body very hard.
+Saif tries to slash *Buntaro*, but he parries successfully.
+*Bastige* tries to lance Naerin, but she parries successfully.
+Trik slashes *Groth*'s body.
+*Buntaro* tries to slash Saif, but he parries successfully.
+*Nexen* tries to pierce Orasel, but he deflects the blow.
+A ramshorned trolloc tries to cleave Saif, but he dodges the attack.
+*Buntaro* opens the hiddenpassage.
+[close hiddenpassage]
+Ok.
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Wounded > 
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Wounded > b
+*Nexen* panics, and attempts to flee!
+*Buntaro* opens the hiddenpassage.
+[close hiddenpassage]
+Ok.
+
+*Buntaro* panics, and attempts to flee!d - a ramshorned trolloc: Wounded > 
+[bash ]
+
+ 
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+Trik narrates 'me and saif on door'
+
+-
+*Buntaro* panics, and attempts to flee!
+
+=
+*Nexen* panics, and attempts to flee!
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
++
+*Buntaro* panics, and attempts to flee!
+
+*
+*Groth* tries to blast Trik, but he deflects the blow.
+*Nexen* tries to pierce Orasel, but he deflects the blow.
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+
+*Buntaro* panics, and attempts to flee!
+
+*
+*Nexen* panics, and attempts to flee!
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
++
+*Buntaro* panics, and attempts to flee!
+
+=
+Saif tries to slash *Buntaro*, but he parries successfully.
+*Groth* tries to blast Trik, but he deflects the blow.
+Trik barely slashes *Groth*'s body.
+Naerin strikes *Bastige*'s body.
+*Buntaro* tries to slash Saif, but he parries successfully.
+*Nexen* pierces Orasel's body hard.
+A ramshorned trolloc tries to cleave Saif, but he parries successfully.
+*Nexen* panics, and attempts to flee!
+
+ 
+*Buntaro* panics, and attempts to flee!
+
+-
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+=
+*Nexen* panics, and attempts to flee!
+*Buntaro* panics, and attempts to flee!
+Your bash at a ramshorned trolloc sends him sprawling!
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Battered > 
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+Orasel sends *Nexen* sprawling with a powerful bash!
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Battered > 
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Battered > 
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Battered > 
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Battered > 
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Battered > 
+You lance a ramshorned trolloc's body extremely hard.
+*Groth* tries to blast Trik, but he parries successfully.
+Naerin avoids being bashed by *Bastige* who loses his balance and falls!
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Battered > 
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Battered > 
+Orasel slashes *Nexen*'s body hard.
+You lance a ramshorned trolloc's left hand very hard.
+Saif tries to slash *Buntaro*, but he deflects the blow.
+*Groth* tries to blast Trik, but he parries successfully.
+Trik slashes *Groth*'s left leg.
+*Buntaro* tries to slash Saif, but he deflects the blow.
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Battered > 
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Battered > 
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Battered > 
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Battered > 
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Battered > 
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Battered > 
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Battered > 
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Battered > 
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Battered > 
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Battered > 
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Battered > 
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Battered > 
+Orasel slashes *Nexen*'s left hand hard.
+You lance a ramshorned trolloc's body very hard.
+Saif tries to slash *Buntaro*, but he parries successfully.
+Trik slashes *Groth*'s right arm hard.
+Naerin strikes *Bastige*'s right arm hard.
+*Buntaro* tries to slash Saif, but he deflects the blow.
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Beaten > 
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Beaten > 
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Beaten > 
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Beaten > 
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Beaten > 
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Beaten > 
+*Nexen* panics, and attempts to flee!
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Beaten > 
+*Nexen* panics, and attempts to flee!
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Beaten > 
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Beaten > 
+Trik avoids being bashed by *Groth* who loses his balance and falls!
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Beaten > 
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Beaten > 
+Naerin avoids being bashed by *Bastige* who loses his balance and falls!
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Beaten > 
+Orasel tries to slash *Nexen*, but he parries successfully.
+You lance a ramshorned trolloc's body extremely hard.
+Saif tries to slash *Buntaro*, but he parries successfully.
+Trik barely slashes *Groth*'s body.
+*Buntaro* tries to slash Saif, but he parries successfully.
+*Nexen* tries to pierce Orasel, but he deflects the blow.
+A ramshorned trolloc tries to cleave Saif, but he deflects the blow.
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Beaten > b
+
+*Nexen* panics, and attempts to flee!
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+You lance a ramshorned trolloc's body hard.a ramshorned trolloc: Beaten > 
+*Buntaro* panics, and attempts to flee!
+[bash ]
+
+ 
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+-
+*Buntaro* panics, and attempts to flee!
+
+=
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
++
+*Nexen* panics, and attempts to flee!
+*Buntaro* panics, and attempts to flee!
+
+*
+Naerin waves at *Bastige*, who stumbles and begins to break out in a cold sweat.
+*Buntaro* panics, and attempts to flee!
+
+
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+*
+*Nexen* panics, and attempts to flee!
+*Buntaro* panics, and attempts to flee!
+
++
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+=
+*Nexen* panics, and attempts to flee!
+*Buntaro* panics, and attempts to flee!
+
+-
+Saif tries to slash *Buntaro*, but he parries successfully.
+*Bastige* tries to lance Naerin, but she parries successfully.
+Trik slashes *Groth*'s body.
+Naerin strikes *Bastige*'s body.
+*Buntaro* tries to slash Saif, but he parries successfully.
+*Nexen* pierces Orasel's right arm.
+A ramshorned trolloc tries to cleave Saif, but he deflects the blow.
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+ 
+*Nexen* panics, and attempts to flee!
+*Buntaro* panics, and attempts to flee!
+Orasel sends *Nexen* sprawling with a powerful bash!
+
+-
+*Buntaro* panics, and attempts to flee!
+
+=
+*Buntaro* panics, and attempts to flee!
+Your bash at a ramshorned trolloc sends him sprawling!
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Beaten > 
+You lance a ramshorned trolloc's right arm into bloody fragments!
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Critical > 
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Critical > 
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Critical > 
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Critical > 
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Critical > 
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Critical > 
+Trik avoids being bashed by *Groth* who loses his balance and falls!
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Critical > 
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Saif: Wounded - a ramshorned trolloc: Critical > 
+Orasel slashes *Nexen*'s left leg hard.
+You lance a ramshorned trolloc's left leg extremely hard.
+A ramshorned trolloc is dead!  R.I.P.
+You receive your share of experience...
+Sigh... nothing better to do, eh?
+Your blood freezes as you hear a ramshorned trolloc's death cry.
+Saif tries to slash *Buntaro*, but he deflects the blow.
+Trik slashes *Groth*'s left arm hard.
+Naerin tries to strike *Bastige*, but he deflects the blow.
+*Buntaro* tries to slash Saif, but he parries successfully.
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh > 
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh > 
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh > \
+
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh > *Buntaro* opens the hiddenpassage.
+[k dark]
+You lance *Bastige*'s body hard.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Scratched > b
+
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+You lance *Bastige*'s head very hard.ratched - Bastige: Scratched > 
+*Buntaro* opens the hiddenpassage.
+[bash ]
+Saif closes the hiddenpassage.
+
+ 
+Naerin avoids being bashed by *Bastige* who loses his balance and falls!
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+-
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+=
+*Buntaro* panics, and attempts to flee!
+
++
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+*
+*Buntaro* panics, and attempts to flee!
+
+
+*Groth* tries to blast Trik, but he parries successfully.
+Orasel slashes *Nexen*'s body.
+Saif tries to slash *Buntaro*, but he parries successfully.
+Trik barely slashes *Groth*'s body.
+Naerin tickles *Bastige*'s right hand with her strike.
+*Buntaro* tries to slash Saif, but he deflects the blow.
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+*
+*Buntaro* panics, and attempts to flee!
+
++
+*Nexen* panics, and attempts to flee!
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+=
+*Nexen* panics, and attempts to flee!
+*Buntaro* panics, and attempts to flee!
+
+-
+*Nexen* panics, and attempts to flee!
+*Buntaro* panics, and attempts to flee!
+
+ 
+*Nexen* panics, and attempts to flee!
+*Buntaro* panics, and attempts to flee!
+
+-
+*Nexen* panics, and attempts to flee!
+*Buntaro* panics, and attempts to flee!
+
+=
+*Nexen* panics, and attempts to flee!
+*Buntaro* panics, and attempts to flee!
+Your bash at *Bastige* sends him sprawling!
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Hurt > 
+You lance *Bastige*'s body hard.
+*Nexen* tries to pierce Orasel, but he deflects the blow.
+*Nexen* panics, and attempts to flee!
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Hurt > 
+*Nexen* panics, and attempts to flee!
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Hurt > 
+*Nexen* panics, and attempts to flee!
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Hurt > 
+*Nexen* panics, and attempts to flee!
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Hurt > 
+You lance *Bastige*'s left leg.
+*Groth* tries to blast Trik, but he parries successfully.
+Saif tries to slash *Buntaro*, but he deflects the blow.
+Trik slashes *Groth*'s right arm hard.
+Naerin barely strikes *Bastige*'s right leg.
+*Buntaro* tries to slash Saif, but he deflects the blow.
+*Nexen* tries to pierce Orasel, but he parries successfully.
+*Nexen* panics, and attempts to flee!
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Hurt > 
+*Nexen* panics, and attempts to flee!
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Hurt > 
+*Nexen* panics, and attempts to flee!
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Hurt > 
+*Nexen* panics, and attempts to flee!
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Hurt > 
+*Nexen* panics, and attempts to flee!
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+*Nexen* avoids being bashed by Orasel who loses his balance and falls!
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Hurt > 
+*Nexen* panics, and attempts to flee!
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Hurt > 
+*Nexen* panics, and attempts to flee!
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Hurt > 
+*Nexen* panics, and attempts to flee!
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Hurt > 
+*Nexen* panics, and attempts to flee!
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Hurt > 
+*Nexen* panics, and attempts to flee!
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Hurt > 
+*Nexen* tries to pierce Orasel, but he deflects the blow.
+*Nexen* panics, and attempts to flee!
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Hurt > 
+*Nexen* panics, and attempts to flee!
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Hurt > 
+You lance *Bastige*'s right leg hard.
+Saif slashes *Buntaro*'s body hard.
+Trik slashes *Groth*'s right arm.
+Naerin strikes *Bastige*'s body.
+*Buntaro* tries to slash Saif, but he deflects the blow.
+*Nexen* tries to pierce Orasel, but he deflects the blow.
+*Nexen* panics, and attempts to flee!
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Wounded > 
+Naerin narrates 'tapped'
+*Nexen* panics, and attempts to flee!
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Wounded > 
+*Nexen* panics, and attempts to flee!
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Wounded > 
+*Nexen* panics, and attempts to flee!
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Wounded > 
+*Nexen* panics, and attempts to flee!
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Wounded > 
+*Nexen* panics, and attempts to flee!
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Wounded > 
+*Nexen* panics, and attempts to flee!
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Wounded > b
+
+*Nexen* panics, and attempts to flee!
+*Buntaro* panics, and attempts to flee!
+
+*Nexen* panics, and attempts to flee!ratched - Bastige: Wounded > 
+*Buntaro* opens the hiddenpassage.
+[bash ]
+Saif closes the hiddenpassage.
+
+ 
+*Nexen* panics, and attempts to flee!
+*Buntaro* panics, and attempts to flee!
+
+-
+*Nexen* panics, and attempts to flee!
+
+=
+*Nexen* panics, and attempts to flee!
+Trik avoids being bashed by *Groth* who loses his balance and falls!
+
++
+Naerin swiftly dodges *Bastige*'s attempt to lance her.
+Saif slashes *Buntaro*'s right leg.
+Trik barely slashes *Groth*'s body.
+Naerin strikes *Bastige*'s body.
+*Buntaro* tries to slash Saif, but he parries successfully.
+*Nexen* pierces Orasel's left arm.
+*Nexen* pierces Orasel's body.
+*Nexen* panics, and attempts to flee!
+
+*
+*Nexen* panics, and attempts to flee!
+
+
+*Nexen* panics, and attempts to flee!
+
+*
+*Nexen* panics, and attempts to flee!
+
++
+*Nexen* panics, and attempts to flee!
+
+=
+*Nexen* panics, and attempts to flee!
+
+-
+*Nexen* panics, and attempts to flee!
+
+ 
+*Nexen* panics, and attempts to flee!
+*Nexen* avoids being bashed by Orasel who loses his balance and falls!
+
+-
+*Nexen* panics, and attempts to flee!
+
+=
+*Nexen* panics, and attempts to flee!
+Your bash at *Bastige* sends him sprawling!
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Wounded > 
+*Nexen* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Wounded > 
+*Nexen* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Wounded > 
+You lance *Bastige*'s body hard.
+*Groth* tries to blast Trik, but he parries successfully.
+Saif tries to slash *Buntaro*, but he parries successfully.
+Trik slashes *Groth*'s body.
+Naerin strikes *Bastige*'s right arm hard.
+*Buntaro* tries to slash Saif, but he parries successfully.
+*Nexen* tries to pierce Orasel, but he parries successfully.
+*Nexen* panics, and attempts to flee!
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Wounded > 
+*Nexen* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Wounded > 
+*Nexen* panics, and attempts to flee!
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Wounded > 
+*Nexen* panics, and attempts to flee!
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Wounded > 
+*Nexen* panics, and attempts to flee!
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Wounded > 
+*Nexen* panics, and attempts to flee!
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Wounded > 
+*Nexen* panics, and attempts to flee!
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Wounded > 
+*Nexen* panics, and attempts to flee!
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Wounded > 
+*Nexen* panics, and attempts to flee!
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Wounded > 
+*Nexen* panics, and attempts to flee!
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Wounded > 
+*Nexen* panics, and attempts to flee!
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Wounded > 
+*Nexen* panics, and attempts to flee!
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Wounded > 
+You lance *Bastige*'s body very hard.
+Saif tries to slash *Buntaro*, but he parries successfully.
+Trik slashes *Groth*'s body.
+Naerin strikes *Bastige*'s right leg.
+*Buntaro* tries to slash Saif, but he parries successfully.
+*Nexen* pierces Orasel's body.
+*Nexen* panics, and attempts to flee!
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Wounded > dia orasel
+
+*Nexen* panics, and attempts to flee!
+Trik avoids being bashed by *Groth* who loses his balance and falls!
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Wounded > 
+*Nexen* panics, and attempts to flee!
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Wounded > *Nexen* panics, and attempts to flee!
+*Buntaro* opens the hiddenpassage.
+Orasel has quite a few wounds.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Wounded > 
+You lance *Bastige*'s body very hard.
+*Nexen* pierces Orasel's head hard.
+*Nexen* panics, and attempts to flee!
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Battered > 
+*Nexen* panics, and attempts to flee!
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Battered > 
+*Nexen* panics, and attempts to flee!
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Battered > 
+*Nexen* panics, and attempts to flee!
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Battered > b
+*Nexen* panics, and attempts to flee!
+*Buntaro* panics, and attempts to flee!
+[bash ]
+They already seem to be stunned.
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Battered > 
+*Nexen* panics, and attempts to flee!
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Battered > 
+*Nexen* panics, and attempts to flee!
+*Buntaro* panics, and attempts to flee!
+*Nexen* avoids being bashed by Orasel who loses his balance and falls!
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Battered > 
+*Nexen* panics, and attempts to flee!
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Battered > 
+You lance *Bastige*'s body very hard.
+Saif tries to slash *Buntaro*, but he deflects the blow.
+Trik slashes *Groth*'s body.
+Naerin strikes *Bastige*'s body.
+*Buntaro* tries to slash Saif, but he parries successfully.
+*Nexen* tries to pierce Orasel, but he deflects the blow.
+*Nexen* panics, and attempts to flee!
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Battered > 
+*Nexen* panics, and attempts to flee!
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Battered > 
+*Nexen* panics, and attempts to flee!
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Battered > 
+*Nexen* panics, and attempts to flee!
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Battered > b
+
+*Nexen* panics, and attempts to flee!
+*Buntaro* panics, and attempts to flee!
+
+*Nexen* panics, and attempts to flee!ratched - Bastige: Battered > 
+[bash ]
+
+ 
+*Nexen* panics, and attempts to flee!
+*Buntaro* panics, and attempts to flee!
+
+-
+*Nexen* panics, and attempts to flee!
+*Buntaro* panics, and attempts to flee!
+
+=
+*Nexen* panics, and attempts to flee!
+
++
+*Nexen* panics, and attempts to flee!
+*Buntaro* panics, and attempts to flee!
+
+*
+*Nexen* panics, and attempts to flee!
+
+
+Naerin avoids being bashed by *Bastige* who loses his balance and falls!
+*Nexen* panics, and attempts to flee!
+*Buntaro* panics, and attempts to flee!
+
+*
+*Groth* tries to blast Trik, but he deflects the blow.
+Saif tries to slash *Buntaro*, but he parries successfully.
+Trik barely slashes *Groth*'s body.
+Naerin barely strikes *Bastige*'s left arm.
+*Buntaro* tries to slash Saif, but he parries successfully.
+*Nexen* tries to pierce Orasel, but he deflects the blow.
+*Nexen* panics, and attempts to flee!
+
++
+*Nexen* panics, and attempts to flee!
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+=
+*Nexen* panics, and attempts to flee!
+
+-
+*Nexen* panics, and attempts to flee!
+
+ 
+*Nexen* panics, and attempts to flee!
+
+-
+*Nexen* panics, and attempts to flee!
+
+=
+*Nexen* panics, and attempts to flee!
+Your bash at *Bastige* sends him sprawling!
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Battered > 
+*Nexen* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Battered > 
+You lance *Bastige*'s right leg.
+*Nexen* pierces Orasel's left arm.
+*Nexen* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Battered > 
+*Nexen* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Battered > 
+*Nexen* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Battered > 
+*Nexen* panics, and attempts to flee!
+Orasel sends *Nexen* sprawling with a powerful bash!
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Battered > 
+Orasel slashes *Nexen*'s right arm very hard.
+You lance *Bastige*'s left leg hard.
+Saif tries to slash *Buntaro*, but he deflects the blow.
+Trik slashes *Groth*'s body.
+Naerin strikes *Bastige*'s right leg.
+*Buntaro* tries to slash Saif, but he parries successfully.
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Beaten > 
+Trik avoids being bashed by *Groth* who loses his balance and falls!
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Beaten > 
+You lance *Bastige*'s body hard.
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Beaten > 
+Orasel slashes *Nexen*'s right leg hard.
+You lance *Bastige*'s right leg hard.
+Saif tries to slash *Buntaro*, but he parries successfully.
+Trik tickles *Groth*'s body with his slash.
+Naerin strikes *Bastige*'s body.
+*Buntaro* tries to slash Saif, but he parries successfully.
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Beaten > narr bastige almsot rip
+
+Naerin avoids being bashed by *Bastige* who loses his balance and falls!
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Beaten > b
+You narrate 'bastige almsot rip'
+
+[bash ]              esh - Naerin: Scratched - Bastige: Beaten > 
+
+ 
+Saif barely slashes *Buntaro*'s left hand.
+Trik barely slashes *Groth*'s right hand.
+Naerin strikes *Bastige*'s head.
+*Buntaro* tries to slash Saif, but he parries successfully.
+*Nexen* tries to pierce Orasel, but he parries successfully.
+*Nexen* panics, and attempts to flee!
+
+-
+*Nexen* panics, and attempts to flee!
+
+=
+*Nexen* panics, and attempts to flee!
+
++
+*Nexen* panics, and attempts to flee!
+Trik avoids being bashed by *Groth* who loses his balance and falls!
+
+*
+*Nexen* panics, and attempts to flee!
+
+
+*Nexen* panics, and attempts to flee!
+
+*
+*Nexen* panics, and attempts to flee!
+
+-
+*Bastige* spits over his shoulder.
+
+=
+*Bastige* tries to lance Naerin, but she deflects the blow.
+Orasel tries to slash *Nexen*, but he deflects the blow.
+You lance *Bastige*'s head hard.
+Saif tries to slash *Buntaro*, but he deflects the blow.
+Trik barely slashes *Groth*'s left leg.
+Naerin tries to strike *Bastige*, but he deflects the blow.
+*Buntaro* tries to slash Saif, but he deflects the blow.
+*Nexen* tries to pierce Orasel, but he deflects the blow.
+Your bash at *Bastige* sends him sprawling!
+Orasel sends *Nexen* sprawling with a powerful bash!
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Critical > 
+*Groth* looks at Trik.
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Critical > 
+*Groth* drops an oilstone.
+*Groth* drops a gold ring delicately carved with ivy.
+*Groth* drops a gold ring delicately carved with ivy.
+*Groth* drops a rimmed round helmet.
+*Groth* drops a shimmering chain of gold.
+*Groth* drops a shimmering chain of gold.
+*Groth* drops a shirt of overlapping black scales.
+*Groth* drops an earthen brown mantle.
+*Groth* drops a pair of ebony-steel plate vambraces.
+*Groth* drops a sturdy pair of full leather gauntlets.
+*Groth* drops a ridged steel bracer.
+*Groth* drops a ridged steel bracer.
+*Groth* drops a dark blue tasseled spear.
+*Groth* drops a belt with a buckle of cuendillar.
+*Groth* drops a set of riveted chainmail leggings.
+*Groth* drops a pair of animal-fur boots.
+*Groth* drops a thin vial of yellow fluid.
+*Groth* drops thirteen copper pennys.
+*Groth* drops a skin of human flesh.
+*Groth* drops a skin of human flesh.
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Critical > 
+*Buntaro* burps loudly.
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Critical > \
+[k dark]
+You do the best you can!
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Critical > 
+Orasel slashes *Nexen*'s right leg hard.
+You lance *Bastige*'s right leg very hard.
+Saif tries to slash *Buntaro*, but he deflects the blow.
+Trik barely slashes *Groth*'s left leg.
+Naerin strikes *Bastige*'s head hard.
+*Buntaro* tries to slash Saif, but he deflects the blow.
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Critical > \
+[k dark]
+You do the best you can!
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Critical > \
+\
+You lance *Bastige*'s left leg hard.
+[k dark]
+You do the best you can!
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Critical > [k dark]
+You do the best you can!
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Critical > \
+[k dark]
+You do the best you can!
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Critical > 
+Trik avoids being bashed by *Groth* who loses his balance and falls!
+
+* R HP:Battered MV:Fresh - Naerin: Scratched - Bastige: Critical > \
+\
+Orasel slashes *Nexen*'s body hard.
+You lance *Bastige*'s left leg hard.
+*Bastige* is dead!  R.I.P.
+You feel the Weave of the Wheel tighten around you.
+You receive your share of experience...
+Your first time! Was it good for you too?
+Your blood freezes as you hear *Bastige*'s death cry.
+Saif tries to slash *Buntaro*, but he parries successfully.
+Trik slashes *Groth*'s body.
+*Buntaro* tries to slash Saif, but he deflects the blow.
+[k dark]
+You lance *Nexen*'s right leg hard.
+
+* R HP:Battered MV:Fresh - Orasel: Wounded - Nexen: Wounded > \
+[k dark]
+You do the best you can!
+
+* R HP:Battered MV:Fresh - Orasel: Wounded - Nexen: Wounded > b
+*Buntaro* opens the hiddenpassage.
+[k dark]
+You do the best you can!
+Saif closes the hiddenpassage.
+
+*Buntaro* panics, and attempts to flee!ded - Nexen: Wounded > 
+[bash ]
+
+=
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+*
+*Buntaro* panics, and attempts to flee!
+
+=
+*Groth* tries to blast Trik, but he deflects the blow.
+Saif tries to slash *Buntaro*, but he deflects the blow.
+Trik tickles *Groth*'s body with his slash.
+*Buntaro* tries to slash Saif, but he parries successfully.
+*Nexen* tries to pierce Orasel, but he deflects the blow.
+
+ 
+*Nexen* panics, and attempts to flee!
+
+-
+Orasel sends *Nexen* sprawling with a powerful bash!
+
+=
+They already seem to be stunned.
+
+* R HP:Battered MV:Fresh - Orasel: Wounded - Nexen: Wounded > 
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Orasel: Wounded - Nexen: Wounded > 
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Orasel: Wounded - Nexen: Wounded > 
+You tickle *Nexen*'s left leg with your lance.
+Orasel tickles *Nexen*'s left leg with his slash.
+Saif tries to slash *Buntaro*, but he parries successfully.
+Trik barely slashes *Groth*'s body.
+*Buntaro* tries to slash Saif, but he deflects the blow.
+
+* R HP:Battered MV:Fresh - Orasel: Wounded - Nexen: Wounded > [
+[close hiddenpassage]
+It's already closed!
+
+[
+* R HP:Battered MV:Fresh - Orasel: Wounded - Nexen: Wounded > [close hiddenpassage]
+It's already closed!
+
+* R HP:Battered MV:Fresh - Orasel: Wounded - Nexen: Wounded > 
+You lance *Nexen*'s right arm hard.
+*Groth* tries to blast Trik, but he deflects the blow.
+
+* R HP:Battered MV:Fresh - Orasel: Wounded - Nexen: Wounded > 
+You lance *Nexen*'s body very hard.
+Orasel slashes *Nexen*'s body hard.
+*Groth* tries to blast Trik, but he parries successfully.
+Saif tries to slash *Buntaro*, but he parries successfully.
+Trik slashes *Groth*'s body.
+*Buntaro* tries to slash Saif, but he parries successfully.
+
+* R HP:Battered MV:Fresh - Orasel: Wounded - Nexen: Wounded > 
+Naerin strikes *Nexen*'s body.
+
+* R HP:Battered MV:Fresh - Orasel: Wounded - Nexen: Wounded > 
+*Nexen* panics, and attempts to flee!
+
+b
+* R HP:Battered MV:Fresh - Orasel: Wounded - Nexen: Wounded > 
+*Nexen* panics, and attempts to flee!
+
+*Nexen* panics, and attempts to flee!unded - Nexen: Wounded > 
+[bash ]
+
+ 
+*Nexen* panics, and attempts to flee!
+
++
+*Nexen* panics, and attempts to flee!
+
+*
+Naerin tries to strike *Nexen*, but he parries successfully.
+*Groth* tries to blast Trik, but he deflects the blow.
+Saif tries to slash *Buntaro*, but he deflects the blow.
+Trik barely slashes *Groth*'s head.
+*Buntaro* tries to slash Saif, but he parries successfully.
+*Nexen* pierces Orasel's body.
+*Nexen* tries to pierce Orasel, but he parries successfully.
+
+*
+*Nexen* panics, and attempts to flee!
+
+-
+*Nexen* panics, and attempts to flee!
+
+ 
+Orasel sends *Nexen* sprawling with a powerful bash!
+
+=
+They already seem to be stunned.
+
+* R HP:Battered MV:Fresh - Orasel: Wounded - Nexen: Wounded > 
+Naerin strikes *Nexen*'s body.
+You lance *Nexen*'s right leg hard.
+Orasel slashes *Nexen*'s head hard.
+*Groth* tries to blast Trik, but he parries successfully.
+Saif slashes *Buntaro*'s right hand very hard.
+Trik barely slashes *Groth*'s body.
+*Buntaro* tries to slash Saif, but he deflects the blow.
+
+* R HP:Battered MV:Fresh - Orasel: Wounded - Nexen: Battered > 
+You lance *Nexen*'s body very hard.
+Orasel slashes *Nexen*'s body.
+*Groth* tries to blast Trik, but he deflects the blow.
+Saif tries to slash *Buntaro*, but he parries successfully.
+Trik barely slashes *Groth*'s left leg.
+*Buntaro* tries to slash Saif, but he parries successfully.
+
+* R HP:Battered MV:Fresh - Orasel: Wounded - Nexen: Battered > 
+You lance *Nexen*'s right leg hard.
+
+* R HP:Battered MV:Fresh - Orasel: Wounded - Nexen: Battered > 
+*Nexen* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Orasel: Wounded - Nexen: Battered > 
+*Nexen* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Orasel: Wounded - Nexen: Battered > 
+*Nexen* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Orasel: Wounded - Nexen: Battered > 
+*Nexen* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Orasel: Wounded - Nexen: Battered > b
+*Nexen* panics, and attempts to flee!
+*Buntaro* opens the hiddenpassage.
+[bash ]
+Saif closes the hiddenpassage.
+
+ 
+*Buntaro* panics, and attempts to flee!
+
+-
+*Groth* tries to blast Trik, but he deflects the blow.
+Saif tries to slash *Buntaro*, but he deflects the blow.
+Trik slashes *Groth*'s body.
+*Buntaro* tries to slash Saif, but he deflects the blow.
+*Nexen* tries to pierce Orasel, but he parries successfully.
+
+*
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+
+*Buntaro* panics, and attempts to flee!
+
++
+*Groth* tries to blast Trik, but he deflects the blow.
+*Nexen* tries to pierce Orasel, but he parries successfully.
+*Nexen* avoids being bashed by Orasel who loses his balance and falls!
+
+=
+Naerin unleashes a flurry of icy spikes at *Nexen*, who is stabbed repeatedly.
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+-
+*Buntaro* panics, and attempts to flee!
+
+ 
+*Nexen* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+-
+*Nexen* panics, and attempts to flee!
+*Buntaro* panics, and attempts to flee!
+
+=
+Your bash at *Nexen* sends him sprawling!
+
+* R HP:Battered MV:Fresh - Orasel: Wounded - Nexen: Beaten > 
+Naerin strikes *Nexen*'s left leg.
+You lance *Nexen*'s body hard.
+*Groth* tries to blast Trik, but he dodges the attack.
+Saif tries to slash *Buntaro*, but he deflects the blow.
+*Buntaro* tries to slash Saif, but he deflects the blow.
+
+* R HP:Battered MV:Fresh - Orasel: Wounded - Nexen: Beaten > 
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Orasel: Wounded - Nexen: Beaten > 
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Orasel: Wounded - Nexen: Beaten > 
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Orasel: Wounded - Nexen: Beaten > 
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Orasel: Wounded - Nexen: Beaten > 
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Orasel: Wounded - Nexen: Beaten > 
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Orasel: Wounded - Nexen: Beaten > 
+*Groth* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Orasel: Wounded - Nexen: Beaten > 
+*Groth* opens the hiddenpassage.
+*Buntaro* panics, and attempts to flee!
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Orasel: Wounded - Nexen: Beaten > 
+*Groth* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Orasel: Wounded - Nexen: Beaten > 
+*Groth* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+*Groth* avoids being bashed by Trik who loses his balance and falls!
+
+* R HP:Battered MV:Fresh - Orasel: Wounded - Nexen: Beaten > 
+Naerin strikes *Nexen*'s body.
+You lance *Nexen*'s body very hard.
+Orasel slashes *Nexen*'s left arm hard.
+*Nexen* panics, and attempts to flee!
+*Groth* tries to blast Trik, but he parries successfully.
+Saif tries to slash *Buntaro*, but he deflects the blow.
+*Groth* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Orasel: Wounded - Nexen: Critical > 
+*Groth* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Orasel: Wounded - Nexen: Critical > 
+*Groth* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Orasel: Wounded - Nexen: Critical > 
+*Groth* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Orasel: Wounded - Nexen: Critical > 
+*Groth* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Orasel: Wounded - Nexen: Critical > 
+*Groth* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Orasel: Wounded - Nexen: Critical > 
+*Groth* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Orasel: Wounded - Nexen: Critical > 
+*Groth* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Orasel: Wounded - Nexen: Critical > 
+*Groth* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Orasel: Wounded - Nexen: Critical > 
+*Groth* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Orasel: Wounded - Nexen: Critical > 
+*Groth* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Orasel: Wounded - Nexen: Critical > 
+*Groth* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Orasel: Wounded - Nexen: Critical > 
+Trik slashes *Groth*'s body.
+Naerin barely strikes *Nexen*'s right leg.
+*Nexen* panics, and attempts to flee!
+You lance *Nexen*'s right arm very hard.
+*Nexen* is incapacitated and will slowly die, if not aided.
+Orasel slashes *Nexen*'s left hand very hard.
+*Nexen* is dead!  R.I.P.
+You feel the Weave of the Wheel tighten around you.
+You receive your share of experience...
+Your first time! Was it good for you too?
+Your blood freezes as you hear *Nexen*'s death cry.
+*Groth* tries to blast Trik, but he parries successfully.
+Saif slashes *Buntaro*'s right arm.
+*Groth* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+Orasel slashes *Groth*'s body.
+
+* R HP:Battered MV:Fresh > 
+*Groth* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh > \
+b
+*Groth* opens the hiddenpassage.
+[k dark]
+You lance *Groth*'s body.
+Saif closes the hiddenpassage.
+
+*Groth* opens the hiddenpassage. Wounded - Groth: Beaten > 
+[bash ]
+Saif closes the hiddenpassage.
+
+ 
+*Groth* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+-
+*Groth* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+=
+*Groth* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
++
+*Groth* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+*
+*Groth* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+
+*Groth* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+*
+*Groth* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
++
+*Groth* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+=
+*Groth* tries to blast Trik, but he parries successfully.
+Saif tries to slash *Buntaro*, but he parries successfully.
+*Groth* tries to blast Trik, but he parries successfully.
+*Groth* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+-
+*Groth* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+ 
+*Groth* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+-
+*Groth* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+=
+*Groth* opens the hiddenpassage.
+Your bash at *Groth* sends him sprawling!
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Trik: Wounded - Groth: Beaten > 
+You lance *Groth*'s right arm very hard.
+Orasel slashes *Groth*'s left hand.
+Trik slashes *Groth*'s body hard.
+Saif tries to slash *Buntaro*, but he deflects the blow.
+
+* R HP:Battered MV:Fresh - Trik: Wounded - Groth: Beaten > 
+Trik gets a pair of lissome leather boots with metal capped toes from the corpse of Nexen.
+Trik gets a set of riveted chainmail leggings from the corpse of Nexen.
+Trik gets a water skin from the corpse of Nexen.
+Trik gets a belt with a buckle of cuendillar from the corpse of Nexen.
+Trik gets a dagger of green jade from the corpse of Nexen.
+Trik gets a silver etched shield from the corpse of Nexen.
+Trik gets a jeweled wristcuff from the corpse of Nexen.
+Trik gets a jeweled wristcuff from the corpse of Nexen.
+Trik gets a sturdy pair of full leather gauntlets from the corpse of Nexen.
+Trik gets a pair of ebony-steel plate vambraces from the corpse of Nexen.
+Trik gets a backpack from the corpse of Nexen.
+Trik gets a pelt of black wolfskin matted with blood from the corpse of Nexen.
+Trik gets a tunic of finely-crafted chain from the corpse of Nexen.
+Trik gets a shimmering chain of gold from the corpse of Nexen.
+Trik gets a shimmering chain of gold from the corpse of Nexen.
+Trik gets a rimmed round helmet from the corpse of Nexen.
+Trik gets a gold ring delicately carved with ivy from the corpse of Nexen.
+Trik gets a gold ring delicately carved with ivy from the corpse of Nexen.
+
+* R HP:Battered MV:Fresh - Trik: Wounded - Groth: Beaten > 
+Trik narrates 'gj guys'
+
+* R HP:Battered MV:Fresh - Trik: Wounded - Groth: Beaten > 
+You lance *Groth*'s body hard.
+Orasel barely slashes *Groth*'s body.
+Trik slashes *Groth*'s left arm.
+Saif slashes *Buntaro*'s body hard.
+
+* R HP:Battered MV:Fresh - Trik: Wounded - Groth: Critical > 
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Trik: Wounded - Groth: Critical > 
+You lance *Groth*'s body hard.
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Battered MV:Fresh - Trik: Wounded - Groth: Critical > 
+*Groth* opens the hiddenpassage.
+*Buntaro* panics, and attempts to flee!
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Trik: Wounded - Groth: Critical > 
+*Groth* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+\
+* R HP:Battered MV:Fresh - Trik: Wounded - Groth: Critical > 
+*Groth* opens the hiddenpassage.
+*Buntaro* panics, and attempts to flee!
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Trik: Wounded - Groth: Critical > *Groth* opens the hiddenpassage.
+[k dark]
+You do the best you can!
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Trik: Wounded - Groth: Critical > 
+*Groth* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Trik: Wounded - Groth: Critical > 
+*Groth* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Trik: Wounded - Groth: Critical > 
+*Groth* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Trik: Wounded - Groth: Critical > \
+
+You tickle *Groth*'s body with your lance.
+Orasel tickles *Groth*'s left hand with his slash.
+*Groth* tries to blast Trik, but he parries successfully.
+Saif slashes *Buntaro*'s body.
+*Groth* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Trik: Wounded - Groth: Critical > *Groth* opens the hiddenpassage.
+[k dark]
+You do the best you can!
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Trik: Wounded - Groth: Critical > \
+
+*Groth* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Trik: Wounded - Groth: Critical > *Groth* opens the hiddenpassage.
+[k dark]
+You do the best you can!
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Trik: Wounded - Groth: Critical > 
+*Groth* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Trik: Wounded - Groth: Critical > \
+
+*Groth* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Trik: Wounded - Groth: Critical > *Groth* opens the hiddenpassage.
+[k dark]
+You do the best you can!
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Trik: Wounded - Groth: Critical > 
+*Groth* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Trik: Wounded - Groth: Critical > 
+*Groth* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Trik: Wounded - Groth: Critical > 
+*Groth* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Trik: Wounded - Groth: Critical > \
+\
+
+*Groth* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Trik: Wounded - Groth: Critical > *Groth* opens the hiddenpassage.
+[k dark]
+You do the best you can!
+Saif closes the hiddenpassage.
+
+* R HP:Battered MV:Fresh - Trik: Wounded - Groth: Critical > \
+You lance *Groth*'s body.
+Orasel slashes *Groth*'s right arm.
+*Groth* is mortally wounded, and will die soon, if not aided.
+Trik slashes *Groth*'s right arm very hard.
+*Groth* is dead!  R.I.P.
+You feel the Weave of the Wheel tighten around you.
+You receive your share of experience...
+Your first time! Was it good for you too?
+Your blood freezes as you hear *Groth*'s death cry.
+Saif slashes *Buntaro*'s body.
+[k dark]
+You lance *Buntaro*'s body.
+
+* R HP:Battered MV:Fresh - Saif: Wounded - Buntaro: Wounded > [k dark]
+You do the best you can!
+
+* R HP:Battered MV:Fresh - Saif: Wounded - Buntaro: Wounded > b
+[bash ]              
+
+-
+Orasel slashes *Buntaro*'s body.
+
++
+Orasel slashes *Buntaro*'s right foot hard.
+Saif slashes *Buntaro*'s body.
+The corpse of a blighted deer has decayed into a pile of dust.
+
+                     
+As *Buntaro* avoids your bash, you topple over and fall to the ground!
+
+* R HP:Wounded MV:Fresh - Saif: Wounded - Buntaro: Wounded > 
+Saif barely slashes *Buntaro*'s left leg.
+
+* R HP:Wounded MV:Fresh - Saif: Wounded - Buntaro: Wounded > 
+Orasel sends *Buntaro* sprawling with a powerful bash!
+
+* R HP:Wounded MV:Fresh - Saif: Wounded - Buntaro: Wounded > 
+Orasel slashes *Buntaro*'s right arm.
+You lance *Buntaro*'s body hard.
+Saif slashes *Buntaro*'s left leg very hard.
+You lance *Buntaro*'s right arm into bloody fragments!
+
+* R HP:Wounded MV:Fresh - Saif: Wounded - Buntaro: Wounded > 
+*Buntaro* opens the hiddenpassage.
+Trik closes the hiddenpassage.
+
+* R HP:Wounded MV:Fresh - Saif: Wounded - Buntaro: Wounded > 
+*Buntaro* opens the hiddenpassage.
+Trik closes the hiddenpassage.
+
+* R HP:Wounded MV:Fresh - Saif: Wounded - Buntaro: Wounded > 
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Wounded MV:Fresh - Saif: Wounded - Buntaro: Wounded > 
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Wounded MV:Fresh - Saif: Wounded - Buntaro: Wounded > 
+*Buntaro* panics, and attempts to flee!
+Naerin unleashes a flurry of icy spikes at *Buntaro*, who is stabbed repeatedly.
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Wounded MV:Fresh - Saif: Wounded - Buntaro: Battered > 
+You lance *Buntaro*'s body.
+*Buntaro* panics, and attempts to flee!
+Saif slashes *Buntaro*'s body hard.
+*Buntaro* panics, and attempts to flee!
+*Buntaro* tries to slash Saif, but he parries successfully.
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Wounded MV:Fresh - Saif: Wounded - Buntaro: Beaten > 
+*Buntaro* opens the hiddenpassage.
+Trik closes the hiddenpassage.
+
+* R HP:Wounded MV:Fresh - Saif: Wounded - Buntaro: Beaten > 
+You lance *Buntaro*'s right leg hard.
+*Buntaro* panics, and attempts to flee!
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Wounded MV:Fresh - Saif: Wounded - Buntaro: Beaten > 
+*Buntaro* opens the hiddenpassage.
+Saif closes the hiddenpassage.
+
+* R HP:Wounded MV:Fresh - Saif: Wounded - Buntaro: Beaten > b
+*Buntaro* panics, and attempts to flee!
+[bash ]
+
+-
+*Buntaro* blinks his eyes innocently.
+Orasel sends *Buntaro* sprawling with a powerful bash!
+*Buntaro* panics, and attempts to flee!
+
++
+Orasel slashes *Buntaro*'s right leg.
+*Buntaro* panics, and attempts to flee!
+Saif slashes *Buntaro*'s left leg very hard.
+*Buntaro* panics, and attempts to flee!
+
+=
+They already seem to be stunned.
+
+* R HP:Wounded MV:Fresh - Saif: Wounded - Buntaro: Beaten > 
+Saif waves.
+
+* R HP:Wounded MV:Fresh - Saif: Wounded - Buntaro: Beaten > 
+Orasel slashes *Buntaro*'s head very hard.
+*Buntaro* panics, and attempts to flee!
+You lance *Buntaro*'s right hand very hard.
+*Buntaro* panics, and attempts to flee!
+Saif slashes *Buntaro*'s body very hard.
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Wounded MV:Fresh - Saif: Wounded - Buntaro: Critical > 
+You lance *Buntaro*'s body very hard.
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Wounded MV:Fresh - Saif: Wounded - Buntaro: Critical > 
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Wounded MV:Fresh - Saif: Wounded - Buntaro: Critical > 
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Wounded MV:Fresh - Saif: Wounded - Buntaro: Critical > 
+*Buntaro* panics, and attempts to flee!
+
+* R HP:Wounded MV:Fresh - Saif: Wounded - Buntaro: Critical > 
+Orasel slashes *Buntaro*'s body.
+*Buntaro* is mortally wounded, and will die soon, if not aided.
+You lance *Buntaro*'s left arm extremely hard.
+*Buntaro* is dead!  R.I.P.
+You feel the Weave of the Wheel tighten around you.
+You receive your share of experience...
+Your first time! Was it good for you too?
+Your blood freezes as you hear *Buntaro*'s death cry.
+
+* R HP:Wounded MV:Fresh > c
+c
+c
+[change mood brave]
+You try to calm down, but can't.
+
+c
+* R HP:Wounded MV:Fresh > [change mood brave]
+Mood changed to: Brave
+Wimpy reset to: 119 hit points.
+
+* R HP:Wounded MV:Fresh > [change mood brave]
+Mood changed to: Brave
+Wimpy reset to: 119 hit points.
+
+v
+* R HP:Wounded MV:Fresh > [change mood brave]
+Mood changed to: Brave
+Wimpy reset to: 119 hit points.
+
+* R HP:Wounded MV:Fresh > 
+Saif can't seem to regain control of himself.
+
+* R HP:Wounded MV:Fresh > [change wimpy 0]
+You won't flee from any fight now.
+Saif can't seem to regain control of himself.
+
+* R HP:Wounded MV:Fresh > 
+Saif can't seem to regain control of himself.
+
+* R HP:Wounded MV:Fresh > 
+Saif can't seem to regain control of himself.
+
+* R HP:Wounded MV:Fresh > 
+Saif can't seem to regain control of himself.
+
+* R HP:Wounded MV:Fresh > 
+Saif can't seem to regain control of himself.
+
+* R HP:Wounded MV:Fresh > l
+A Caved-in Passage
+The small opening in the vegetation is only eight feet in diameter, and has
+recently caved in so that it is now visible from the outside. A layer of
+solid sand covers the surface, and with the outside light filtering in,
+plants are now starting to grow here.
+[ obvious exits: E ]
+The corpse of Buntaro is lying here.
+The corpse of Groth is lying here.
+The corpse of Nexen is lying here.
+The corpse of Bastige is lying here.
+A water skin made from dried human flesh lies here. [2]
+A pile of copper pennies lies here.
+A small thin vial has been left here.
+Boots made from the fur of various animals have been left here.
+A brightly polished set of riveted chainmail leggings lies here.
+A thin belt with a beautifully carved buckle of white stone lies here.
+Colored tassels flutter atop a wicked, long-hafted spear jammed into the ground.
+A steel bracer lies here, glinting dully. [2]
+A solid set of leather gauntlets rests here.
+A pair of black vambraces lies here, gleaming brightly
+A pile of dirt brown cloth has been discarded here.
+A dark shirt of metal serpentine scale lies here gleaming.
+A gold chain lies here in a shimmering coil. [2]
+A slightly dented rimmed round helmet has been left here.
+Glittering with gemstones, a golden ivy-carved ring lies here. [2]
+A fine-grained oilstone lies upon the ground.
+The corpse of a ramshorned trolloc is lying here.
+The corpse of Haznak is lying here.
+Trik al'Karst, Student of War is standing here, riding a warhorse.
+Naerin the Tower Accepted is standing here.
+A black shadow stallion paws the ground here, fiery-red eyes shining with evil.
+Orasel Daeyl, Shienaran Lancer. is standing here, riding a warhorse.
+Saif Sayeed is standing here, riding a warhorse.
+Eyes keen, a Domani razor stands here swishing its tail, being ridden by you.
+
