@@ -20,3 +20,8 @@ urlpatterns = patterns(
 
     url(r'^_/(?P<template>.*)', 'django.views.generic.simple.direct_to_template'),
 )
+
+urlpatterns += patterns(
+    'django.contrib.staticfiles.views',
+    url(r'^static/(?P<path>.*)$', 'serve'),
+)
