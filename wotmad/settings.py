@@ -24,6 +24,8 @@ if not SITE_URL:
 
 if ENV == 'dev':
     DEBUG = True
+elif ENV == 'heroku':
+    DEBUG = True
 else:
     DEBUG = False
 
