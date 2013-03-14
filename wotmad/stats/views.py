@@ -15,7 +15,7 @@ class StatList(ListView):
     mine = False
 
     def get_queryset(self):
-        if self.mine:
+        if self.mine and not self.request.user.is_anonymous():
             qs = Stat.objects.filter(submitter=self.request.user)
         else:
             qs = Stat.objects.all()
