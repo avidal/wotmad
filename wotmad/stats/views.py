@@ -1,7 +1,9 @@
 import csv
 from datetime import datetime
 
-from django.http import HttpResponse
+from django.contrib.auth.models import User
+from django.http import HttpResponse, Http404
+from django.shortcuts import get_object_or_404
 from django.views.generic import TemplateView, ListView, View
 
 from annoying.decorators import JsonResponse
@@ -14,13 +16,36 @@ class StatList(ListView):
     model = Stat
     mine = False
 
+    def get_submitter(self):
+        username = self.kwargs.pop('username', None)
+        submitter = None
+
+        if self.mine and self.request.user.is_anonymous():
+            raise Http404
+
+        if username:
+            submitter = get_object_or_404(User, username__iexact=username)
+        elif self.mine:
+            submitter = self.request.user
+
+        return submitter
+
     def get_queryset(self):
-        if self.mine and not self.request.user.is_anonymous():
-            qs = Stat.objects.filter(submitter=self.request.user)
+        submitter = self.get_submitter()
+
+        if submitter:
+            qs = Stat.objects.filter(submitter=submitter)
         else:
             qs = Stat.objects.all()
 
         return qs.order_by('-date_submitted')[:100]
+
+    def get_context_data(self, *args, **kwargs):
+        ctx = super(StatList, self).get_context_data(*args, **kwargs)
+
+        ctx.update(submitter=self.get_submitter())
+
+        return ctx
 
 
 class ContributeStat(TemplateView):
