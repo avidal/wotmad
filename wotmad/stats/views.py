@@ -12,9 +12,15 @@ from .models import Stat
 
 class StatList(ListView):
     model = Stat
+    mine = False
 
     def get_queryset(self):
-        return Stat.objects.order_by('-date_submitted')[:100]
+        if self.mine:
+            qs = Stat.objects.filter(submitter=self.request.user)
+        else:
+            qs = Stat.objects.all()
+
+        return qs.order_by('-date_submitted')[:100]
 
 
 class ContributeStat(TemplateView):
@@ -90,8 +96,8 @@ class SubmitStat(View):
                     out.append("<h1>Error receiving stat</h1>")
                     out.append("<p>{0}</p>".format(data['error']))
                 if 'errors' in data:
-                    out.append("<p>The following errors were encountered while "
-                               "validating your submission:</p>")
+                    out.append("<p>The following errors were encountered "
+                               "while validating your submission:</p>")
                     for field, errors in data['errors'].iteritems():
                         l = "<li>{0}<ul><li>{1}</li></ul></li>"
                         out.append(l.format(field, "</li><li>".join(errors)))
@@ -168,8 +174,7 @@ class SubmitStat(View):
                                 intel=clean.get('intel'),
                                 wil=clean.get('wil'),
                                 dex=clean.get('dex'),
-                                con=clean.get('con'),
-                               )
+                                con=clean.get('con'))
         except:
             return make_error("Something went wrong accepting your stat.")
 
