@@ -36,6 +36,14 @@ class Stat(models.Model):
     dex = models.PositiveSmallIntegerField()
     con = models.PositiveSmallIntegerField()
 
+    @property
+    def stats(self):
+        return [self.strength, self.intel, self.wil, self.dex, self.con]
+
+    @property
+    def sum(self):
+        return sum(self.stats)
+
     def __unicode__(self):
         parts = []
         parts.append("{faction} {sex} {klass} from {homeland}")
