@@ -24,12 +24,12 @@
   </thead>
   <tbody>
   {% for stat in object_list %}
-    <tr class="{% if stat.submitter == request.user %}info{% endif %}">
+    <tr class="{% if stat.submitter == user %}info{% endif %}">
       <td>
         <abbr title="{{ stat.date_submitted }}">{{ stat.date_submitted|timesince }} ago</abbr>
       </td>
       <td>{{ stat.submitter }}</td>
-      <td>{% if stat.submitter == request.user %}{{ stat.name }}{% endif %}</td>
+      <td>{% if stat.submitter == user %}{{ stat.name }}{% endif %}</td>
       <td>{{ stat.get_faction_display }}</td>
       <td>{{ stat.get_klass_display }}</td>
       <td>{{ stat.homeland }}</td>
