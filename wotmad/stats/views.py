@@ -17,7 +17,7 @@ class StatList(ListView):
     mine = False
 
     def get_submitter(self):
-        username = self.kwargs.pop('username', None)
+        username = self.kwargs.get('username', None)
         submitter = None
 
         if self.mine and self.request.user.is_anonymous():
@@ -30,7 +30,7 @@ class StatList(ListView):
 
         return submitter
 
-    def get_queryset(self):
+    def get_initial_queryset(self):
         submitter = self.get_submitter()
 
         if submitter:
@@ -38,12 +38,24 @@ class StatList(ListView):
         else:
             qs = Stat.objects.all()
 
+        return qs
+
+    def get_queryset(self):
+        qs = self.get_initial_queryset()
+
         return qs.order_by('-date_submitted')[:100]
 
     def get_context_data(self, *args, **kwargs):
         ctx = super(StatList, self).get_context_data(*args, **kwargs)
 
         ctx.update(submitter=self.get_submitter())
+
+        total = self.get_initial_queryset().count()
+
+        if total > 999:
+            total = "{0:0.1f}K".format(total / 1000.)
+
+        ctx.update(total=total)
 
         return ctx
 

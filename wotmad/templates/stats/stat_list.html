@@ -3,7 +3,7 @@
 {% block title %}Stat Database{% endblock %}
 
 {% block content %}
-<h1>submitted stats {% if submitter %}by {{ submitter.username }}{% endif %}
+<h1>last 100 submitted stats {% if submitter %}by {{ submitter.username }}{% endif %} (total {{ total }})
   <small class="pull-right">
     <a href="{% url stats:contribute %}">want to contribute?</a>
   </small>
