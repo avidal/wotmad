@@ -4,7 +4,6 @@ django-browserid==0.5
 django-annoying==0.7.6
 requests==0.13.0
 psycopg2==2.4.5
-gunicorn==0.14.3
 django-crispy-forms==1.1.4
 django-braces==0.1.0
 South==0.7.5

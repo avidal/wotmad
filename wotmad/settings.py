@@ -103,7 +103,6 @@ INSTALLED_APPS = (
     'django.contrib.admin',
 
     'django_browserid',
-    'gunicorn',
     'crispy_forms',
     'south',
 
