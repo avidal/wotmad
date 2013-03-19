@@ -37,10 +37,18 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
+INTERNAL_IPS = ('127.0.0.1',)
+
 import dj_database_url
 
 DEFAULT_DATABASE = 'sqlite:////' + (SITE_ROOT / 'tmp' / 'database.db')
 DATABASES = {'default': dj_database_url.config(default=DEFAULT_DATABASE)}
+
+if 'postgres' in DATABASES['default']['ENGINE']:
+    DATABASES['default']['ENGINE'] = 'django_postgrespool'
+    SOUTH_DATABASE_ADAPTERS = {
+        'default': 'south.db.postgresql_psycopg2'
+    }
 
 TIME_ZONE = 'America/Chicago'
 
@@ -85,6 +93,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
+if DEBUG:
+    MIDDLEWARE_CLASSES += ('debug_toolbar.middleware.DebugToolbarMiddleware',)
+
 ROOT_URLCONF = 'wotmad.urls'
 
 WSGI_APPLICATION = 'wotmad.wsgi.application'
@@ -111,6 +122,9 @@ INSTALLED_APPS = (
     'wotmad.scripts',
     'wotmad.stats',
 )
+
+if DEBUG:
+    INSTALLED_APPS += ('debug_toolbar',)
 
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
