@@ -16,27 +16,14 @@ class StatList(ListView):
     model = Stat
     mine = False
 
-    def get_submitter(self):
-        username = self.kwargs.get('username', None)
-        submitter = None
+    def get_initial_queryset(self):
+        qs = Stat.objects
 
         if self.mine and self.request.user.is_anonymous():
             raise Http404
 
-        if username:
-            submitter = get_object_or_404(User, username__iexact=username)
-        elif self.mine:
-            submitter = self.request.user
-
-        return submitter
-
-    def get_initial_queryset(self):
-        submitter = self.get_submitter()
-
-        if submitter:
-            qs = Stat.objects.filter(submitter=submitter)
-        else:
-            qs = Stat.objects.all()
+        if self.mine:
+            return qs.filter(submitter=self.request.user)
 
         return qs
 
@@ -48,7 +35,7 @@ class StatList(ListView):
     def get_context_data(self, *args, **kwargs):
         ctx = super(StatList, self).get_context_data(*args, **kwargs)
 
-        ctx.update(submitter=self.get_submitter())
+        ctx.update(mine=self.mine)
 
         total = self.get_initial_queryset().count()
 

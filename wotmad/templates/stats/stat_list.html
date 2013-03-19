@@ -3,7 +3,7 @@
 {% block title %}Stat Database{% endblock %}
 
 {% block content %}
-<h1>last 100 submitted stats {% if submitter %}by {{ submitter.username }}{% endif %} (total {{ total }})
+<h1>last 100 submitted stats {% if mine %}by you{% endif %} (total {{ total }})
   <small class="pull-right">
     <a href="{% url stats:contribute %}">want to contribute?</a>
   </small>
@@ -13,8 +13,7 @@
   <thead>
     <tr>
       <th>When</th>
-      <th>Submitter</th>
-      <th>Name</th>
+      {% if mine %}<th>Name</th>{% endif %}
       <th>Faction</th>
       <th>Class</th>
       <th>Homeland</th>
@@ -24,12 +23,11 @@
   </thead>
   <tbody>
   {% for stat in object_list %}
-    <tr class="{% if stat.submitter == user %}info{% endif %}">
+    <tr class="{% if stat.submitter == user and not mine %}info{% endif %}">
       <td>
         <abbr title="{{ stat.date_submitted }}">{{ stat.date_submitted|timesince }} ago</abbr>
       </td>
-      <td>{{ stat.submitter }}</td>
-      <td>{% if stat.submitter == user %}{{ stat.name }}{% endif %}</td>
+      {% if mine %}<td>{{ stat.name }}</td>{% endif %}
       <td>{{ stat.get_faction_display }}</td>
       <td>{{ stat.get_klass_display }}</td>
       <td>{{ stat.homeland }}</td>
