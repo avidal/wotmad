@@ -8,7 +8,7 @@ ENV = os.environ.get('ENV', 'dev')
 
 SITE_URL_MAP = {
     'heroku': 'http://wotmad.herokuapp.com',
-    'dev': 'http://chrono.local:5000',
+    'dev': 'http://wotmad.local:5000',
 }
 
 # First, try loading SITE_URL out of the environment
@@ -25,7 +25,7 @@ if not SITE_URL:
 if ENV == 'dev':
     DEBUG = True
 elif ENV == 'heroku':
-    DEBUG = True
+    DEBUG = False
 else:
     DEBUG = False
 

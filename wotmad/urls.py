@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.conf.urls import patterns, include, url
 
 from django.contrib import admin
@@ -21,7 +22,8 @@ urlpatterns = patterns(
     url(r'^_/(?P<template>.*)', 'django.views.generic.simple.direct_to_template'),
 )
 
-urlpatterns += patterns(
-    'django.contrib.staticfiles.views',
-    url(r'^static/(?P<path>.*)$', 'serve'),
-)
+if not settings.DEBUG:
+    urlpatterns += patterns(
+        'django.views.static',
+        url(r'^static/(?P<path>.*)$', 'serve', {'document_root': settings.STATIC_ROOT}),
+    )
