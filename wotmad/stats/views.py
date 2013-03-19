@@ -17,7 +17,7 @@ class StatList(ListView):
     mine = False
 
     def get_initial_queryset(self):
-        qs = Stat.objects
+        qs = Stat.objects.select_related('submitter')
 
         if self.mine and self.request.user.is_anonymous():
             raise Http404
