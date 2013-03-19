@@ -67,7 +67,6 @@ STATICFILES_DIRS = (
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-    'compressor.finders.CompressorFinder',
 )
 
 SECRET_KEY = '0uni4qeb$0hu*y#iap93)%!(_lr2syps+8p+3-sybk9k%e^vy&amp;'
@@ -103,7 +102,6 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.admin',
 
-    'compressor',
     'django_browserid',
     'gunicorn',
     'crispy_forms',
@@ -154,20 +152,6 @@ LOGGING = {
         },
     }
 }
-
-COMPRESS_PRECOMPILERS = (
-    ('text/less', 'lessc {infile} {outfile}'),
-    ('text/css', 'cp {infile} {outfile}'),
-)
-
-COMPRESS_CSS_FILTERS = [
-    'compressor.filters.css_default.CssAbsoluteFilter',
-    'compressor.filters.datauri.CssDataUriFilter'
-]
-
-COMPRESS_DATA_URI_MAX_SIZE = 1024 * 5
-
-COMPRESS_ENABLED = ENV == 'heroku'
 
 BROWSERID_CREATE_USER = True
 LOGIN_URL = '/accounts/login/'

@@ -1,16 +1,13 @@
 <!doctype html>
 <html lang="en">
-{% load compress %}
 {% load static from staticfiles %}
 
 <head>
 <title>{% block title %}wotmad{% endblock %}</title>
 <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic,700italic|Ubuntu:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-{% compress css %}
 <link type="text/css" rel="stylesheet" href="{% static "css/chosen.css" %}">
-<link type="text/less" rel="stylesheet" href="{% static "less/style.less" %}">
+<link type="text/less" rel="stylesheet" href="{% static "css/style.css" %}">
 {% block stylesheets %}{% endblock %}
-{% endcompress %}
 </head>
 
 <body class="{% block bodyclass %}container {% endblock %}">
@@ -90,7 +87,6 @@
   <script src="{% static "js/chosen.jquery.min.js" %}"></script>
   <script src="{% static "js/URI.min.js" %}"></script>
   <script src="{% static "js/jquery.URI.min.js" %}"></script>
-  {% compress js %}
   <script>
   var uri = URI();
 
@@ -126,7 +122,6 @@
   });
   </script>
   {% block javascript %}{% endblock %}
-  {% endcompress %}
 
 </body>
 </html>
