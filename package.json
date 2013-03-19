@@ -1,0 +1,17 @@
+{
+  "name": "wotmad",
+  "version": "0.0.1",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-less": "~0.5.0",
+    "grunt-contrib-watch": "~0.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/avidal/wotmad.git"
+  },
+  "author": "Alex Vidal <alex.vidal@gmail.com>",
+  "license": "BSD",
+  "readmeFilename": "README.mkd"
+}

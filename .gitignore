@@ -18,3 +18,4 @@ uploads/*
 
 static/*
 !static/.empty
+node_modules/
