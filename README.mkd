@@ -18,4 +18,4 @@ Install grunt-cli globally:
 
 Then, install grunt, grunt less, and grunt watch:
 
-    $ npm install grunt~0.4.1 grunt-contrib-less~0.5.0 grunt-contrib-watch~0.3.1
+    $ npm install grunt@0.4.1 grunt-contrib-less@0.5.0 grunt-contrib-watch@0.3.1
