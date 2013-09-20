@@ -1,9 +1,7 @@
 import csv
 from datetime import datetime
 
-from django.contrib.auth.models import User
 from django.http import HttpResponse, Http404
-from django.shortcuts import get_object_or_404
 from django.views.generic import TemplateView, ListView, View
 
 from annoying.decorators import JsonResponse
@@ -168,6 +166,10 @@ class SubmitStat(View):
             v = formdata.get(k, None)
             if v and v in map_:
                 formdata[k] = map_[v]
+            elif v and v.upper() in map_.values():
+                # This allows the user to submit 'm' for male instead of just
+                # male/M and etc
+                formdata[k] = v.upper()
 
         # Create the form instance
         form = SubmitStatForm(formdata)

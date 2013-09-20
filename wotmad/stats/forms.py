@@ -2,6 +2,7 @@ from django import forms
 from django.contrib.auth.models import User
 
 from .models import Stat
+from .models import LS_HOMELANDS, DS_HOMELANDS, SS_HOMELANDS
 
 
 class SubmitStatForm(forms.ModelForm):
@@ -19,10 +20,19 @@ class SubmitStatForm(forms.ModelForm):
 
         klass = data.get('klass', None)
         faction = data.get('faction', None)
+        homeland = data.get('homeland', None)
 
         # If the klass is C then the faction must be H
         if klass == 'C' and faction != 'H':
             raise forms.ValidationError("Only humans can be channelers.")
+
+        # Make sure the faction and homeland are valid together
+        hls = {'H': LS_HOMELANDS, 'D': DS_HOMELANDS, 'S': SS_HOMELANDS}[faction]
+
+        hls = map(lambda r: r[0], hls)
+
+        if homeland not in hls:
+            raise forms.ValidationError("Homeland '%s' is not valid for this faction.")
 
         return data
 
