@@ -177,6 +177,9 @@ class SubmitStat(View):
         if homeland.endswith(' Trolloc'):
             homeland = homeland[:-8]
 
+        if homeland.startswith('The '):
+            homeland = homeland[4:]
+
         formdata['homeland'] = homeland
 
         # Create the form instance
