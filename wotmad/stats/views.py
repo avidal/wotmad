@@ -171,6 +171,14 @@ class SubmitStat(View):
                 # male/M and etc
                 formdata[k] = v.upper()
 
+        # We also want to strip Trolloc off the end of the homeland if it
+        # exists
+        homeland = formdata.get('homeland')
+        if homeland.endswith(' Trolloc'):
+            homeland = homeland[:-8]
+
+        formdata['homeland'] = homeland
+
         # Create the form instance
         form = SubmitStatForm(formdata)
 
