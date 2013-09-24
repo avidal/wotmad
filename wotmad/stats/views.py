@@ -1,5 +1,6 @@
 import csv
 from datetime import datetime
+import re
 
 from django.http import HttpResponse, Http404
 from django.views.generic import TemplateView, ListView, View
@@ -65,7 +66,7 @@ class ExportStats(View):
             ('Faction', 'get_faction_display'),
             ('Class', 'get_klass_display'),
             ('Sex', 'get_sex_display'),
-            ('Homeland', 'homeland'),
+            ('Homeland', 'get_homeland_display'),
             ('Strength', 'strength'),
             ('Intelligence', 'intel'),
             ('Willpower', 'wil'),
@@ -143,22 +144,40 @@ class SubmitStat(View):
         formdata = request.GET.copy()
         formdata['klass'] = formdata.get('class', None)
 
-        # Allow the user to submit full versions of the sex, faction, and class
+        # First, let's normalize all of the input: lowercase and strip
+        # punctuation
+        for k, v in formdata.iteritems():
+            if not v:
+                continue
+
+            v = v.lower()
+
+            if k == 'homeland':
+                if v.endswith(' trolloc'):
+                    v = v[:-8]
+                if v.startswith('the '):
+                    v = v[4:]
+
+            v = re.sub(r'[^a-z]', '', v)
+            formdata[k] = v
+
+        # Next, allow some common shorthands for inputs
         fulltext_maps = {
             'sex': {
-                'male': 'M',
-                'female': 'F',
+                'm': 'male',
+                'f': 'female',
             },
             'faction': {
-                'human': 'H',
-                'seanchan': 'S',
-                'trolloc': 'D',
+                'h': 'human',
+                's': 'seanchan',
+                't': 'darkside',
+                'd': 'darkside',
             },
             'klass': {
-                'hunter': 'H',
-                'rogue': 'R',
-                'warrior': 'W',
-                'channeler': 'C',
+                'h': 'hunter',
+                'r': 'rogue',
+                'w': 'warrior',
+                'c': 'channeler',
             },
         }
 
@@ -166,21 +185,6 @@ class SubmitStat(View):
             v = formdata.get(k, None)
             if v and v in map_:
                 formdata[k] = map_[v]
-            elif v and v.upper() in map_.values():
-                # This allows the user to submit 'm' for male instead of just
-                # male/M and etc
-                formdata[k] = v.upper()
-
-        # We also want to strip Trolloc off the end of the homeland if it
-        # exists
-        homeland = formdata.get('homeland')
-        if homeland.endswith(' Trolloc'):
-            homeland = homeland[:-8]
-
-        if homeland.startswith('The '):
-            homeland = homeland[4:]
-
-        formdata['homeland'] = homeland
 
         # Create the form instance
         form = SubmitStatForm(formdata)

@@ -1,58 +1,58 @@
 from django.db import models
 
 SEX_CHOICES = (
-    ('M', 'Male'),
-    ('F', 'Female'),
+    ('male', 'Male'),
+    ('female', 'Female'),
 )
 
 FACTION_CHOICES = (
-    ('H', 'Human'),
-    ('D', 'Darkside'),
-    ('S', 'Seanchan'),
+    ('human', 'Human'),
+    ('darkside', 'Darkside'),
+    ('seanchan', 'Seanchan'),
 )
 
 CLASS_CHOICES = (
-    ('H', 'Hunter'),
-    ('R', 'Rogue'),
-    ('W', 'Warrior'),
-    ('C', 'Channeler'),
+    ('hunter', 'Hunter'),
+    ('rogue', 'Rogue'),
+    ('warrior', 'Warrior'),
+    ('channeler', 'Channeler'),
 )
 
 DS_HOMELANDS = (
-    ("Beaked", "Beaked"),
-    ("Bearish", "Bearish"),
-    ("Boarish", "Boarish"),
-    ("Ramshorned", "Ramshorned"),
-    ("Wolfish", "Wolfish"),
+    ("beaked", "Beaked"),
+    ("bearish", "Bearish"),
+    ("boarish", "Boarish"),
+    ("ramshorned", "Ramshorned"),
+    ("wolfish", "Wolfish"),
 )
 
 LS_HOMELANDS = (
-    ("Altara", "Altara"),
-    ("Amadicia", "Amadicia"),
-    ("Andor", "Andor"),
-    ("Arad Doman", "Arad Doman"),
-    ("Arafel", "Arafel"),
-    ("Borderlands", "Borderlands"),
-    ("Cairhien", "Cairhien"),
-    ("Ghealdan", "Ghealdan"),
-    ("Illian", "Illian"),
-    ("Kandor", "Kandor"),
-    ("Mayene", "Mayene"),
-    ("Murandy", "Murandy"),
-    ("Saldaea", "Saldaea"),
-    ("Shienar", "Shienar"),
-    ("Tarabon", "Tarabon"),
-    ("Tear", "Tear"),
-    ("Two Rivers", "Two Rivers"),
+    ("altara", "Altara"),
+    ("amadicia", "Amadicia"),
+    ("andor", "Andor"),
+    ("araddoman", "Arad Doman"),
+    ("arafel", "Arafel"),
+    ("borderlands", "Borderlands"),
+    ("cairhien", "Cairhien"),
+    ("ghealdan", "Ghealdan"),
+    ("illian", "Illian"),
+    ("kandor", "Kandor"),
+    ("mayene", "Mayene"),
+    ("murandy", "Murandy"),
+    ("saldaea", "Saldaea"),
+    ("shienar", "Shienar"),
+    ("tarabon", "Tarabon"),
+    ("tear", "Tear"),
+    ("tworivers", "Two Rivers"),
 )
 
 SS_HOMELANDS = (
-    ("Seandar", "Seandar"),
-    ("Kirendad", "Kirendad"),
-    ("Shon Kifar", "Shon Kifar"),
-    ("Rampore", "Rampore"),
-    ("Tzura", "Tzura"),
-    ("Noren M'shar", "Noren M'shar"),
+    ("seandar", "Seandar"),
+    ("kirendad", "Kirendad"),
+    ("shonkifar", "Shon Kifar"),
+    ("rampore", "Rampore"),
+    ("tzura", "Tzura"),
+    ("norenmshar", "Noren M'shar"),
 )
 
 HOMELAND_CHOICES = DS_HOMELANDS + LS_HOMELANDS + SS_HOMELANDS
@@ -64,9 +64,9 @@ class Stat(models.Model):
     date_submitted = models.DateTimeField(auto_now_add=True)
 
     name = models.CharField(max_length=64, default='', blank=True)
-    sex = models.CharField(max_length=1, choices=SEX_CHOICES)
-    faction = models.CharField(max_length=1, choices=FACTION_CHOICES)
-    klass = models.CharField(max_length=1, choices=CLASS_CHOICES)
+    sex = models.CharField(max_length=6, choices=SEX_CHOICES)
+    faction = models.CharField(max_length=8, choices=FACTION_CHOICES)
+    klass = models.CharField(max_length=9, choices=CLASS_CHOICES)
     homeland = models.CharField(max_length=32, choices=HOMELAND_CHOICES)
 
     strength = models.PositiveSmallIntegerField()
@@ -91,7 +91,7 @@ class Stat(models.Model):
         return " ".join(parts).format(faction=self.get_faction_display(),
                                       sex=self.get_sex_display(),
                                       klass=self.get_klass_display(),
-                                      homeland=self.homeland,
+                                      homeland=self.get_homeland_display(),
                                       strength=self.strength,
                                       intel=self.intel,
                                       wil=self.wil,

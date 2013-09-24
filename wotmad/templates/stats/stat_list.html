@@ -30,7 +30,7 @@
       {% if mine %}<td>{{ stat.name }}</td>{% endif %}
       <td>{{ stat.get_faction_display }}</td>
       <td>{{ stat.get_klass_display }}</td>
-      <td>{{ stat.homeland }}</td>
+      <td>{{ stat.get_homeland_display }}</td>
       <td>{{ stat.stats|join:"&nbsp;"|safe }}</td>
       <td>{{ stat.sum }}</td>
     </tr>
