@@ -150,6 +150,10 @@ class SubmitStat(View):
             if not v:
                 continue
 
+            # We only want to clean these keys
+            if k not in ('homeland', 'sex', 'faction', 'klass'):
+                continue
+
             v = v.lower()
 
             if k == 'homeland':
