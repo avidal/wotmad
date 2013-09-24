@@ -12,32 +12,34 @@ class Migration(DataMigration):
     def forwards(self, orm):
         Stat = orm.Stat
 
+        print "Updating sex."
         Stat.objects.filter(sex='M').update(sex='male')
         Stat.objects.filter(sex='F').update(sex='female')
 
+        print "Updating factions."
         Stat.objects.filter(faction='H').update(faction='human')
         Stat.objects.filter(faction='D').update(faction='darkside')
         Stat.objects.filter(faction='S').update(faction='seanchan')
 
+        print "Updating classes."
         Stat.objects.filter(klass='H').update(klass='hunter')
         Stat.objects.filter(klass='R').update(klass='rogue')
         Stat.objects.filter(klass='W').update(klass='warrior')
         Stat.objects.filter(klass='C').update(klass='channeler')
 
-        xs = Stat.objects.filter(homeland__endswith=' Trolloc')
-        for x in xs.all():
-            x.homeland = x.homeland[:-8]
-            x.save()
+        print "Updating homelands."
 
-        xs = Stat.objects.filter(homeland__startswith='The ')
-        for x in xs.all():
-            x.homeland = x.homeland[4:]
-            x.save()
+        print "    Getting a list of homelands."
+        # Get a list of all of our homelands
+        xs = Stat.objects.values_list('homeland', flat=True)
 
-        # Clean up the homelands
-        xs = Stat.objects.all()
+        # Make it a set
+        xs = set(xs)
+        print "    Unique number of homelands", len(xs)
+
+        # For each homeland, figure out the normalized version
         for x in xs:
-            hl = x.homeland.lower()
+            hl = x.lower()
             if hl.endswith(' trolloc'):
                 hl = hl[:-8]
 
@@ -47,9 +49,9 @@ class Migration(DataMigration):
             # Remove everything but letters
             hl = re.sub(r'[^a-z]', '', hl)
 
-            # And save it back
-            x.homeland = hl
-            x.save()
+            # And clean it up..
+            print "    Updating homeland", x, "to", hl
+            Stat.objects.filter(homeland=x).update(homeland=hl)
 
     def backwards(self, orm):
         raise RuntimeError("Cannot reverse this migration.")
