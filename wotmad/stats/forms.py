@@ -22,12 +22,11 @@ class SubmitStatForm(forms.ModelForm):
         faction = data.get('faction', None)
         homeland = data.get('homeland', None)
 
-        # If the klass is C then the faction must be H
-        if klass == 'C' and faction != 'H':
+        if klass == 'channeler' and faction != 'human':
             raise forms.ValidationError("Only humans can be channelers.")
 
         # Make sure the faction and homeland are valid together
-        hls = {'H': LS_HOMELANDS, 'D': DS_HOMELANDS, 'S': SS_HOMELANDS}[faction]
+        hls = {'human': LS_HOMELANDS, 'darkside': DS_HOMELANDS, 'seanchan': SS_HOMELANDS}[faction]
 
         hls = map(lambda r: r[0], hls)
 
