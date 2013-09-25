@@ -1,6 +1,7 @@
 import csv
 from datetime import datetime
 import re
+import StringIO
 
 from django.http import HttpResponse, Http404
 from django.views.generic import TemplateView, ListView, View
@@ -52,14 +53,11 @@ class ContributeStat(TemplateView):
 
 class ExportStats(View):
 
-    def get(self, *args, **kwargs):
-        request = self.request
-        mine = 'mine' in request.GET
-
-        response = HttpResponse(mimetype="text/csv")
-        response['Content-Disposition'] = 'attachment; filename=stats.csv'
-
-        writer = csv.writer(response)
+    def csvgen(self, qs, mine=False):
+        """Returns a generator which yields successive rows of a CSV file for
+        export."""
+        buf = StringIO.StringIO()
+        writer = csv.writer(buf)
 
         header = [
             ('Submitted', 'date_submitted'),
@@ -74,10 +72,7 @@ class ExportStats(View):
             ('Constitution', 'con'),
         ]
 
-        stats = Stat.objects.order_by('-date_submitted')
-
         if mine:
-            stats = stats.filter(submitter=request.user)
             header.insert(0, ('Name', 'name'))
 
         labels = [r[0] for r in header]
@@ -85,7 +80,17 @@ class ExportStats(View):
 
         writer.writerow(labels)
 
-        for stat in stats.all():
+        def flush():
+            # Reads out all accumulated data and truncates the file in
+            # preperation for the next batch
+            buf.seek(0)
+            data = buf.read()
+            buf.seek(0)
+            buf.truncate()
+            return data
+
+        i = 0
+        for stat in qs.all():
             row = []
             for f in fields:
                 attr = getattr(stat, f)
@@ -102,6 +107,27 @@ class ExportStats(View):
                 row.append(value)
 
             writer.writerow(row)
+
+            # Every 1,000 records we'll flush and yield the data
+            if i % 1000 == 0:
+                data = flush()
+                yield data
+
+            i += 1
+
+        data = flush()
+        yield data
+
+    def get(self, *args, **kwargs):
+        request = self.request
+        mine = 'mine' in request.GET
+
+        stats = Stat.objects.order_by('-date_submitted')
+
+        gen = self.csvgen(stats, mine=mine)
+
+        response = HttpResponse(gen, mimetype="text/csv")
+        response['Content-Disposition'] = 'attachment; filename=stats.csv'
 
         return response
 
