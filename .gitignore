@@ -6,6 +6,7 @@
 *.sublime-project
 *.sublime-workspace
 .ropeproject
+.vagrant
 
 tmp/*
 !tmp/.empty
