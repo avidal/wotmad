@@ -123,6 +123,8 @@ class ExportStats(View):
         mine = 'mine' in request.GET
 
         stats = Stat.objects.order_by('-date_submitted')
+        if mine:
+            stats = stats.filter(submitter=request.user)
 
         gen = self.csvgen(stats, mine=mine)
 
