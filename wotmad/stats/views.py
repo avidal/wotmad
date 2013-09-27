@@ -7,6 +7,7 @@ from django.http import HttpResponse, Http404
 from django.views.generic import TemplateView, ListView, View
 
 from annoying.decorators import JsonResponse
+import pytz
 
 from .forms import SubmitStatForm
 from .models import Stat
@@ -125,6 +126,12 @@ class ExportStats(View):
         stats = Stat.objects.order_by('-date_submitted')
         if mine:
             stats = stats.filter(submitter=request.user)
+
+        # See if we're going to filter by timestamp
+        since = request.GET.get('since', None)
+        if since:
+            since = datetime.fromtimestamp(since, pytz.utc)
+            stats = stats.filter(date_submitted__gte=since)
 
         gen = self.csvgen(stats, mine=mine)
 
