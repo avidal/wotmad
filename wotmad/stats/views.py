@@ -130,8 +130,12 @@ class ExportStats(View):
         # See if we're going to filter by timestamp
         since = request.GET.get('since', None)
         if since:
-            since = datetime.fromtimestamp(since, pytz.utc)
-            stats = stats.filter(date_submitted__gte=since)
+            # Catch a TypeError if since is not castable to an int
+            try:
+                since = datetime.fromtimestamp(int(since), tz=pytz.utc)
+                stats = stats.filter(date_submitted__gte=since)
+            except TypeError:
+                pass
 
         gen = self.csvgen(stats, mine=mine)
 
