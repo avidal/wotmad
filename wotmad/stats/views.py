@@ -214,6 +214,7 @@ class SubmitStat(View):
                 'h': 'human',
                 's': 'seanchan',
                 't': 'darkside',
+                'trolloc': 'darkside',
                 'd': 'darkside',
             },
             'klass': {

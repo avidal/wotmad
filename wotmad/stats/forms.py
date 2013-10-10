@@ -26,12 +26,18 @@ class SubmitStatForm(forms.ModelForm):
             raise forms.ValidationError("Only humans can be channelers.")
 
         # Make sure the faction and homeland are valid together
-        hls = {'human': LS_HOMELANDS, 'darkside': DS_HOMELANDS, 'seanchan': SS_HOMELANDS}[faction]
+        hls = {
+            'human': LS_HOMELANDS,
+            'darkside': DS_HOMELANDS,
+            'seanchan': SS_HOMELANDS
+        }[faction]
 
         hls = map(lambda r: r[0], hls)
 
         if homeland not in hls:
-            raise forms.ValidationError("Homeland '%s' is not valid for this faction.")
+            msg = "Homeland '{0}' is not valid for this faction."
+            msg = msg.format(homeland)
+            raise forms.ValidationError(msg)
 
         return data
 
