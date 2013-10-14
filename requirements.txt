@@ -1,0 +1,9 @@
+Flask==0.10.1
+
+Flask-Migrate==0.1.4
+Flask-SQLAlchemy==1.0
+Flask-Script==0.6.2
+Flask-Security==1.6.9
+Flask-WTF==0.9.3
+
+psycopg2==2.5.1
