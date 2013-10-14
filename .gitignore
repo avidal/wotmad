@@ -1,0 +1,7 @@
+*.sw[a-z]
+*.py[co]
+*~
+*.bak
+*.orig
+Thumbs.db
+.DS_Store
