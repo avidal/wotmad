@@ -3,3 +3,4 @@
 # Import all model classes here, so it's discoverable by the system
 
 from .users.models import *
+from .stats.models import *

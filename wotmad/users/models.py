@@ -45,3 +45,5 @@ class User(UserJsonSerializer, UserMixin, db.Model):
 
     roles = db.relationship('Role', secondary=roles_users,
                             backref=db.backref('users', lazy='dynamic'))
+    stats = db.relationship('Stat', backref='submitter',
+                            lazy='dynamic')
