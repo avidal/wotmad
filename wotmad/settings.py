@@ -43,7 +43,7 @@ INTERNAL_IPS = ('127.0.0.1',)
 import dj_database_url
 
 DATABASE_URL = env('DATABASE_URL')
-DATABASES = {'default': dj_database_url.config(DATABASE_URL)}
+DATABASES = {'default': dj_database_url.parse(DATABASE_URL)}
 
 TIME_ZONE = 'America/Chicago'
 
