@@ -7,6 +7,9 @@
 *.sublime-workspace
 .ropeproject
 
+Berksfile.lock
+.vagrant/
+
 tmp/*
 !tmp/.empty
 
@@ -18,4 +21,3 @@ uploads/*
 
 static/*
 !static/.empty
-node_modules/
