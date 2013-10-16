@@ -7,6 +7,8 @@
 *.sublime-workspace
 .ropeproject
 
+.env
+
 Berksfile.lock
 .vagrant/
 
