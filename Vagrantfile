@@ -14,7 +14,7 @@ Vagrant.configure("2") do |config|
     sh.inline = <<-EOF
       apt-get update -qq
       apt-get install ruby1.9.3 build-essential -qq --yes
-      apt-get install python-pip python-dev libpq-dev -qq --yes
+      apt-get install python-pip python-dev libpq-dev libevent-dev -qq --yes
       gem install chef --version 11.4.4 --no-ri --no-rdoc
       pip install virtualenv virtualenvwrapper stevedore virtualenv-clone
       update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US
