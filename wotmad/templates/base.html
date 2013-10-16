@@ -8,26 +8,38 @@
 <link type="text/css" rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
 <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/select2/3.4.1/select2.min.css">
 <style type="text/css">
-footer {
+html, body {
+  height: 100%;
+}
+
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -60px;
+  padding: 0 0 60px;
+}
+
+#main {
+  padding: 60px 15px 0;
+}
+
+#footer {
   height: 60px;
   background-color: #f5f5f5;
 }
 
-footer .container .credit {
+.container .credit {
   margin: 20px 0;
 }
 
-#main {
-  margin-bottom: 20px;
-}
 </style>
 {% block stylesheets %}{% endblock %}
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-default">
-
+  <div id="wrap">
+    <div class="navbar navbar-default navbar-fixed-top">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
           <span class="sr-only">Toggle navigation</span>
@@ -63,21 +75,22 @@ footer .container .credit {
 
       </div>
     </div>
-  </header>
 
-  {% block messages %}
-    {% for message in messages %}
-      <div class="alert alert-{{ message.tags }}">
-        {{ message }}
-      </div>
-    {% endfor %}
-  {% endblock %}
+    {% block messages %}
+      {% for message in messages %}
+        <div class="alert alert-{{ message.tags }}">
+          {{ message }}
+        </div>
+      {% endfor %}
+    {% endblock %}
 
-  <div class="container" id="main">
-    {% block content %}{% endblock %}
-  </div>
+    <div class="container" id="main">
+      {% block content %}{% endblock %}
+    </div>
 
-  <footer>
+  </div><!-- /div#wrap -->
+
+  <div id="footer">
     <div class="container">
       <p class="text-muted credit pull-right">
         <a href="#main" title="Back to top"><span class="glyphicon glyphicon-chevron-up"></span></a>
@@ -88,7 +101,7 @@ footer .container .credit {
         Source code on <a href="https://github.com/avidal/wotmad/">Github</a>.
       </p>
     </div>
-  </footer>
+  </div>
 
   <script>
     window.ST_RENDER_STYLE = "new_page";
