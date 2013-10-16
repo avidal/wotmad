@@ -4,8 +4,9 @@
 
 <head>
 <title>{% block title %}wotmad{% endblock %}</title>
-<link type="text/css" rel="stylesheet" href="{% static "css/chosen.css" %}">
-<link type="text/css" rel="stylesheet" href="{% static "css/style.css" %}">
+<link type="text/css" rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+<link type="text/css" rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
+<link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/select2/3.4.1/select2.min.css">
 {% block stylesheets %}{% endblock %}
 </head>
 
@@ -80,11 +81,11 @@
     window.ST_RENDER_STYLE = "new_page";
   </script>
   {% endblock %}
-  <script src="https://browserid.org/include.js"></script>
-  <script src="//code.jquery.com/jquery.min.js"></script>
-  <script src="{% static "js/chosen.jquery.min.js" %}"></script>
-  <script src="{% static "js/URI.min.js" %}"></script>
-  <script src="{% static "js/jquery.URI.min.js" %}"></script>
+  <script src="//login.persona.org/include.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/select2/3.4.1/select2.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/URI.js/1.7.2/URI.min.js"></script>
   <script>
   var uri = URI();
 
