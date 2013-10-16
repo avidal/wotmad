@@ -4,7 +4,7 @@
 
 {% block content %}
 <div class="row">
-  <div class="span9">
+  <div class="col-md-9">
     <ul class="nav nav-pills">
       <li class="active">
         <a href="#">most popular</a>
@@ -17,15 +17,6 @@
           <span class="log-title {{ log.pov }}">
             <a href="{{ log.get_absolute_url }}">{{ log.title }}</a>
           </span><br/>
-          <ul class='log-vote'>
-            <li class='upvote'><i class='icon-chevron-up'></i></li>
-            <li class='downvote'><i class='icon-chevron-down'></i></li>
-          </ul>
-          <ul class="log-meta">
-            {% for category in log.categories.all %}
-              <li><span class="label">{{ category }}</span></li>
-            {% endfor %}
-          </ul>
           <span class="log-submission-info">
             submitted {{ log.date_submitted|timesince }} ago by {{ log.submitter }}
           </span>
@@ -33,25 +24,19 @@
       {% endfor %}
     </ul>
   </div>
-  <div class="span3">
-    <div class="well" style="padding: 8px 0;">
-      <ul class="nav nav-list">
-        <li>
-          <a href="{% url artofwar:submit %}"><i class="icon-plus"></i> Submit Log</a>
-        </li>
-        <li class="nav-header">
-          Filter Results
-        </li>
-        {% for category in categories %}
-          <li>
-            <a href="#" class="filter-logs" data-category="{{ category.slug }}">{{ category }}</a>
-          </li>
-        {% endfor %}
-        <li class="divider"></li>
-        <li>
-          <a href="#" class="filter-logs" data-category=""><i class="icon-remove"></i> Reset Filters</a>
-        </li>
-      </ul>
+  <div class="col-md-3">
+    <a class="btn btn-primary pull-right" href="{% url artofwar:submit %}"><span class="icon-plus"></span> Submit Log</a>
+    <div class="clearfix" style="margin-bottom:10px;"></div>
+    <div class="list-group">
+      <div class="list-group-item">
+        <h4 class="list-group-item-heading">Filter Results</h4>
+        <div class="list-group">
+          {% for category in categories %}
+          <a href="#" class="filter-logs list-group-item" data-category="{{ category.slug }}">{{ category }} <span class="badge">{{ category.logs.count }}</span></a>
+          {% endfor %}
+        </div>
+      </div>
+      <a href="#" class="filter-logs list-group-item" data-category=""><i class="icon-remove"></i> Reset Filters</a>
     </div>
   </div>
 </div>
