@@ -9,3 +9,63 @@ be down at any given time and the data may go missing at any time.
 Logins are handled via [BrowserID](https://browserid.org) because it's much
 easier for me to use. If you don't want an account through BrowserID, so sorry
 charlie.
+
+# contributing
+
+If you wish to contribute, you'll need Vagrant, with the Berkshelf plugin.
+
+You can get vagrant from https://vagrantup.com
+
+After installing vagrant, install the berkshelf plugin:
+
+```
+$ vagrant plugin install vagrant-berkshelf
+```
+
+After checking out the code, change into the directory holding the source and run:
+
+```
+$ vagrant up
+```
+
+The first time you run the command, vagrant will download a base virtual
+machine image for you, then provision the image using the scripts included in
+the Vagrantfile.
+
+Because of the way browserid/persona works, you need to access the site using
+a defined hostname:port. The vagrant machine is preconfigured to use
+`http://wotmad.local:5000`, and it is listening on the private IP `10.0.0.52`,
+so go ahead and add this line to your /etc/hosts file:
+
+```
+10.0.0.52   wotmad.local
+```
+
+Once the provisioning is done, ssh into the virtual machine by typing `vagrant ssh`.
+
+The first time you provision, you'll need to migrate the database up to the current point, so run:
+
+```
+$ ./manage.py syncdb --noinput
+```
+
+Followed by:
+
+```
+$ ./manage.py migrate
+```
+
+Then, create a superuser for yourself. Be sure to use the same email address
+you'll be using when you login via BrowserID so that you'll gain access to the
+admin.
+
+```
+$ ./manage.py createsuperuser
+```
+
+Finally, you're ready to run the server. You only need to perform the steps
+above if it's your first time. Otherwise, you can skip straight to here.
+
+```
+$ ./manage.py runserver 0:5000
+```
