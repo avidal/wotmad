@@ -7,16 +7,17 @@ Vagrant.configure("2") do |config|
   config.vm.box = "precise64"
 
   config.vm.box_url = "http://files.vagrantup.com/precise64.box"
-  config.vm.network "private_network", ip: "10.0.0.100"
+  config.vm.network "private_network", ip: "10.0.0.52"
   config.berkshelf.enabled = true
 
   config.vm.provision :shell do |sh|
     sh.inline = <<-EOF
       apt-get update -qq
       apt-get install ruby1.9.3 build-essential -qq --yes
-      apt-get install python-pip python-dev libpq-dev libevent-dev -qq --yes
+      apt-get install python-pip python-dev libpq-dev libevent-dev git -qq --yes
+      git clone git://github.com/kennethreitz/autoenv.git /home/vagrant/.autoenv
       gem install chef --version 11.4.4 --no-ri --no-rdoc
-      pip install virtualenv virtualenvwrapper stevedore virtualenv-clone autoenv
+      pip install virtualenv virtualenvwrapper stevedore virtualenv-clone
       update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US
       dpkg-reconfigure locales
     EOF
@@ -78,7 +79,7 @@ EOD
             export PYTHONDONTWRITEBYTECODE=1
 
             source /usr/local/bin/virtualenvwrapper.sh
-            source /usr/local/bin/activate.sh
+            source /home/vagrant/.autoenv/activate.sh
 
             workon wotmad
 EOD
@@ -87,12 +88,13 @@ EOD
       if [ -f /vagrant/.env ]
       then
         echo "Already setup .env file."
-    else
+      else
         cat >> /vagrant/.env <<EOD
             DEBUG = True
             DATABASE_URL = postgresql://wotmad:wotmad@/wotmad
             SITE_URL=http://wotmad.local
 EOD
+      fi
 
       cat > /tmp/setup-env.sh <<EOD
         mkdir -p /home/vagrant/.pip_download_cache
