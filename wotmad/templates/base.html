@@ -7,6 +7,16 @@
 <link type="text/css" rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
 <link type="text/css" rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
 <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/select2/3.4.1/select2.min.css">
+<style type="text/css">
+footer {
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+footer .container .credit {
+  margin: 20px 0;
+}
+</style>
 {% block stylesheets %}{% endblock %}
 </head>
 
@@ -60,17 +70,21 @@
     {% endfor %}
   {% endblock %}
 
-  <div class="container">
+  <div class="container" id="main">
     {% block content %}{% endblock %}
   </div>
 
-  <footer class="footer">
-    <p class="pull-right"><a href="#">Back to top</a></p>
-    <p>
-      Features and Issues <a
-        href="https://trello.com/board/wotmad/4f723dc355adc061384f2976">on Trello</a>;
-      Source code on <a href="https://github.com/avidal/wotmad/">Github</a>.
-    </p>
+  <footer>
+    <div class="container">
+      <p class="text-muted credit pull-right">
+        <a href="#main" title="Back to top"><span class="glyphicon glyphicon-chevron-up"></span></a>
+      </p>
+      <p class="text-muted credit">
+        Features and Issues <a
+          href="https://trello.com/board/wotmad/4f723dc355adc061384f2976">on Trello</a>;
+        Source code on <a href="https://github.com/avidal/wotmad/">Github</a>.
+      </p>
+    </div>
   </footer>
 
   <script>
