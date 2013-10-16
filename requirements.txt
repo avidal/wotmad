@@ -12,3 +12,5 @@ chaussette==0.7
 gevent==0.13.8
 django-debug-toolbar==0.9.4
 pytz==2013d
+honcho==0.4.2
+ipython==1.1.0

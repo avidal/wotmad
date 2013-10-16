@@ -15,7 +15,6 @@ Vagrant.configure("2") do |config|
       apt-get update -qq
       apt-get install ruby1.9.3 build-essential -qq --yes
       apt-get install python-pip python-dev libpq-dev libevent-dev git -qq --yes
-      git clone git://github.com/kennethreitz/autoenv.git /home/vagrant/.autoenv
       gem install chef --version 11.4.4 --no-ri --no-rdoc
       pip install virtualenv virtualenvwrapper stevedore virtualenv-clone
       update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US
@@ -79,7 +78,6 @@ EOD
             export PYTHONDONTWRITEBYTECODE=1
 
             source /usr/local/bin/virtualenvwrapper.sh
-            source /home/vagrant/.autoenv/activate.sh
 
             workon wotmad
 EOD
