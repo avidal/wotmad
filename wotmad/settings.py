@@ -132,7 +132,7 @@ if DEBUG:
 
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
-    'wotmad.backends.BrowserIDBackend',
+    'django_browserid.auth.BrowserIDBackend',
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (

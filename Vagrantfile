@@ -90,7 +90,7 @@ EOD
         cat >> /vagrant/.env <<EOD
             DEBUG = True
             DATABASE_URL = postgresql://wotmad:wotmad@/wotmad
-            SITE_URL=http://wotmad.local
+            SITE_URL=http://wotmad.local:5000
 EOD
       fi
 
