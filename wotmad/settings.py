@@ -2,32 +2,33 @@ import os
 
 from path import path
 
+from django.core.exceptions import ImproperlyConfigured
+
 PROJECT_ROOT = path(__file__).abspath().dirname()
 SITE_ROOT = PROJECT_ROOT.dirname()
-ENV = os.environ.get('ENV', 'dev')
 
-SITE_URL_MAP = {
-    'heroku': 'http://wotmad.herokuapp.com',
-    'dev': 'http://wotmad.local:5000',
-}
+DEFAULT_ENV = object()
 
-# First, try loading SITE_URL out of the environment
-# If that fails, load it out of the map
-SITE_URL = os.environ.get('SITE_URL', None)
 
-if not SITE_URL:
-    SITE_URL = SITE_URL_MAP.get(ENV, None)
+def env(key, default=DEFAULT_ENV):
+    v = os.environ.get(key, default)
 
-if not SITE_URL:
-    from django.exceptions import ImproperlyConfigured
-    raise ImproperlyConfigured("No SITE_URL specified.")
+    # If they tried to read a value that doesn't exist, and didn't provide
+    # a default, then raise ImproperlyConfigured
+    if v == DEFAULT_ENV:
+        msg = "Environment variable '{0}' was not found.".format(key)
+        raise ImproperlyConfigured(msg)
 
-if ENV == 'dev':
-    DEBUG = True
-elif ENV == 'heroku':
-    DEBUG = False
-else:
-    DEBUG = False
+    if v == "True":
+        v = True
+    elif v == "False":
+        v = False
+
+    return v
+
+
+SITE_URL = env('SITE_URL')
+DEBUG = env('DEBUG', False)
 
 TEMPLATE_DEBUG = DEBUG
 
@@ -41,14 +42,8 @@ INTERNAL_IPS = ('127.0.0.1',)
 
 import dj_database_url
 
-DEFAULT_DATABASE = 'sqlite:////' + (SITE_ROOT / 'tmp' / 'database.db')
-DATABASES = {'default': dj_database_url.config(default=DEFAULT_DATABASE)}
-
-if 'postgres' in DATABASES['default']['ENGINE']:
-    DATABASES['default']['ENGINE'] = 'django_postgrespool'
-    SOUTH_DATABASE_ADAPTERS = {
-        'default': 'south.db.postgresql_psycopg2'
-    }
+DATABASE_URL = env('DATABASE_URL')
+DATABASES = {'default': dj_database_url.config(DATABASE_URL)}
 
 TIME_ZONE = 'America/Chicago'
 

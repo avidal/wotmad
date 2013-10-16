@@ -10,6 +10,5 @@ South==0.7.5
 dj-database-url==0.2.1
 chaussette==0.7
 gevent==0.13.8
-django-postgrespool==0.2.4
 django-debug-toolbar==0.9.4
 pytz==2013d

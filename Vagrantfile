@@ -16,7 +16,7 @@ Vagrant.configure("2") do |config|
       apt-get install ruby1.9.3 build-essential -qq --yes
       apt-get install python-pip python-dev libpq-dev libevent-dev -qq --yes
       gem install chef --version 11.4.4 --no-ri --no-rdoc
-      pip install virtualenv virtualenvwrapper stevedore virtualenv-clone
+      pip install virtualenv virtualenvwrapper stevedore virtualenv-clone autoenv
       update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US
       dpkg-reconfigure locales
     EOF
@@ -78,10 +78,21 @@ EOD
             export PYTHONDONTWRITEBYTECODE=1
 
             source /usr/local/bin/virtualenvwrapper.sh
+            source /usr/local/bin/activate.sh
 
             workon wotmad
 EOD
       fi
+
+      if [ -f /vagrant/.env ]
+      then
+        echo "Already setup .env file."
+    else
+        cat >> /vagrant/.env <<EOD
+            DEBUG = True
+            DATABASE_URL = postgresql://wotmad:wotmad@/wotmad
+            SITE_URL=http://wotmad.local
+EOD
 
       cat > /tmp/setup-env.sh <<EOD
         mkdir -p /home/vagrant/.pip_download_cache
