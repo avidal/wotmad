@@ -1,16 +1,22 @@
 import csv
 from datetime import datetime
+import json
 import re
 import StringIO
 
+from django.core.serializers.json import DjangoJSONEncoder
 from django.http import HttpResponse, Http404
 from django.views.generic import TemplateView, ListView, View
 
-from annoying.decorators import JsonResponse
 import pytz
 
 from .forms import SubmitStatForm
 from .models import Stat
+
+
+def JsonResponse(data):
+    return HttpResponse(json.dumps(data, cls=DjangoJSONEncoder),
+                        content_type='application/json')
 
 
 class StatList(ListView):
