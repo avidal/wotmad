@@ -1,4 +1,4 @@
-Django<1.5
+Django==1.4.17
 path.py==7.0
 django-browserid==0.11
 django-annoying==0.8.0
