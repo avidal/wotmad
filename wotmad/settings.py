@@ -37,6 +37,8 @@ def env(key, default=DEFAULT_ENV):
 
 
 SITE_URL = env('SITE_URL')
+BROWSERID_AUDIENCES = [SITE_URL]
+
 DEBUG = env('DEBUG', False)
 
 TEMPLATE_DEBUG = DEBUG
