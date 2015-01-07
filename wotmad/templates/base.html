@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-{% load static from staticfiles %}
+{% load staticfiles %}
+{% load browserid %}
 
 <head>
 <title>{% block title %}wotmad{% endblock %}</title>
@@ -38,6 +39,7 @@ html, body {
 </head>
 
 <body>
+  {% browserid_info %}
   <div id="wrap">
     <div class="navbar navbar-default navbar-fixed-top">
       <div class="navbar-header">
@@ -62,14 +64,10 @@ html, body {
 
         <p class="navbar-text navbar-right">
           {% if not user.is_authenticated %}
-            <a id="browserid" href="#">login / register</a>
-            <form method="POST" id="login-form" action="{% url accounts:verify %}">
-              {% csrf_token %}
-              {{ browserid_form.as_p }}
-            </form>
+            {% browserid_login text="login / register" %}
           {% else %}
             Signed in as {{ user }}
-            <a href="{% url accounts:logout %}" title="Logout"><span class="glyphicon glyphicon-log-out"></span></a>
+            {% browserid_logout text="logout" %}
           {% endif %}
         </p>
 
@@ -111,20 +109,12 @@ html, body {
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/select2/3.4.1/select2.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/URI.js/1.7.2/URI.min.js"></script>
+  <script src="{% static 'browserid/api.js' %}"></script>
+  <script src="{% static 'browserid/browserid.js' %}"></script>
   <script>
   var uri = URI();
 
   $(document).ready(function() {
-    $('#browserid').bind('click', function(e) {
-      e.preventDefault();
-      navigator.id.getVerifiedEmail(function(assertion) {
-          if (assertion) {
-            var $e = $('#id_assertion');
-            $e.val(assertion.toString());
-            $e.parent().submit();
-          }
-      });
-    });
     $('.select2').select2();
   });
   </script>
