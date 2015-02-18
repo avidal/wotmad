@@ -252,20 +252,41 @@ class SubmitStat(View):
         user = form.user
         clean = form.cleaned_data
 
-        # At this point, we have valid data and a valid user, so just
-        # create the stat and let them know it was done!
+        # At this point, we have valid data and a valid user, but we want to
+        # ensure this doesn't match their most recent submission
         try:
-            Stat.objects.create(submitter=user,
-                                name=clean.get('name'),
-                                sex=clean.get('sex'),
-                                faction=clean.get('faction'),
-                                klass=clean.get('klass'),
-                                homeland=clean.get('homeland'),
-                                strength=clean.get('strength'),
-                                intel=clean.get('intel'),
-                                wil=clean.get('wil'),
-                                dex=clean.get('dex'),
-                                con=clean.get('con'))
+            latest = Stat.objects.filter(submitter=user).latest('date_submitted')
+
+            # If they do have a latest, then we want to compare all fields with
+            # the exception of date_submitted
+            duplicate = True
+            for k, v in clean.iteritems():
+                if k == "apikey": continue
+                if getattr(latest, k) != v:
+                    duplicate = False
+
+            if duplicate:
+                return make_error("Duplicate. This submission matches your most recent one.")
+
+        except Stat.DoesNotExist:
+            # New users might not have a most recent, and that's okay. We can
+            # just pass through.
+            pass
+
+        try:
+            Stat.objects.create(
+                submitter=user,
+                name=clean.get('name'),
+                sex=clean.get('sex'),
+                faction=clean.get('faction'),
+                klass=clean.get('klass'),
+                homeland=clean.get('homeland'),
+                strength=clean.get('strength'),
+                intel=clean.get('intel'),
+                wil=clean.get('wil'),
+                dex=clean.get('dex'),
+                con=clean.get('con')
+            )
         except:
             return make_error("Something went wrong accepting your stat.")
 
