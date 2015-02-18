@@ -9,12 +9,8 @@ SITE_ROOT = PROJECT_ROOT.dirname()
 
 # Use honcho to read the .env file, if it exists
 if (SITE_ROOT / '.env').exists():
-    from honcho.command import Honcho
-    h = Honcho()
-    entries = h.read_env(type('obj', (object,),
-                              {'env': '.env', 'app_root': SITE_ROOT}))
-    h.set_env(entries)
-    del entries
+    import dotenv
+    dotenv.load_dotenv(SITE_ROOT / '.env')
 
 DEFAULT_ENV = object()
 
@@ -28,9 +24,9 @@ def env(key, default=DEFAULT_ENV):
         msg = "Environment variable '{0}' was not found.".format(key)
         raise ImproperlyConfigured(msg)
 
-    if v == "True":
+    if v.lower() in ('1', 'true', 'on'):
         v = True
-    elif v == "False":
+    elif v.lower() in ('0', 'false', 'off'):
         v = False
 
     return v
