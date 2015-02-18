@@ -12,15 +12,9 @@ charlie.
 
 # contributing
 
-If you wish to contribute, you'll need Vagrant, with the Berkshelf plugin.
+If you wish to contribute, you'll need Vagrant.
 
 You can get vagrant from https://vagrantup.com
-
-After installing vagrant, install the berkshelf plugin:
-
-```
-$ vagrant plugin install vagrant-berkshelf
-```
 
 After checking out the code, change into the directory holding the source and run:
 
