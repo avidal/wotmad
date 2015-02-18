@@ -12,6 +12,7 @@ Vagrant.configure("2") do |config|
     sh.inline = <<-EOF
       apt-get update -qq
       apt-get install build-essential -qq --yes
+      apt-get install postgresql postgresql-contrib -qq --yes
       apt-get install python-pip python-dev libpq-dev libevent-dev git -qq --yes
       pip install virtualenv virtualenvwrapper stevedore virtualenv-clone
       update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US
@@ -30,6 +31,14 @@ EOD
 
       su - postgres -c "psql template1 < /tmp/create-db.sql"
       rm /tmp/create-db.sql
+
+      cat > /etc/postgresql/9.3/main/pg_hba.conf <<EOD
+# TYPE  DATABASE    USER      ADDRESS       METHOD
+local   all         postgres                peer
+local   all         all                     md5
+
+host    all         all       127.0.0.1/32  md5
+EOD
     EOF
   end
 
