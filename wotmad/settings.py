@@ -24,9 +24,9 @@ def env(key, default=DEFAULT_ENV):
         msg = "Environment variable '{0}' was not found.".format(key)
         raise ImproperlyConfigured(msg)
 
-    if v.lower() in ('1', 'true', 'on'):
+    if isinstance(v, basestring) and v.lower() in ('1', 'true', 'on'):
         v = True
-    elif v.lower() in ('0', 'false', 'off'):
+    elif isinstance(v, basestring) and v.lower() in ('0', 'false', 'off'):
         v = False
 
     return v
